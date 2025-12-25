@@ -163,13 +163,13 @@ Yes. Typical usage:
 
 > `Jenkinsfile` example:
 
-`pipeline {
-  triggers { cron('H 2 * * 1-5') } // Weekdays around 02:00
-  agent any
-  stages {
-    stage('Test'){ steps { sh 'npm ci && npx playwright test' } }
-  }
-}` 
+    pipeline {
+      triggers { cron('H 2 * * 1-5') } // Weekdays around 02:00
+      agent any
+      stages {
+        stage('Test'){ steps { sh 'npm ci && npx playwright test' } }
+      }
+    }
 
 ----------
 

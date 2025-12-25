@@ -5,7 +5,9 @@
 # 𝗥𝗼𝘂𝗻𝗱 𝟭: 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗦𝗰𝗿𝗲𝗲𝗻𝗶𝗻𝗴
 
 
-## 1) Framework Walkthrough: Tools, Design Patterns & Reporting
+## 1) Walk me through your automation framework – which tools, design patterns, and reporting mechanisms do you use?
+
+    
 **Tech Stack**
 - **Language**: Java 11+
 - **UI Automation**: Selenium WebDriver
@@ -47,7 +49,8 @@ project-root/
 
 ---
 
-## 2) Selenium WebDriver with Java & Handling Dynamic Elements
+## 2) Explain how you use **Selenium WebDriver with Java**. How do you handle dynamic web elements?
+
 **Driver Bootstrap**
 ```java
 public class DriverManager {
@@ -97,7 +100,8 @@ public void resilientClick(By locator) {
 
 ---
 
-## 3) Role of TestNG & Data-Driven Testing with `@DataProvider`
+## 3) What is the role of TestNG in your framework? How do you implement data-driven testing using `@DataProvider`?
+
 **Why TestNG?**
 - Flexible test orchestration: grouping, parallel execution, dependencies.
 - Built-in **data providers**, **retry**, and **listeners** (`ITestListener`).
@@ -129,7 +133,8 @@ Optionally load from Excel/CSV/JSON using Apache POI/Jackson.
 
 ---
 
-## 4) Waits in Selenium: Implicit vs Explicit vs Fluent
+## 4) How do you handle waits in Selenium? What’s the difference between implicit, explicit, and fluent waits?
+
 - **Implicit Wait**: Sets a default polling time for **findElement**. Global, may mask sync issues. Use sparingly.
   ```java
   DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(0)); // often disable
@@ -151,7 +156,8 @@ Optionally load from Excel/CSV/JSON using Apache POI/Jackson.
 
 ---
 
-## 5) Jenkins CI: Managing Test Execution & Pipelines
+## 5) How do you manage test execution in Jenkins? Have you set up CI pipelines for automated test runs?
+
 **Pipeline-as-Code (Declarative)**
 ```groovy
 pipeline {
@@ -180,7 +186,8 @@ pipeline {
 
 ---
 
-## 6) Reporting: Extent & Allure Integration
+## 6) What kind of reports do you generate post automation execution? How do you integrate Extent Reports or Allure?
+
 **Extent Reports Setup**
 ```java
 public class ExtentManager {
@@ -235,7 +242,8 @@ Allure.addAttachment("Failure Screenshot", new ByteArrayInputStream(bytes));
 
 ---
 
-## 7) Page Object Model (POM) & Reusable Components
+## 7) What is Page Object Model (POM)? How do you maintain reusable components across multiple test cases?
+
 **POM Principle**: Page classes expose **behaviors**, not locators.
 ```java
 public class LoginPage {
@@ -260,7 +268,8 @@ public class LoginPage {
 
 ---
 
-## 8) REST API Automation (Rest Assured / Postman)
+## 8) Have you automated REST API test cases? Which tools or libraries do you use (like Rest Assured or Postman)?
+
 **Rest Assured Pattern**
 ```java
 import static io.restassured.RestAssured.*;
@@ -288,7 +297,8 @@ public void createUser_shouldReturn201() {
 
 ---
 
-## 9) Screenshots on Failure & Attachment to Reports
+## 9) How do you capture screenshots on failure and attach them to reports?
+
 **Utility**
 ```java
 public class Screenshot {
@@ -307,7 +317,8 @@ Hook into **TestNG Listeners** or `@AfterMethod` to capture and attach for Exten
 
 ---
 
-## 10) Git Version Control & Collaboration
+## 10) What is your approach to version control? How do you structure your code in Git and collaborate with teams?
+
 **Branching Strategy**
 - **Main**: Always stable; tagged releases.
 - **Develop**: Integration branch (optional).

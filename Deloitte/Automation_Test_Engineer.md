@@ -49,7 +49,7 @@ project-root/
 
 ---
 
-## 2) SExplain how you use **Selenium WebDriver with Java**. How do you handle dynamic web elements?
+## 2) Explain how you use **Selenium WebDriver with Java**. How do you handle dynamic web elements?
 
 **Driver Bootstrap**
 ```java

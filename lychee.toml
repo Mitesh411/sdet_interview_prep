@@ -1,7 +1,9 @@
 # lychee link checker configuration (used by .github/workflows/docs-quality.yml)
 
-# Check links to other files and #heading anchors, not only external URLs.
-include_fragments = true
+# Check #heading anchors in links, not only that the file or URL exists.
+# Since lychee v0.24 this is a mode, not a boolean: "none" | "anchor-only" | "text-only" | "full".
+# This repo only uses heading anchors (#section), not text fragments (#:~:text=...).
+include_fragments = "anchor-only"
 
 # Be tolerant of slow or rate-limiting sites so PRs don't fail on transient errors.
 max_retries = 3
@@ -19,4 +21,5 @@ exclude = [
   '^https?://(www\.)?linkedin\.com',
 ]
 
-exclude_path = ["node_modules", ".git"]
+# Regular expressions matched against file paths.
+exclude_path = ['(^|/)node_modules/', '(^|/)\.git/']

@@ -23,7 +23,7 @@ This roadmap turns the repo from a **folder of notes** into a **structured, sear
 
 | Area | Files | Approx. size | Notes |
 |---|---|---|---|
-| AWS AI Practitioner (AIF-C01) | 9 `.md` in `AWS AI Practitioner/Claude/` | ~840 KB, ~20k lines | 525-question bank (twice), 2 × 65-question mock exams, 57 exam-style Qs, 2 sets of study notes |
+| AWS AI Practitioner (AIF-C01) | 10 `.md` in `AWS-AI-Practitioner/` | ~820 KB | Bank 1 (525 Qs) + Bank 2 (473 Qs, deduplicated 2026-11-13), 2 × 65-question mock exams, 57 exam-style Qs, 2 sets of study notes, review log |
 | Playwright | `100_Playwright_Interview_Questions.md` + `.pdf` + `playwright.md` | ~67 KB | Q1–80 complete; Q81–100 are stubs |
 | Deloitte | `Automation_Test_Engineer.md`, `Sr QA.md` | ~37 KB | 10 + ~22 Qs, Selenium/Java/TestNG/SQL |
 | Capgemini | `L2_interview_Questions.md` | ~10 KB | 15 Qs, metrics/CI/Git/data validation |
@@ -43,16 +43,16 @@ This roadmap turns the repo from a **folder of notes** into a **structured, sear
 | W1 | README is empty (title only). There is no index, purpose or how-to-use | `README.md` | New visitors can't find their way around; low discoverability |
 | W2 | Playwright guide is incomplete. Q81–90 are one-line bold stubs, Q91–100 are missing, and the "100 questions" title over-promises | `Playwright/100_Playwright_Interview_Questions.md` (line ~2709+) | Credibility; the content doesn't match its title |
 | W3 | Placeholder file whose only content is `test` | `Playwright/playwright.md` | Noise |
-| W4 | The same 525-question bank is stored twice in different formats (`AllChapters.md` vs `Ch1&2.md` + `Ch3&4.md` + `Ch5.md`), and the question wording differs between copies | `AWS AI Practitioner/Claude/` | ~570 KB duplicated; fixes drift between copies |
+| ~~W4~~ | ~~The same 525-question bank is stored twice in different formats (`AllChapters.md` vs `Ch1&2.md` + `Ch3&4.md` + `Ch5.md`), and the question wording differs between copies~~ | ~~`AWS AI Practitioner/Claude/`~~ | ✅ **Done 2026-11-13.** Analysis showed these were two *different* banks that overlapped, not one bank stored twice. 52 duplicate questions were removed from Bank 2 (now `question-bank-2.md`, 473 Qs), so the banks give 998 distinct questions |
 | W5 | Five different question formats: `- [x]` checkboxes (answer visible), inline `**Answer:**`, `<details>` reveal, a separate answer key, and bold numbering | AWS + Playwright | Can't be parsed automatically; inconsistent experience |
-| W6 | `AIF-C01.md` shows the correct answer inline (`[x]`), so it can't be used for self-testing. It also has no title, intro or numbering | `AIF-C01.md` | Spoils practice |
+| ~~W6~~ | ~~`AIF-C01.md` shows the correct answer inline (`[x]`), so it can't be used for self-testing. It also has no title, intro or numbering~~ | ~~`AIF-C01.md`~~ | ✅ **Done 2026-11-13** (see C-03) |
 | W7 | Folder name typo: `Capegemini` should be `Capgemini`. The `Claude/` folder name describes how the content was made, not what it is | Root, AWS folder | Professionalism, findability |
 | W8 | Headings use Unicode "math bold" characters (`𝗥𝗼𝘂𝗻𝗱 𝟭`), and several `#` H1s are used as sub-headings | `Deloitte/Automation_Test_Engineer.md` | Breaks search, anchors and screen readers |
 | W9 | Code samples are indented, not fenced, so they get no syntax highlighting | `Capegemini/…`, `Deloitte/Sr QA.md` | Harder to read |
 | W10 | A binary PDF copy of a Markdown file is committed | `Playwright/*.pdf` | Copies drift; repo grows |
 | W11 | No `.gitignore`, no CI, no Markdown/link linting, no CONTRIBUTING guide | Root | Quality regressions go unnoticed |
 | W12 | Many core SDET topics are missing (API testing, Cypress, Appium, performance, BDD, DSA for SDET, behavioral) | — | Narrow audience |
-| W13 | AWS content is AI-generated with no recorded review or "last verified" date against the current exam guide | AWS folder | Accuracy risk as AWS services change |
+| ~~W13~~ | ~~AWS content is AI-generated with no recorded review or "last verified" date against the current exam guide~~ | ~~AWS folder~~ | ✅ **Done 2026-11-13.** `AWS-AI-Practitioner/review-log.md` records where each file came from and the review history. Every AWS file has a "Last reviewed" line, and stale feature names were updated. A full expert check of every question is still open under C-05 |
 
 ---
 
@@ -79,7 +79,7 @@ Each item is scored on **Impact** (learner value, reach, credibility) and **Feas
 |---|---|---|---|---|---|---|
 | F-01 | **Write a real README** | Purpose, audience, folder map, how to use (study vs. self-test), table of all guides with question counts, contribution link, disclaimer that questions are not real exam content | 5 | 5 | 2 SP (4h) | 0.5 SP (1h) |
 | F-02 | **Remove/replace placeholder** | Delete `Playwright/playwright.md`, or turn it into a Playwright section index | 2 | 5 | 0.25 SP (0.5h) | 0.25 SP (0.5h) |
-| F-03 | **Fix naming** | Rename `Capegemini/` to `Capgemini/` and `AWS AI Practitioner/Claude/` to `AWS-AI-Practitioner/`. Use kebab-case file names with no `&` or spaces (e.g. `ch1-2.md`). Update internal links | 3 | 5 | 1 SP (2h) | 0.5 SP (1h) |
+| ~~F-03~~ | ~~**Fix naming**~~ | ~~Rename `Capegemini/` to `Capgemini/` and `AWS AI Practitioner/Claude/` to `AWS-AI-Practitioner/`. Use kebab-case file names with no `&` or spaces (e.g. `ch1-2.md`). Update internal links~~ ✅ **Done 2026-11-13** | 3 | 5 | 1 SP (2h) | 0.5 SP (1h) |
 | F-04 | **Fix heading structure** | Replace Unicode bold characters with plain text. Use one H1 per file and H2/H3 for rounds and questions. Fence all code blocks with language tags | 3 | 5 | 1.5 SP (3h) | 0.5 SP (1h) |
 | F-05 | **Add repo hygiene** | `.gitignore`, `CONTRIBUTING.md` (question template, style guide, review rule for AI-generated content), issue templates ("Add interview experience", "Report incorrect answer") | 4 | 5 | 1.5 SP (3h) | 0.5 SP (1h) |
 | F-06 | **Markdown CI** | GitHub Action running `markdownlint`, `lychee` (link checker) and a spell check with a custom tech dictionary on every PR | 4 | 5 | 2 SP (4h) | 1 SP (2h) |
@@ -97,8 +97,8 @@ Each item is scored on **Impact** (learner value, reach, credibility) and **Feas
 | ID | Task | Description | Impact | Feasibility | Dev Effort | Test Effort |
 |---|---|---|---|---|---|---|
 | C-01 | **Define a canonical question schema** | One Markdown pattern for every Q&A. Front-matter-style metadata (`id`, `topic`, `company`, `role`, `round`, `difficulty`, `type`, `tags`, `last_verified`), then the question, options, and a `<details>` answer with an explanation. Document it in CONTRIBUTING | 5 | 4 | 2 SP (4h) | 1 SP (2h) |
-| C-02 | **Deduplicate the AWS 525-question bank** | Pick one copy (recommended: the `Ch*` files, because they already use `<details>`), merge any better wording from `AllChapters.md`, and delete the other copy. Generate the combined view at build time if it's still needed | 5 | 4 | 3 SP (6h) | 2 SP (4h) |
-| C-03 | **Convert `AIF-C01.md` to self-test format** | Add a title and intro, number the 57 questions, move answers into `<details>`, and add explanations for each | 4 | 4 | 4 SP (8h) | 2 SP (4h) |
+| ~~C-02~~ | ~~**Deduplicate the AWS 525-question bank**~~ | ~~Pick one copy, merge any better wording, and delete the other copy~~ ✅ **Done 2026-11-13 as part of W4.** The banks turned out to be different question sets, so only the 52 overlapping questions were removed (from `question-bank-2.md`) instead of deleting a whole file | 5 | 4 | 3 SP (6h) | 2 SP (4h) |
+| ~~C-03~~ | ~~**Convert `AIF-C01.md` to self-test format**~~ | ~~Add a title and intro, number the 57 questions, move answers into `<details>`, and add explanations for each~~ ✅ **Done 2026-11-13.** Now `aif-c01-questions.md`, with domain tags, explanations, an answer key and a score tracker. All 57 answers were checked | 4 | 4 | 4 SP (8h) | 2 SP (4h) |
 | C-04 | **Normalize the remaining files to the schema** | Migrate the Playwright, Deloitte, Capgemini and both 65-question mock exams. Add a script that validates the schema in CI | 4 | 3 | 6 SP (12h) | 3 SP (6h) |
 | C-05 | **Accuracy review and "last verified" stamps** | Check the AWS content against the current official AIF-C01 exam guide and service docs, and Playwright content against the current stable release. Record a `last_verified` date per file | 5 | 3 | 5 SP (10h) | 3 SP (6h) |
 
@@ -191,12 +191,12 @@ Ranked by Impact × Feasibility, then by dependencies.
 | 1 | F-01 | Write README | P0 | 4h | 1h | — |
 | 2 | F-06 | Markdown CI (lint, links, spell) | P0 | 4h | 2h | F-04 |
 | 3 | F-05 | CONTRIBUTING + templates | P0 | 3h | 1h | — |
-| 4 | F-03/F-04 | Naming + heading fixes | P0 | 5h | 2h | — |
-| 5 | C-02 | Deduplicate AWS bank | P1 | 6h | 4h | C-01 |
+| 4 | ~~F-03~~/F-04 | ~~Naming~~ (✅ done) + heading fixes | P0 | 5h | 2h | — |
+| 5 | ~~C-02~~ | ~~Deduplicate AWS bank~~ ✅ Done | P1 | 6h | 4h | ~~C-01~~ |
 | 6 | C-06 | Complete Playwright Q81–100 | P1 | 12h | 4h | — |
 | 7 | C-01 | Canonical question schema | P1 | 4h | 2h | — |
 | 8 | P-01 | Static docs site | P1 | 10h | 4h | F-03 |
-| 9 | C-03 | Fix `AIF-C01.md` self-test format | P1 | 8h | 4h | C-01 |
+| 9 | ~~C-03~~ | ~~Fix `AIF-C01.md` self-test format~~ ✅ Done | P1 | 8h | 4h | ~~C-01~~ |
 | 10 | C-08 | API Testing module | P1 | 12h | 4h | C-01 |
 | 11 | C-12 | Test Strategy & Behavioral module | P1 | 10h | 3h | C-01 |
 | 12 | P-02 | Markdown → JSON parser | P1 | 10h | 6h | C-04 |
@@ -243,10 +243,10 @@ Quarter 3-4
 | Metric | Baseline (today) | Target (end of Q2) |
 |---|---|---|
 | Files passing schema + lint | 0% | 100% |
-| Duplicate question content | ~570 KB | 0 |
+| Duplicate questions across AWS banks | 52 (originally misreported as ~570 KB) | ✅ 0 (2026-11-13) |
 | SDET topics covered (of 12 core topics) | 4 | 10+ |
 | Total SDET (non-cert) questions with full answers | ~125 | 400+ |
-| Questions with `last_verified` < 6 months | 0% | 90% |
+| Questions with `last_verified` < 6 months | 0% → AWS files stamped 2026-11-13 (structural review) | 90% (expert-verified) |
 | Site monthly visitors / GitHub stars | n/a / current | Track; +50% QoQ |
 | Quiz completions per month | n/a | Track from launch |
 | External contributions merged per quarter | 0 | 5+ |

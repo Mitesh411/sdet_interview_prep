@@ -1,6 +1,6 @@
 # AWS Certified AI Practitioner (AIF-C01): Detailed Study Notes & Cram Guide
 
-> **Exam guide version:** 1.4 · **Level:** Foundational · **Last reviewed:** November 2026
+> **Exam guide version:** 1.4 · **Level:** Foundational · **Last reviewed:** 2026-11-13 (see [review-log.md](review-log.md))
 
 ---
 
@@ -601,7 +601,7 @@ Prompt engineering → RAG → Fine-tuning → Continued pre-training → Pre-tr
 
 ## 3.5 Agents ⭐
 
-**Agents for Amazon Bedrock** let an FM carry out **multi-step tasks** by:
+**Amazon Bedrock Agents** let an FM carry out **multi-step tasks** by:
 1. Breaking a request into steps (reasoning/orchestration, for example the ReAct pattern)
 2. Calling **APIs** through **action groups** (OpenAPI schema + **AWS Lambda** functions)
 3. Querying **Knowledge Bases**
@@ -712,7 +712,7 @@ Productivity gains, user engagement, task completion rate, CSAT, cost per intera
 
 ## 4.5 AWS Tools for Responsible AI ⭐⭐
 
-### Guardrails for Amazon Bedrock ⭐
+### Amazon Bedrock Guardrails ⭐
 Configurable safeguards applied to **both user inputs and model outputs**, and they work across FMs:
 | Policy | What it does | Example |
 |---|---|---|
@@ -918,7 +918,7 @@ Classifies gen AI use cases by **how much ownership and control you have**:
 | Deploy an open-source FM on your own managed endpoints | **SageMaker JumpStart** |
 | Company documents + chatbot + citations | **Bedrock Knowledge Bases (RAG)** |
 | Multi-step tasks, call APIs, take actions | **Bedrock Agents** |
-| Block harmful content / denied topics / mask PII / detect hallucination | **Guardrails for Amazon Bedrock** |
+| Block harmful content / denied topics / mask PII / detect hallucination | **Amazon Bedrock Guardrails** |
 | Compare FMs on accuracy and toxicity | **Bedrock Model Evaluation** |
 | Smaller, cheaper model mimicking a larger one | **Bedrock Model Distillation** |
 | No-code gen AI playground for learning | **PartyRock** |

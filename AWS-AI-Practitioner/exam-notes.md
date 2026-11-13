@@ -1,4 +1,7 @@
 # AWS Certified AI Practitioner (AIF-C01)  
+
+> **Last reviewed:** 2026-11-13 against the AIF-C01 exam guide (v1.4) · AI-assisted structural and staleness review · see [review-log.md](review-log.md)
+
 ### Exam Study Notes & Prep Guidance
 
 These are my personal study notes for the **AWS Certified AI Practitioner (AIF-C01)** exam.
@@ -465,9 +468,9 @@ AWS offers a range of managed AI services designed to be easily integrated into 
   - Facilitates language translation, supporting global user interaction.
 
 #### Business Metrics
-- **Amazon Forecast**
+- **Amazon Forecast** (closed to new customers; know its purpose)
   - Predicts future points in time-series data, such as _inventory levels_.
-- **Amazon Fraud Detection**
+- **Amazon Fraud Detector** (closed to new customers; know its purpose)
   - Detects potential fraud in various scenarios including online transactions and new account creations.
 
 #### Amazon Q
@@ -681,8 +684,8 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
 | **Amazon Kendra**                   | Intelligent document search engine with semantic understanding.                                                                                                      |
 | **Amazon Personalize**              | Service for **personalized product recommendations**.                                                                                                                    |
 | **Amazon Translate**                | **Language translation** service.                                                                                                                                       |
-| **Amazon Forecast**                 | Provides time-series **forecasting**, e.g., inventory levels prediction.                                                                                                |
-| **Amazon Fraud Detection**          | Detects fraudulent activity, including online transactions and account takeovers.                                                                                    |
+| **Amazon Forecast**                 | Provides time-series **forecasting**, e.g., inventory levels prediction (closed to new customers).                                                                                                |
+| **Amazon Fraud Detector**           | Detects fraudulent activity, including online transactions and account takeovers (closed to new customers).                                                                                    |
 | **Amazon Q Business**               | Generative AI-powered assistant for enterprise data processing and tasks.                                                                                            |
 | **Amazon Macie**                    | **PII data** detection and anonymization service for data security.                                                                                                      |
 | **SageMaker Clarify**               | **Bias detection** and explainability for machine learning models.                                                                                                       |

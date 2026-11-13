@@ -1,3 +1,9 @@
+# AWS Certified AI Practitioner (AIF-C01): Question Bank 1 (Domain 5)
+
+> **Last reviewed:** 2026-11-13 against the AIF-C01 exam guide (v1.4) · AI-assisted structural and staleness review · see [review-log.md](review-log.md)
+>
+> Part 3 of 3 of Question Bank 1 · [ch1-2.md](ch1-2.md) · [ch3-4.md](ch3-4.md)
+
 ## Domain 5: Security, Compliance, and Governance
 
 **Domain 5 index:** [Task 5.1](#task-51-securing-ai-systems) (Q421–Q480) · [Task 5.2](#task-52-governance-and-compliance) (Q481–Q525)

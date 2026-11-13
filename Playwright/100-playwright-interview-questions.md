@@ -1,6 +1,7 @@
 # 100 Playwright Interview Questions - Complete Guide
 
 ## Table of Contents
+
 1. [Basics (1-20)](#basics-1-20)
 2. [Locators & UI Interaction (21-40)](#locators--ui-interaction-21-40)
 3. [Advanced Selectors & Assertions (41-60)](#advanced-selectors--assertions-41-60)
@@ -17,6 +18,7 @@
 Playwright is a modern, open-source automation framework developed by Microsoft for testing and automating web applications across multiple browsers (Chromium, Firefox, WebKit) with a single API.
 
 **Key Features:**
+
 - Cross-browser support
 - Fast and reliable automation
 - Built-in wait mechanisms (auto-waiting)
@@ -26,6 +28,7 @@ Playwright is a modern, open-source automation framework developed by Microsoft 
 - Native support for multiple tabs and contexts
 
 **Example:**
+
 ```javascript
 const { chromium } = require('playwright');
 
@@ -58,6 +61,7 @@ const { chromium } = require('playwright');
 | **Learning Curve** | Gentle | Steep |
 
 **Example - Auto-wait comparison:**
+
 ```javascript
 // Playwright - Auto-waits for element visibility
 await page.click('button#submit'); // Waits automatically!
@@ -75,12 +79,14 @@ element.click()
 ### 3. Which languages does Playwright support?
 
 **Supported Languages:**
+
 1. **JavaScript/TypeScript** - Native support
 2. **Python** - Full-featured support
 3. **Java** - Complete API coverage
 4. **C# (.NET)** - Full integration
 
 **Example (Python):**
+
 ```python
 from playwright.sync_api import sync_playwright
 
@@ -93,6 +99,7 @@ with sync_playwright() as p:
 ```
 
 **Example (Java):**
+
 ```java
 import com.microsoft.playwright.*;
 
@@ -114,11 +121,13 @@ public class Example {
 ### 4. Which browsers are supported by Playwright?
 
 **Supported Browsers:**
+
 1. **Chromium** - Chrome, Edge, Brave, Vivaldi
 2. **Firefox** - Mozilla Firefox
 3. **WebKit** - Safari
 
 **Browser Launch Example:**
+
 ```javascript
 const { chromium, firefox, webkit } = require('playwright');
 
@@ -138,6 +147,7 @@ const { chromium, firefox, webkit } = require('playwright');
 ```
 
 **Launch with options:**
+
 ```javascript
 const browser = await chromium.launch({
   headless: false,
@@ -154,6 +164,7 @@ const browser = await chromium.launch({
 Playwright Test is a dedicated test runner for end-to-end testing with built-in support for parallel execution, multiple browsers, retries, screenshots, and HTML reporting.
 
 **Key Features:**
+
 - Parallel execution by default
 - Multiple browsers/devices
 - Automatic retry on failure
@@ -164,6 +175,7 @@ Playwright Test is a dedicated test runner for end-to-end testing with built-in 
 - Test isolation
 
 **Example Configuration (playwright.config.ts):**
+
 ```typescript
 import { defineConfig, devices } from '@playwright/test';
 
@@ -199,6 +211,7 @@ export default defineConfig({
 **Installation Methods:**
 
 **NPM/Node.js:**
+
 ```bash
 # Method 1: Create new project with setup
 npm init playwright@latest
@@ -209,12 +222,14 @@ npx playwright install
 ```
 
 **Python:**
+
 ```bash
 pip install playwright
 playwright install
 ```
 
 **Java:**
+
 ```xml
 <!-- Add to pom.xml -->
 <dependency>
@@ -225,6 +240,7 @@ playwright install
 ```
 
 **C# (.NET):**
+
 ```bash
 dotnet add package Microsoft.Playwright
 pwsh bin/Debug/net6.0/playwright.ps1 install
@@ -238,6 +254,7 @@ pwsh bin/Debug/net6.0/playwright.ps1 install
 Auto-waiting automatically waits for elements to be ready before performing actions, eliminating the need for explicit waits in most cases.
 
 **Auto-waiting conditions:**
+
 1. Element is attached to DOM
 2. Element is visible
 3. Element is stable (not animating)
@@ -245,6 +262,7 @@ Auto-waiting automatically waits for elements to be ready before performing acti
 5. Element doesn't have pointer events
 
 **Example:**
+
 ```javascript
 // Playwright automatically waits for:
 // 1. Element to be in DOM
@@ -268,12 +286,14 @@ await page.click('button#submit', { timeout: 10000 });
 A Locator is a query object that represents a way to find elements on a page. It's lazy and intelligent, meaning it queries the DOM only when needed.
 
 **Locator Features:**
+
 - Lazy evaluation
 - Auto-waits for elements
 - Retry mechanism
 - Chainable API
 
 **Example:**
+
 ```javascript
 // Create a locator
 const submitButton = page.locator('button#submit');
@@ -306,6 +326,7 @@ await button.click();
 | **Performance** | Better with retries | Faster for immediate queries |
 
 **Example:**
+
 ```javascript
 // page.locator() - Modern approach (Recommended)
 const locator = page.locator('button#submit');
@@ -327,6 +348,7 @@ const buttons = page.locator('button'); // Returns Locator
 ### 10. How to launch a browser in Playwright?
 
 **Browser Launch Syntax:**
+
 ```javascript
 const { chromium } = require('playwright');
 
@@ -354,6 +376,7 @@ const { chromium } = require('playwright');
 ```
 
 **Launch options:**
+
 - `headless` - Run in headless mode (default: true)
 - `slowMo` - Slow down actions (milliseconds)
 - `devtools` - Open DevTools on launch
@@ -365,6 +388,7 @@ const { chromium } = require('playwright');
 ### 11. How do you open a new page or tab?
 
 **Creating New Pages/Tabs:**
+
 ```javascript
 const { chromium } = require('playwright');
 
@@ -417,6 +441,7 @@ Headless mode runs the browser without displaying a GUI. It's faster and commonl
 | **Use Case** | CI/CD, Testing | Debugging, Development |
 
 **Example:**
+
 ```javascript
 // Headless mode (default - faster, used in CI/CD)
 const browser = await chromium.launch({ headless: true });
@@ -437,6 +462,7 @@ const browser = await chromium.launch({
 ### 13. How to run tests in UI mode?
 
 **UI Mode Features:**
+
 - Real-time test execution visualization
 - Step-by-step debugging
 - Time-travel debugging
@@ -444,6 +470,7 @@ const browser = await chromium.launch({
 - Test filtering
 
 **Run tests in UI mode:**
+
 ```bash
 # Run all tests in UI mode
 npx playwright test --ui
@@ -459,6 +486,7 @@ npx playwright test --ui --grep="login"
 ```
 
 **Playwright Test File:**
+
 ```typescript
 import { test, expect } from '@playwright/test';
 
@@ -484,6 +512,7 @@ test('should display error on invalid credentials', async ({ page }) => {
 ### 14. How to take a screenshot?
 
 **Screenshot Methods:**
+
 ```javascript
 const { chromium } = require('playwright');
 
@@ -529,6 +558,7 @@ const { chromium } = require('playwright');
 Codegen automatically generates test scripts by recording your interactions with the web application.
 
 **Start Codegen:**
+
 ```bash
 # Record on specific URL
 npx playwright codegen https://example.com
@@ -544,6 +574,7 @@ npx playwright codegen --device="iPhone 12" https://example.com
 ```
 
 **Generated Script Example:**
+
 ```typescript
 import { test, expect } from '@playwright/test';
 
@@ -569,6 +600,7 @@ test('test', async ({ page }) => {
 A BrowserContext is an isolated browser session within a single browser instance with separate cookies, cache, local storage, and session storage.
 
 **BrowserContext Features:**
+
 - Isolated storage
 - Separate cookies
 - Independent cache
@@ -576,6 +608,7 @@ A BrowserContext is an isolated browser session within a single browser instance
 - Multiple concurrent contexts
 
 **Example:**
+
 ```javascript
 const { chromium } = require('playwright');
 
@@ -628,7 +661,8 @@ const { chromium } = require('playwright');
 | **Concurrency** | Single instance | Multiple concurrent contexts |
 
 **Visual Example:**
-```
+
+```text
 Browser (Single Instance)
 ├── BrowserContext 1 (User 1 session)
 │   ├── Page 1
@@ -648,6 +682,7 @@ Browser (Single Instance)
 Tracing captures all interactions, network activity, DOM snapshots, and screenshots for debugging and root cause analysis of test failures.
 
 **Trace Contents:**
+
 - Screenshots
 - DOM snapshots
 - Network requests/responses
@@ -656,6 +691,7 @@ Tracing captures all interactions, network activity, DOM snapshots, and screensh
 - Actions timeline
 
 **Example:**
+
 ```javascript
 const { chromium } = require('playwright');
 
@@ -689,6 +725,7 @@ const { chromium } = require('playwright');
 ### 19. How to generate a trace?
 
 **Configuration Method:**
+
 ```typescript
 // playwright.config.ts
 export default defineConfig({
@@ -699,6 +736,7 @@ export default defineConfig({
 ```
 
 **Programmatic Method:**
+
 ```typescript
 import { test, expect } from '@playwright/test';
 
@@ -718,6 +756,7 @@ test('with trace', async ({ page, context }) => {
 ```
 
 **Trace options:**
+
 - `on` - Record traces for all tests
 - `off` - Don't record traces
 - `on-first-retry` - Record only when test retries
@@ -727,6 +766,7 @@ test('with trace', async ({ page, context }) => {
 ### 20. How to view Playwright report?
 
 **Configure Reporter:**
+
 ```typescript
 // playwright.config.ts
 export default defineConfig({
@@ -739,6 +779,7 @@ export default defineConfig({
 ```
 
 **View Report:**
+
 ```bash
 # Automatically opens after test run
 npx playwright test
@@ -751,6 +792,7 @@ npx playwright show-report ./playwright-report
 ```
 
 **Report Contents:**
+
 - Test results (passed/failed/skipped)
 - Execution time
 - Screenshots on failure
@@ -2150,6 +2192,7 @@ export default defineConfig({
 ```
 
 **Usage in tests:**
+
 ```typescript
 import { test, expect } from '@playwright/test';
 
@@ -2163,6 +2206,7 @@ test('record HAR', async ({ page }) => {
 ```
 
 **Replay recorded HAR:**
+
 ```typescript
 test('replay from HAR', async ({ page }) => {
   await page.routeFromHAR('recording.har', {
@@ -2228,6 +2272,7 @@ await page.goto('https://example.com');
 ```
 
 **Using playwright.config.ts:**
+
 ```typescript
 export default defineConfig({
   webServer: {
@@ -2322,6 +2367,7 @@ export default defineConfig({
 ```
 
 **Run with coverage:**
+
 ```bash
 npx playwright test --reporter=json > results.json
 ```
@@ -2351,6 +2397,7 @@ await page.screenshot({ path: 'debug.png' });
 ```
 
 **Run with UI debugger:**
+
 ```bash
 PWDEBUG=1 npx playwright test
 ```
@@ -2711,55 +2758,65 @@ test('should login successfully', async ({ page }) => {
 ### 81-100: Quick Reference
 
 **81. Continuous Integration with Playwright**
+
 - GitHub Actions, GitLab CI, Jenkins
 - Run tests on push/PR
 - Generate reports and artifacts
 
 **82. Docker & Containers**
+
 - Use official Playwright Docker images
 - Run tests in isolated containers
 
 **83. Test Data Management**
+
 - Use fixtures for setup/teardown
 - Database seeding
 - API-based test data
 
 **84. Reporting & Monitoring**
+
 - HTML reports
 - JSON reports
 - Integration with test management tools
 
 **85. Best Practices**
+
 - Use Page Object Model
 - Avoid hardcoded waits
 - Meaningful test names
 - Clean up resources
 
 **86. Common Pitfalls**
+
 - Not using auto-wait
 - Hardcoded timeouts
 - Missing assertions
 - Poor element locators
 
 **87. Performance Optimization**
+
 - Parallel test execution
 - Sharding across machines
 - Reduce context creation
 - Minimize network calls
 
 **88. Maintenance**
+
 - Regular updates
 - Monitor deprecated APIs
 - Refactor tests
 - Document patterns
 
 **89. Troubleshooting**
+
 - Check logs
 - Use trace viewer
 - Enable debugging
 - Review error messages
 
 **90. Integration Testing**
+
 - Test with real backends
 - Mock external services
 - Test API contracts
@@ -2773,6 +2830,7 @@ This completes the comprehensive Playwright interview questions guide covering b
 ## Summary
 
 This guide covers:
+
 - ✅ 90+ Playwright concepts
 - ✅ Practical code examples
 - ✅ Best practices
@@ -2780,6 +2838,7 @@ This guide covers:
 - ✅ Advanced techniques
 
 Use this as a reference for:
+
 - Interview preparation
 - Learning Playwright
 - Test automation best practices

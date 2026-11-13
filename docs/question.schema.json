@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Mitesh411/sdet_interview_prep/docs/question.schema.json",
+  "title": "SDET Interview Prep question schema v1",
+  "description": "Machine-readable form of docs/question-schema.md. fileFrontMatter validates the YAML front matter of a question file; questionMeta validates each per-question <!-- meta: {...} --> comment; question describes one parsed question as the P-02 parser will emit it.",
+  "$defs": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+
+    "fileFrontMatter": {
+      "type": "object",
+      "required": ["schema", "title", "id_prefix", "topic", "source", "last_verified"],
+      "additionalProperties": false,
+      "properties": {
+        "schema": { "const": "question-file/v1" },
+        "title": { "type": "string", "minLength": 1 },
+        "id_prefix": { "$ref": "#/$defs/slug" },
+        "topic": {
+          "enum": ["aws-aif-c01", "playwright", "selenium", "java", "sql", "api-testing", "ci-cd", "test-strategy", "behavioral", "general-qa"]
+        },
+        "source": { "enum": ["interview", "original", "ai-generated", "collected"] },
+        "last_verified": { "$ref": "#/$defs/date" },
+        "reviewed_by": { "type": "string" },
+        "company": { "type": "string" },
+        "role": { "type": "string" },
+        "exam_guide_version": { "type": "string" }
+      }
+    },
+
+    "questionMeta": {
+      "type": "object",
+      "required": ["id", "type", "difficulty"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*-\\d{3}$" },
+        "type": {
+          "enum": ["single-choice", "multiple-response", "true-false", "ordering", "matching", "open-ended", "coding"]
+        },
+        "difficulty": { "enum": ["easy", "medium", "hard"] },
+        "domain": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "task": { "type": "string", "pattern": "^[1-5]\\.\\d+$" },
+        "round": { "type": "string" },
+        "tags": { "type": "array", "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true }
+      }
+    },
+
+    "question": {
+      "description": "One question as emitted by the Markdown -> JSON parser (P-02).",
+      "type": "object",
+      "required": ["meta", "number", "title", "file"],
+      "properties": {
+        "meta": { "$ref": "#/$defs/questionMeta" },
+        "number": { "type": "integer", "minimum": 1 },
+        "title": { "type": "string" },
+        "file": { "type": "string" },
+        "stem": { "type": "string" },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["key", "text"],
+            "properties": {
+              "key": { "type": "string", "pattern": "^[A-F]$" },
+              "text": { "type": "string" }
+            }
+          }
+        },
+        "answer": {
+          "description": "Option letters for choice types, True/False, or the ordered letters for ordering questions.",
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "explanation": { "type": "string" },
+        "model_answer_markdown": { "type": "string", "description": "Full answer body for open-ended and coding questions." }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "meta": { "properties": { "type": { "enum": ["single-choice", "multiple-response", "true-false", "ordering"] } } } } },
+          "then": { "required": ["options", "answer", "explanation"] }
+        },
+        {
+          "if": { "properties": { "meta": { "properties": { "type": { "const": "multiple-response" } } } } },
+          "then": { "properties": { "answer": { "minItems": 2 } } }
+        }
+      ]
+    }
+  }
+}

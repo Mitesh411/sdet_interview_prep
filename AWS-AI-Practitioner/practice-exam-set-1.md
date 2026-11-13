@@ -1,5 +1,7 @@
 # AWS Certified AI Practitioner (AIF-C01): 65 Practice Questions
 
+> **Last reviewed:** 2026-11-13 against the AIF-C01 exam guide (v1.4) · AI-assisted structural and staleness review · see [review-log.md](review-log.md)
+>
 > **Format:** Mirrors the real exam. 65 questions, 90 minutes, weighted by domain.
 > **Question types:** Multiple choice (one answer), multiple response (select TWO), ordering, matching.
 > **How to use:** Answer all 65 in one 90-minute sitting **before** checking the [Answer Key](#answer-key). Aim for **80%+ (52/65)** before booking the real exam.
@@ -356,7 +358,7 @@ A travel company wants a generative AI assistant that can check flight availabil
 - D. Amazon Comprehend
 
 ### Q41
-Agents for Amazon Bedrock perform actions in external systems mainly through which component?
+Amazon Bedrock Agents perform actions in external systems mainly through which component?
 
 - A. Action groups that invoke AWS Lambda functions using an API schema
 - B. Amazon SageMaker Pipelines
@@ -419,7 +421,7 @@ A company wants a smaller, faster and cheaper model that matches the quality of 
 ### Q48
 A bank's customer service chatbot built on Amazon Bedrock must never give investment advice, even if a customer asks directly. Which feature should the bank configure?
 
-- A. Guardrails for Amazon Bedrock: denied topics
+- A. Amazon Bedrock Guardrails: denied topics
 - B. Amazon SageMaker Clarify
 - C. Increase the temperature parameter
 - D. AWS Config rules
@@ -429,7 +431,7 @@ Before training a loan approval model, a data science team wants to check whethe
 
 - A. Amazon SageMaker Clarify
 - B. Amazon Macie
-- C. Guardrails for Amazon Bedrock
+- C. Amazon Bedrock Guardrails
 - D. Amazon Inspector
 
 ### Q50
@@ -676,6 +678,7 @@ A company wants to (1) continuously collect evidence of how its AWS usage aligns
 | **Total** | **65** | **___ / 65** | **52** |
 
 > **Interpreting your score**
+>
 > - **52+ (80%+):** Ready. Book the exam and review your weak areas.
 > - **45–51 (70–79%):** Borderline. Re-study the domains where you scored below target, then retest.
 > - **Below 45:** Go back through the study notes domain by domain before attempting another practice set.

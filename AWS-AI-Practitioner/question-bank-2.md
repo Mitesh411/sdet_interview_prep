@@ -1,6 +1,10 @@
-# AWS Certified AI Practitioner (AIF-C01) Practice Question Bank
+# AWS Certified AI Practitioner (AIF-C01): Question Bank 2
 
-**525 original practice questions** across the five AIF-C01 exam domains, with correct answers and explanations.
+> **Last reviewed:** 2026-11-13 against the AIF-C01 exam guide (v1.4) · AI-assisted structural and staleness review · see [review-log.md](review-log.md)
+>
+> **Question Bank 2** complements Question Bank 1 ([ch1-2.md](ch1-2.md), [ch3-4.md](ch3-4.md), [ch5.md](ch5.md)). 52 questions that repeated Bank 1 were removed in the 2026-11-13 review, so the two banks together give 998 distinct questions.
+
+**473 original practice questions** across the five AIF-C01 exam domains, with correct answers and explanations.
 
 ## How to Use This Question Bank
 
@@ -18,43 +22,29 @@
 
 | Domain | Questions |
 |---|---|
-| [Domain 1: Fundamentals of AI and ML](#domain-1-fundamentals-of-ai-and-ml) | 105 |
-| [Domain 2: Fundamentals of Generative AI](#domain-2-fundamentals-of-generative-ai) | 105 |
-| [Domain 3: Applications of Foundation Models](#domain-3-applications-of-foundation-models) | 105 |
-| [Domain 4: Guidelines for Responsible AI](#domain-4-guidelines-for-responsible-ai) | 105 |
-| [Domain 5: Security, Compliance, and Governance](#domain-5-security-compliance-and-governance) | 105 |
+| [Domain 1: Fundamentals of AI and ML](#domain-1-fundamentals-of-ai-and-ml) | 93 |
+| [Domain 2: Fundamentals of Generative AI](#domain-2-fundamentals-of-generative-ai) | 90 |
+| [Domain 3: Applications of Foundation Models](#domain-3-applications-of-foundation-models) | 96 |
+| [Domain 4: Guidelines for Responsible AI](#domain-4-guidelines-for-responsible-ai) | 98 |
+| [Domain 5: Security, Compliance, and Governance](#domain-5-security-compliance-and-governance) | 96 |
 | [Answer Key](#answer-key) | All domains |
 
 ## Question Bank Summary
 
 | Domain | Total | Multiple Choice | Multiple Response | True/False | Easy | Medium | Hard |
 |---|---|---|---|---|---|---|---|
-| Domain 1: Fundamentals of AI and ML | 105 | 95 | 3 | 7 | 32 | 64 | 9 |
-| Domain 2: Fundamentals of Generative AI | 105 | 90 | 3 | 12 | 19 | 80 | 6 |
-| Domain 3: Applications of Foundation Models | 105 | 92 | 4 | 9 | 2 | 85 | 18 |
-| Domain 4: Guidelines for Responsible AI | 105 | 93 | 4 | 8 | 7 | 88 | 10 |
-| Domain 5: Security, Compliance, and Governance | 105 | 92 | 5 | 8 | 4 | 89 | 12 |
-| **Total** | **525** | **462** | **19** | **44** | **64** | **406** | **55** |
+| Domain 1: Fundamentals of AI and ML | 93 | 84 | 2 | 7 | 27 | 58 | 8 |
+| Domain 2: Fundamentals of Generative AI | 90 | 79 | 1 | 10 | 13 | 71 | 6 |
+| Domain 3: Applications of Foundation Models | 96 | 83 | 4 | 9 | 2 | 78 | 16 |
+| Domain 4: Guidelines for Responsible AI | 98 | 88 | 3 | 7 | 5 | 84 | 9 |
+| Domain 5: Security, Compliance, and Governance | 96 | 84 | 5 | 7 | 2 | 84 | 10 |
+| **Total** | **473** | **418** | **15** | **40** | **49** | **375** | **49** |
 
 ---
 
 ## Domain 1: Fundamentals of AI and ML
 
 ### D1-001
-*Multiple Choice | Easy*
-
-**Question:** Which statement best describes the relationship between AI, machine learning, and deep learning?
-
-- A. AI and deep learning are unrelated fields, and machine learning bridges them
-- B. Deep learning is a superset that contains both AI and machine learning
-- C. Machine learning is a subset of AI, and deep learning is a subset of machine learning
-- D. Machine learning is a subset of deep learning, which is a subset of AI
-
-**Answer:** C
-
-**Explanation:** AI is the broadest field: building systems that perform tasks requiring human-like intelligence. Machine learning is the subset of AI that learns patterns from data, and deep learning is the subset of ML that uses multi-layer neural networks.
-
-### D1-002
 *True/False | Easy*
 
 **Question:** Machine learning models learn patterns from data rather than being explicitly programmed with fixed rules for every case.
@@ -66,7 +56,7 @@
 
 **Explanation:** This is the core idea of ML. Algorithms generalize from training examples to make predictions on new data, instead of relying on hand-written if-then logic.
 
-### D1-003
+### D1-002
 *Multiple Choice | Easy*
 
 **Question:** A bank wants to predict whether a loan applicant will default (yes or no) using historical labeled data. Which type of ML problem is this?
@@ -80,7 +70,7 @@
 
 **Explanation:** Predicting one of two discrete categories is binary classification, a supervised task. Regression predicts continuous values, while clustering and dimensionality reduction are unsupervised techniques.
 
-### D1-004
+### D1-003
 *Multiple Choice | Easy*
 
 **Question:** Which task is an example of regression?
@@ -94,7 +84,7 @@
 
 **Explanation:** Regression predicts a continuous numeric value such as a price. Spam detection and cat/dog labeling are classification, and grouping customers is clustering.
 
-### D1-005
+### D1-004
 *Multiple Choice | Easy*
 
 **Question:** Which learning type trains on data where every example includes the correct output?
@@ -108,7 +98,7 @@
 
 **Explanation:** Supervised learning uses input-label pairs so the model learns a mapping from inputs to known outputs. Unsupervised learning has no labels, and reinforcement learning learns from rewards.
 
-### D1-006
+### D1-005
 *Multiple Choice | Easy*
 
 **Question:** A retailer wants to discover natural customer segments without any predefined labels. Which approach fits best?
@@ -122,7 +112,7 @@
 
 **Explanation:** Clustering algorithms such as k-means find groupings in unlabeled data. This is unsupervised learning, because no target variable is provided.
 
-### D1-007
+### D1-006
 *Multiple Choice | Medium*
 
 **Question:** An agent learns to play a game by taking actions, receiving rewards or penalties, and improving its strategy over time. Which paradigm is this?
@@ -136,7 +126,7 @@
 
 **Explanation:** Reinforcement learning optimizes an agent's policy to maximize cumulative reward through trial-and-error interaction with an environment. No labeled dataset is required.
 
-### D1-008
+### D1-007
 *Multiple Choice | Medium*
 
 **Question:** Semi-supervised learning is best described as which of the following?
@@ -150,7 +140,7 @@
 
 **Explanation:** Semi-supervised learning combines a small labeled set with a larger unlabeled set. It is useful when labeling is expensive, as with medical images.
 
-### D1-009
+### D1-008
 *True/False | Easy*
 
 **Question:** Deep learning uses neural networks with many layers and is especially effective on unstructured data such as images, audio, and text.
@@ -162,7 +152,7 @@
 
 **Explanation:** Deep neural networks automatically learn hierarchical features from raw unstructured data. This is why they dominate computer vision, speech, and language tasks.
 
-### D1-010
+### D1-009
 *Multiple Choice | Easy*
 
 **Question:** Which algorithm is commonly used to estimate the probability of a binary outcome, despite having "regression" in its name?
@@ -176,7 +166,7 @@
 
 **Explanation:** Logistic regression applies a sigmoid function to output a probability between 0 and 1, so it is used for classification. Linear regression predicts continuous values.
 
-### D1-011
+### D1-010
 *Multiple Choice | Medium*
 
 **Question:** Which of the following is an unsupervised dimensionality reduction technique?
@@ -190,7 +180,7 @@
 
 **Explanation:** PCA projects high-dimensional data onto fewer components that retain most of the variance, and it needs no labels. The other options are supervised algorithms.
 
-### D1-012
+### D1-011
 *Multiple Choice | Medium*
 
 **Question:** A random forest is an example of which kind of model?
@@ -204,7 +194,7 @@
 
 **Explanation:** Random forests train many decision trees on random subsets of data and features, then combine their outputs by voting or averaging. This reduces variance compared with a single tree.
 
-### D1-013
+### D1-012
 *Multiple Choice | Easy*
 
 **Question:** In the k-means algorithm, what does k represent?
@@ -218,7 +208,7 @@
 
 **Explanation:** K-means partitions data into k clusters, and k must be chosen up front. The nearest-neighbor count is the k in k-NN, which is a different algorithm.
 
-### D1-014
+### D1-013
 *Multiple Choice | Medium*
 
 **Question:** How does the k-nearest neighbors (k-NN) algorithm make a prediction?
@@ -232,7 +222,7 @@
 
 **Explanation:** k-NN is an instance-based supervised method. It finds the k training points closest to a new point and takes a majority vote for classification or an average for regression.
 
-### D1-015
+### D1-014
 *True/False | Medium*
 
 **Question:** A decision tree is generally considered more interpretable than a deep neural network.
@@ -244,21 +234,7 @@
 
 **Explanation:** Decision trees expose explicit if-then splits that humans can follow. Deep networks have millions of parameters and are much harder to interpret, which is the classic interpretability-versus-performance trade-off.
 
-### D1-016
-*Multiple Choice | Easy*
-
-**Question:** A fraud dataset has only 1 percent fraudulent transactions. A model that predicts "not fraud" for everything achieves 99 percent accuracy. Which metrics give a more informative view of performance?
-
-- A. Number of epochs
-- B. Mean absolute error
-- C. Precision and recall
-- D. Training time and model size
-
-**Answer:** C
-
-**Explanation:** With imbalanced classes, accuracy is misleading. Precision and recall (and F1) show how well the minority class is actually detected.
-
-### D1-017
+### D1-015
 *Multiple Choice | Medium*
 
 **Question:** A hospital screens patients for a serious disease, and missing a true case is very costly. Which metric should the team prioritize?
@@ -272,7 +248,7 @@
 
 **Explanation:** Recall measures the share of actual positives that are found. When false negatives are costly, maximize recall even if some false positives result.
 
-### D1-018
+### D1-016
 *Multiple Choice | Medium*
 
 **Question:** An email spam filter must avoid sending legitimate emails to the spam folder. Which metric matters most?
@@ -286,7 +262,7 @@
 
 **Explanation:** Precision is the share of predicted positives that are truly positive. Minimizing false positives (legitimate mail flagged as spam) means maximizing precision.
 
-### D1-019
+### D1-017
 *Multiple Choice | Easy*
 
 **Question:** What is the F1 score?
@@ -300,7 +276,7 @@
 
 **Explanation:** F1 balances precision and recall in one number. The harmonic mean penalizes models where either value is very low.
 
-### D1-020
+### D1-018
 *Multiple Choice | Medium*
 
 **Question:** What does the AUC-ROC metric measure for a classifier?
@@ -314,7 +290,7 @@
 
 **Explanation:** The ROC curve plots true positive rate against false positive rate at varying thresholds. AUC summarizes it, where 1.0 is perfect separation and 0.5 is random guessing.
 
-### D1-021
+### D1-019
 *Multiple Choice | Easy*
 
 **Question:** Which metric is commonly used to evaluate regression models?
@@ -328,7 +304,7 @@
 
 **Explanation:** RMSE measures the typical size of prediction errors in the target's own units. Precision, F1, and AUC apply to classification.
 
-### D1-022
+### D1-020
 *Multiple Choice | Medium*
 
 **Question:** In a confusion matrix, what is a false negative?
@@ -342,7 +318,7 @@
 
 **Explanation:** A false negative is a missed positive: the real class is positive but the model said negative. A false positive is the opposite error.
 
-### D1-023
+### D1-021
 *Multiple Choice | Medium*
 
 **Question:** Compared with mean absolute error (MAE), RMSE does which of the following?
@@ -356,7 +332,7 @@
 
 **Explanation:** Squaring errors before averaging gives large mistakes disproportionate weight. RMSE is therefore more sensitive to outliers than MAE.
 
-### D1-024
+### D1-022
 *Multiple Choice | Hard*
 
 **Question:** A classifier produces TP = 80, FP = 20, FN = 40, TN = 860. What is the precision?
@@ -370,7 +346,7 @@
 
 **Explanation:** Precision = TP / (TP + FP) = 80 / 100 = 0.80. Recall for the same data would be 80 / 120, about 0.67.
 
-### D1-025
+### D1-023
 *Multiple Choice | Hard*
 
 **Question:** A classifier produces TP = 80, FP = 20, FN = 40, TN = 860. What is the recall?
@@ -384,7 +360,7 @@
 
 **Explanation:** Recall = TP / (TP + FN) = 80 / 120, about 0.67. The value 0.80 is the precision, and 0.33 is the miss rate.
 
-### D1-026
+### D1-024
 *Multiple Choice | Easy*
 
 **Question:** What is overfitting?
@@ -398,7 +374,7 @@
 
 **Explanation:** An overfit model memorizes noise and specifics of the training set, so it fails to generalize. A large gap between training and validation performance is the typical sign.
 
-### D1-027
+### D1-025
 *Multiple Choice | Easy*
 
 **Question:** What is underfitting?
@@ -412,22 +388,7 @@
 
 **Explanation:** Underfitting means high bias. The model cannot capture the signal, so error is high on both training and validation data.
 
-### D1-028
-*Multiple Response (Select TWO) | Medium*
-
-**Question:** Which TWO actions help reduce overfitting? (Select TWO.)
-
-- A. Train longer without monitoring validation loss
-- B. Remove the validation set
-- C. Add more diverse training data
-- D. Apply regularization (L1/L2) or dropout
-- E. Increase the model complexity
-
-**Answer:** C, D
-
-**Explanation:** More varied data and regularization or dropout both limit a model's ability to memorize noise. Added complexity and unmonitored training make overfitting worse.
-
-### D1-029
+### D1-026
 *Multiple Choice | Medium*
 
 **Question:** A model shows high error on both the training set and the validation set. What is the most likely issue?
@@ -441,7 +402,7 @@
 
 **Explanation:** High error on both sets indicates the model is too simple or under-trained, which is high bias. Remedies include more features, a more complex model, or longer training.
 
-### D1-030
+### D1-027
 *Multiple Choice | Medium*
 
 **Question:** A model shows very low training error but much higher validation error. What does this indicate?
@@ -455,7 +416,7 @@
 
 **Explanation:** A large train/validation gap signals high variance. The model has fit the training data too closely.
 
-### D1-031
+### D1-028
 *Multiple Choice | Easy*
 
 **Question:** What is the purpose of the held-out test set?
@@ -469,7 +430,7 @@
 
 **Explanation:** The test set must stay untouched until the end so that it gives an honest estimate of real-world performance. Using it for tuning contaminates that estimate.
 
-### D1-032
+### D1-029
 *Multiple Choice | Medium*
 
 **Question:** What is the purpose of the validation set?
@@ -483,7 +444,7 @@
 
 **Explanation:** The validation set guides model selection and hyperparameter tuning without touching the test set.
 
-### D1-033
+### D1-030
 *Multiple Choice | Medium*
 
 **Question:** Which scenario is an example of data leakage?
@@ -497,7 +458,7 @@
 
 **Explanation:** Leakage happens when information from outside the training data, such as test data or the target itself, influences training. It yields overly optimistic results that fail in production.
 
-### D1-034
+### D1-031
 *Multiple Choice | Medium*
 
 **Question:** Why is k-fold cross-validation used?
@@ -511,7 +472,7 @@
 
 **Explanation:** Cross-validation rotates which fold is held out for validation, so every record is used for both training and validation. This reduces dependence on one particular split.
 
-### D1-035
+### D1-032
 *Multiple Choice | Easy*
 
 **Question:** What is feature engineering?
@@ -525,21 +486,7 @@
 
 **Explanation:** Examples include creating ratios, extracting date parts, encoding categories, and scaling values. Good features often improve a model more than switching algorithms.
 
-### D1-036
-*Multiple Choice | Easy*
-
-**Question:** Which of the following is unstructured data?
-
-- A. Audio recordings of customer calls
-- B. A relational database table
-- C. A table of sensor IDs and timestamps
-- D. A CSV file of sales figures
-
-**Answer:** A
-
-**Explanation:** Unstructured data has no predefined schema. Audio, images, video, and free text are typical examples.
-
-### D1-037
+### D1-033
 *Multiple Choice | Medium*
 
 **Question:** Which is an example of time-series data?
@@ -553,7 +500,7 @@
 
 **Explanation:** Time-series data is a sequence of observations indexed by time. Order matters, which affects how it is split for training and testing.
 
-### D1-038
+### D1-034
 *Multiple Choice | Medium*
 
 **Question:** Which technique can help with a highly imbalanced training dataset?
@@ -567,7 +514,7 @@
 
 **Explanation:** Resampling techniques rebalance class representation. Class weights and suitable metrics such as F1 or AUC also help.
 
-### D1-039
+### D1-035
 *Multiple Choice | Medium*
 
 **Question:** What is a common way to handle missing values in a numeric column?
@@ -581,7 +528,7 @@
 
 **Explanation:** Imputation fills gaps using statistics or models, preserving rows. The right choice depends on how much data is missing and why.
 
-### D1-040
+### D1-036
 *Multiple Choice | Medium*
 
 **Question:** Why are numeric features often normalized or standardized before training?
@@ -595,7 +542,7 @@
 
 **Explanation:** Distance-based and gradient-based algorithms are sensitive to feature scale. Scaling prevents large-valued features from dominating.
 
-### D1-041
+### D1-037
 *Multiple Choice | Medium*
 
 **Question:** What does one-hot encoding do?
@@ -609,7 +556,7 @@
 
 **Explanation:** A category such as color with values red, green, and blue becomes three 0/1 columns. This lets algorithms use categorical data without imposing a false order.
 
-### D1-042
+### D1-038
 *True/False | Medium*
 
 **Question:** More training data always guarantees a better model, regardless of data quality.
@@ -621,7 +568,7 @@
 
 **Explanation:** Quality, relevance, and representativeness matter as much as quantity. Noisy, biased, or mislabeled data can degrade a model no matter how much of it there is.
 
-### D1-043
+### D1-039
 *Multiple Choice | Medium*
 
 **Question:** A fraud model's input feature distributions in production gradually differ from those seen in training. What is this called?
@@ -635,7 +582,7 @@
 
 **Explanation:** Data (covariate) drift is a change in the distribution of input data over time. It can reduce accuracy, so it should be monitored and may trigger retraining.
 
-### D1-044
+### D1-040
 *Multiple Choice | Hard*
 
 **Question:** The relationship between inputs and the target changes over time, for example, customer behavior shifts after a pandemic. What is this called?
@@ -649,21 +596,7 @@
 
 **Explanation:** Concept drift means the mapping from features to target has changed, so a previously accurate model becomes outdated even if input distributions look similar.
 
-### D1-045
-*Multiple Choice | Easy*
-
-**Question:** What is the first step in the ML lifecycle?
-
-- A. Defining the business problem and success criteria
-- B. Monitoring the model
-- C. Deploying the model
-- D. Tuning hyperparameters
-
-**Answer:** A
-
-**Explanation:** Teams must first clarify the business goal and whether ML is appropriate, and then frame it as an ML problem with measurable success metrics.
-
-### D1-046
+### D1-041
 *Multiple Choice | Medium*
 
 **Question:** Which sequence best reflects the typical ML lifecycle?
@@ -677,7 +610,7 @@
 
 **Explanation:** The lifecycle is iterative, and monitoring often feeds back into further data collection, retraining, and redeployment.
 
-### D1-047
+### D1-042
 *Multiple Choice | Medium*
 
 **Question:** For which problem is machine learning probably NOT the right choice?
@@ -691,7 +624,7 @@
 
 **Explanation:** When deterministic rules solve the problem exactly and fully, ML adds cost and uncertainty without benefit. ML suits tasks where patterns are complex or too hard to hand-code.
 
-### D1-048
+### D1-043
 *Multiple Choice | Medium*
 
 **Question:** What is MLOps?
@@ -705,7 +638,7 @@
 
 **Explanation:** MLOps covers CI/CD for ML, reproducibility, model versioning, monitoring, and retraining. It brings reliability and speed to moving models into production.
 
-### D1-049
+### D1-044
 *Multiple Choice | Medium*
 
 **Question:** Why should deployed models be monitored continuously?
@@ -719,21 +652,7 @@
 
 **Explanation:** Production data evolves. Monitoring catches data drift, concept drift, and bias drift so teams can retrain or fix the model.
 
-### D1-050
-*Multiple Choice | Medium*
-
-**Question:** Which of the following is a hyperparameter?
-
-- A. The learning rate chosen before training
-- B. The weights learned by a neural network
-- C. The model's predictions
-- D. The coefficients of a linear regression
-
-**Answer:** A
-
-**Explanation:** Hyperparameters are set before training and control the learning process, such as learning rate, batch size, and tree depth. Parameters such as weights are learned from data.
-
-### D1-051
+### D1-045
 *Multiple Choice | Easy*
 
 **Question:** What is an epoch in neural network training?
@@ -747,7 +666,7 @@
 
 **Explanation:** Models typically train for many epochs, and each epoch lets the model see all training examples once.
 
-### D1-052
+### D1-046
 *Multiple Choice | Medium*
 
 **Question:** What is the role of a loss function?
@@ -761,7 +680,7 @@
 
 **Explanation:** Training seeks to minimize the loss. Examples include mean squared error for regression and cross-entropy for classification.
 
-### D1-053
+### D1-047
 *Multiple Choice | Medium*
 
 **Question:** What does gradient descent do?
@@ -775,7 +694,7 @@
 
 **Explanation:** Gradient descent computes the gradient of the loss with respect to the parameters and updates the parameters in small steps (scaled by the learning rate) to reduce error.
 
-### D1-054
+### D1-048
 *Multiple Choice | Medium*
 
 **Question:** Why are non-linear activation functions used in neural networks?
@@ -789,35 +708,7 @@
 
 **Explanation:** Without non-linear activations, stacked layers collapse into a single linear transformation. Functions such as ReLU add the expressive power for complex patterns.
 
-### D1-055
-*Multiple Choice | Medium*
-
-**Question:** Which neural network architecture is traditionally best suited to image recognition?
-
-- A. Convolutional neural network (CNN)
-- B. K-means
-- C. Decision stump
-- D. Linear regression
-
-**Answer:** A
-
-**Explanation:** CNNs use convolutional filters that detect spatial patterns such as edges and shapes, which makes them highly effective for vision tasks.
-
-### D1-056
-*Multiple Choice | Medium*
-
-**Question:** Which architecture was designed for sequential data and maintains a form of memory across time steps?
-
-- A. Convolutional neural network
-- B. Autoencoder
-- C. Support vector machine
-- D. Recurrent neural network (RNN), including LSTM variants
-
-**Answer:** D
-
-**Explanation:** RNNs and LSTMs process sequences step by step while carrying hidden state. Transformers have largely replaced them for many language tasks.
-
-### D1-057
+### D1-049
 *Multiple Choice | Medium*
 
 **Question:** What key mechanism lets transformer models weigh the relevance of different parts of an input sequence?
@@ -831,7 +722,7 @@
 
 **Explanation:** Self-attention computes how much each token should attend to every other token, which captures long-range context and allows parallel processing.
 
-### D1-058
+### D1-050
 *Multiple Choice | Medium*
 
 **Question:** What is transfer learning?
@@ -845,21 +736,7 @@
 
 **Explanation:** Starting from pretrained weights lets you reach good accuracy with less data and compute. Fine-tuning a pretrained model is a common form of transfer learning.
 
-### D1-059
-*Multiple Choice | Hard*
-
-**Question:** During training, the loss oscillates wildly and fails to decrease. Which hyperparameter change is the most likely fix?
-
-- A. Decrease the learning rate
-- B. Increase the learning rate
-- C. Remove the loss function
-- D. Add more output classes
-
-**Answer:** A
-
-**Explanation:** A learning rate that is too high overshoots minima and causes divergence or oscillation. Lowering it makes updates smaller and more stable.
-
-### D1-060
+### D1-051
 *Multiple Choice | Easy*
 
 **Question:** What is Amazon SageMaker?
@@ -873,7 +750,7 @@
 
 **Explanation:** SageMaker provides tools across the ML lifecycle, from data prep and training to hosting and monitoring, without managing the underlying infrastructure.
 
-### D1-061
+### D1-052
 *Multiple Choice | Easy*
 
 **Question:** Which SageMaker capability lets business analysts build ML models and generate predictions with a visual, no-code interface?
@@ -887,7 +764,7 @@
 
 **Explanation:** Canvas offers a point-and-click interface for importing data, building models, and generating predictions without writing code.
 
-### D1-062
+### D1-053
 *Multiple Choice | Medium*
 
 **Question:** Which SageMaker feature automatically builds, trains, and tunes candidate models for tabular data while giving visibility into how they were created?
@@ -901,7 +778,7 @@
 
 **Explanation:** Autopilot is SageMaker's AutoML capability. It explores data preprocessing, algorithms, and hyperparameters, and it provides notebooks that show what it did.
 
-### D1-063
+### D1-054
 *Multiple Choice | Easy*
 
 **Question:** Which SageMaker tool helps import, analyze, transform, and prepare data for ML with little code?
@@ -915,7 +792,7 @@
 
 **Explanation:** Data Wrangler simplifies data preparation and feature engineering through a visual interface with built-in transforms and analyses.
 
-### D1-064
+### D1-055
 *Multiple Choice | Medium*
 
 **Question:** What is the purpose of SageMaker Feature Store?
@@ -929,7 +806,7 @@
 
 **Explanation:** Feature Store keeps features consistent between training and real-time inference, which reduces training/serving skew and duplicated feature work.
 
-### D1-065
+### D1-056
 *Multiple Choice | Easy*
 
 **Question:** Which service helps create high-quality labeled training datasets using human annotators and automated labeling?
@@ -943,7 +820,7 @@
 
 **Explanation:** Ground Truth manages data labeling workflows with public, private, or vendor workforces and can use active learning to reduce labeling cost.
 
-### D1-066
+### D1-057
 *Multiple Choice | Medium*
 
 **Question:** Which SageMaker feature detects bias in data and models and explains individual predictions using feature attributions?
@@ -957,21 +834,7 @@
 
 **Explanation:** Clarify computes pre-training and post-training bias metrics and generates explainability reports (for example, SHAP values).
 
-### D1-067
-*Multiple Choice | Medium*
-
-**Question:** Which SageMaker feature continuously monitors deployed models for data quality, model quality, bias drift, and feature attribution drift?
-
-- A. SageMaker Model Monitor
-- B. SageMaker Ground Truth
-- C. SageMaker Canvas
-- D. SageMaker Neo
-
-**Answer:** A
-
-**Explanation:** Model Monitor compares live traffic with baselines and raises alerts through CloudWatch when drift or quality issues occur.
-
-### D1-068
+### D1-058
 *Multiple Choice | Medium*
 
 **Question:** Which SageMaker feature orchestrates ML workflows as automated, repeatable pipelines with CI/CD support?
@@ -985,7 +848,7 @@
 
 **Explanation:** Pipelines defines steps such as processing, training, evaluation, and registration as a directed graph, enabling MLOps automation.
 
-### D1-069
+### D1-059
 *Multiple Choice | Medium*
 
 **Question:** What does the SageMaker Model Registry provide?
@@ -999,7 +862,7 @@
 
 **Explanation:** The registry tracks model versions, lineage, and approval states (for example, pending or approved), which supports controlled promotion to production.
 
-### D1-070
+### D1-060
 *Multiple Choice | Easy*
 
 **Question:** What is SageMaker JumpStart?
@@ -1013,7 +876,7 @@
 
 **Explanation:** JumpStart accelerates starts with prebuilt models and notebooks from public hubs and providers, which reduces time to value.
 
-### D1-071
+### D1-061
 *Multiple Choice | Medium*
 
 **Question:** Which SageMaker feature optimizes and compiles trained models to run efficiently on specific target hardware, including edge devices?
@@ -1027,7 +890,7 @@
 
 **Explanation:** Neo compiles models for target processors, which improves inference speed and reduces the memory footprint.
 
-### D1-072
+### D1-062
 *Multiple Choice | Medium*
 
 **Question:** Which SageMaker capability monitors training jobs in real time and flags problems such as vanishing gradients or overfitting?
@@ -1041,7 +904,7 @@
 
 **Explanation:** Debugger captures tensors and metrics during training and applies built-in rules to detect training issues early.
 
-### D1-073
+### D1-063
 *Multiple Choice | Medium*
 
 **Question:** A team wants to track and compare many training runs, including parameters and metrics. Which SageMaker capability fits?
@@ -1055,7 +918,7 @@
 
 **Explanation:** Experiments organizes and compares trials, including parameters, metrics, and artifacts, which supports reproducibility.
 
-### D1-074
+### D1-064
 *Multiple Choice | Medium*
 
 **Question:** An application needs low-latency, synchronous predictions from a continuously available endpoint. Which SageMaker inference option fits?
@@ -1069,21 +932,7 @@
 
 **Explanation:** Real-time endpoints are persistent, return responses in milliseconds to seconds, and suit interactive applications.
 
-### D1-075
-*Multiple Choice | Medium*
-
-**Question:** A company must score a large dataset stored in Amazon S3 once per night, and no persistent endpoint is needed. Which option is most appropriate?
-
-- A. Real-time endpoint
-- B. Serverless inference
-- C. Edge deployment
-- D. Batch transform
-
-**Answer:** D
-
-**Explanation:** Batch transform processes whole datasets offline and releases resources when done, so it is cost-effective for non-interactive scoring.
-
-### D1-076
+### D1-065
 *Multiple Choice | Medium*
 
 **Question:** Requests have large payloads (hundreds of MB) and long processing times, and clients can wait for results. Which inference option fits?
@@ -1097,7 +946,7 @@
 
 **Explanation:** Asynchronous inference queues requests, supports large payloads and long processing, and can scale to zero when idle.
 
-### D1-077
+### D1-066
 *Multiple Choice | Medium*
 
 **Question:** A workload has intermittent, unpredictable traffic with idle periods and can tolerate cold starts. Which option minimizes cost?
@@ -1111,7 +960,7 @@
 
 **Explanation:** Serverless Inference scales automatically, including to zero, and you pay only for compute used while requests are processed.
 
-### D1-078
+### D1-067
 *Multiple Choice | Medium*
 
 **Question:** How can a team reduce the cost of SageMaker training jobs that are fault tolerant?
@@ -1125,7 +974,7 @@
 
 **Explanation:** Managed spot training uses spare EC2 capacity at significant discounts, and checkpoints let jobs resume after interruption.
 
-### D1-079
+### D1-068
 *Multiple Choice | Medium*
 
 **Question:** Which SageMaker feature automatically searches for the best hyperparameter values by running multiple training jobs?
@@ -1139,7 +988,7 @@
 
 **Explanation:** Automatic Model Tuning (hyperparameter optimization) runs many training jobs with different configurations and finds the best-performing set against an objective metric.
 
-### D1-080
+### D1-069
 *Multiple Choice | Medium*
 
 **Question:** What do SageMaker Model Cards help teams do?
@@ -1153,7 +1002,7 @@
 
 **Explanation:** Model Cards centralize model documentation and support transparency, audits, and responsible AI practices.
 
-### D1-081
+### D1-070
 *Multiple Choice | Hard*
 
 **Question:** A small team with no data scientists wants to predict customer churn from a tabular CSV with minimal coding effort. Which approach is the best fit?
@@ -1167,7 +1016,7 @@
 
 **Explanation:** Canvas lets business users import data, auto-build models, and generate predictions without code. Polly is text-to-speech and does not fit.
 
-### D1-082
+### D1-071
 *Multiple Choice | Easy*
 
 **Question:** Which AWS service analyzes images and videos to detect objects, faces, text, and inappropriate content?
@@ -1181,7 +1030,7 @@
 
 **Explanation:** Rekognition is a pretrained computer vision service for object and scene detection, facial analysis and comparison, text in images, and content moderation.
 
-### D1-083
+### D1-072
 *Multiple Choice | Easy*
 
 **Question:** Which AWS service performs natural language processing tasks such as sentiment analysis, entity recognition, and key phrase extraction?
@@ -1195,21 +1044,7 @@
 
 **Explanation:** Comprehend extracts insights from text, including sentiment, entities, language, key phrases, topics, and PII.
 
-### D1-084
-*Multiple Choice | Easy*
-
-**Question:** Which AWS service converts speech to text?
-
-- A. Amazon Textract
-- B. Amazon Polly
-- C. Amazon Transcribe
-- D. Amazon Lex
-
-**Answer:** C
-
-**Explanation:** Transcribe is automatic speech recognition. Polly does the opposite by converting text to lifelike speech.
-
-### D1-085
+### D1-073
 *Multiple Choice | Easy*
 
 **Question:** Which AWS service converts text into lifelike speech?
@@ -1223,7 +1058,7 @@
 
 **Explanation:** Polly is text-to-speech, with neural voices and many languages.
 
-### D1-086
+### D1-074
 *Multiple Choice | Easy*
 
 **Question:** Which AWS service provides neural machine translation between languages?
@@ -1237,7 +1072,7 @@
 
 **Explanation:** Translate performs real-time and batch translation of text across many language pairs.
 
-### D1-087
+### D1-075
 *Multiple Choice | Easy*
 
 **Question:** Which AWS service builds conversational interfaces, including chatbots, using voice and text with automatic speech recognition and natural language understanding?
@@ -1251,7 +1086,7 @@
 
 **Explanation:** Lex uses the same deep learning technologies that power Alexa, and it handles intents, slots, and dialogue management for bots.
 
-### D1-088
+### D1-076
 *Multiple Choice | Easy*
 
 **Question:** Which AWS service extracts printed text, handwriting, forms, and tables from scanned documents?
@@ -1265,7 +1100,7 @@
 
 **Explanation:** Textract goes beyond simple OCR by identifying the structure of forms and tables and extracting key-value pairs.
 
-### D1-089
+### D1-077
 *Multiple Choice | Medium*
 
 **Question:** Which AWS service provides intelligent enterprise search using natural language queries across connected data sources?
@@ -1279,7 +1114,7 @@
 
 **Explanation:** Kendra is an ML-powered search service that returns precise answers and ranked documents from connected repositories. It is also commonly used as a retriever for RAG.
 
-### D1-090
+### D1-078
 *Multiple Choice | Medium*
 
 **Question:** Which AWS service generates real-time personalized product and content recommendations?
@@ -1293,7 +1128,7 @@
 
 **Explanation:** Personalize uses the same technology as Amazon.com recommendations and needs no ML expertise to deliver personalized experiences.
 
-### D1-091
+### D1-079
 *Multiple Choice | Medium*
 
 **Question:** Which service extracts medical conditions, medications, and dosages from unstructured clinical text?
@@ -1307,7 +1142,7 @@
 
 **Explanation:** Comprehend Medical is a HIPAA-eligible NLP service tailored to clinical text, such as physician notes and discharge summaries.
 
-### D1-092
+### D1-080
 *Multiple Choice | Medium*
 
 **Question:** Which service adds human review workflows for low-confidence ML predictions?
@@ -1321,7 +1156,7 @@
 
 **Explanation:** A2I routes predictions below a confidence threshold, or a random sample, to human reviewers to improve accuracy and provide oversight.
 
-### D1-093
+### D1-081
 *Multiple Choice | Medium*
 
 **Question:** Which AWS service can analyze customer-agent calls in a contact center to provide sentiment and conversation analytics?
@@ -1335,7 +1170,7 @@
 
 **Explanation:** Contact Lens for Amazon Connect uses ML to transcribe and analyze calls and chats, providing sentiment, categories, and issue detection.
 
-### D1-094
+### D1-082
 *Multiple Choice | Medium*
 
 **Question:** Which service uses ML to automate code reviews and identify the most expensive lines of code?
@@ -1349,7 +1184,7 @@
 
 **Explanation:** CodeGuru Reviewer detects code defects and security issues, and the profiler identifies performance bottlenecks and costly code.
 
-### D1-095
+### D1-083
 *Multiple Choice | Hard*
 
 **Question:** A social platform needs to automatically flag inappropriate images uploaded by users. Which service is most appropriate?
@@ -1363,7 +1198,7 @@
 
 **Explanation:** Rekognition content moderation detects explicit or suggestive content in images and videos and returns labels and confidence scores.
 
-### D1-096
+### D1-084
 *Multiple Choice | Hard*
 
 **Question:** A support team wants to find and redact personally identifiable information (PII) in thousands of text tickets. Which service is the best fit?
@@ -1377,7 +1212,7 @@
 
 **Explanation:** Comprehend can detect and redact PII entities such as names, addresses, and phone numbers in text.
 
-### D1-097
+### D1-085
 *Multiple Choice | Hard*
 
 **Question:** When is a pre-built AWS AI service generally preferable to building a custom model?
@@ -1391,7 +1226,7 @@
 
 **Explanation:** AI services such as Rekognition and Comprehend are pretrained and API-driven. They minimize effort and cost for common tasks, while custom models suit unique problems.
 
-### D1-098
+### D1-086
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO AWS services are speech-related? (Select TWO.)
@@ -1406,7 +1241,7 @@
 
 **Explanation:** Transcribe converts speech to text, and Polly converts text to speech. Textract reads documents, Comprehend analyzes text, and Kendra searches content.
 
-### D1-099
+### D1-087
 *Multiple Choice | Medium*
 
 **Question:** A manufacturer needs predictions on a camera at a factory with intermittent internet connectivity. Which deployment approach best addresses this?
@@ -1420,7 +1255,7 @@
 
 **Explanation:** Edge deployment runs inference on the device, which provides low latency and works when connectivity is unreliable. Models can be optimized with tools such as SageMaker Neo.
 
-### D1-100
+### D1-088
 *Multiple Choice | Medium*
 
 **Question:** Which statement describes the trade-off between model interpretability and performance?
@@ -1434,7 +1269,7 @@
 
 **Explanation:** Linear models and shallow trees are easy to explain but may capture fewer patterns. Deep models can achieve higher accuracy at the cost of transparency.
 
-### D1-101
+### D1-089
 *True/False | Medium*
 
 **Question:** Batch inference is the best choice when predictions are needed within milliseconds for each user click.
@@ -1446,7 +1281,7 @@
 
 **Explanation:** Batch inference processes many records offline with no latency guarantees. Millisecond interactive predictions need real-time inference endpoints.
 
-### D1-102
+### D1-090
 *Multiple Response (Select TWO) | Hard*
 
 **Question:** Which TWO statements describe unsupervised learning? (Select TWO.)
@@ -1461,7 +1296,7 @@
 
 **Explanation:** Unsupervised learning discovers patterns such as groups or lower-dimensional structure in unlabeled data. Labels indicate supervised learning, and rewards indicate reinforcement learning.
 
-### D1-103
+### D1-091
 *True/False | Medium*
 
 **Question:** SageMaker Feature Store can help ensure the same feature definitions are used for training and inference.
@@ -1473,7 +1308,7 @@
 
 **Explanation:** A central feature repository with offline and online stores reduces training/serving skew by serving consistent features in both phases.
 
-### D1-104
+### D1-092
 *Multiple Choice | Medium*
 
 **Question:** Which of the following is an example of narrow (weak) AI?
@@ -1487,7 +1322,7 @@
 
 **Explanation:** Narrow AI performs a specific task. All AI deployed today is narrow, and general AI remains hypothetical.
 
-### D1-105
+### D1-093
 *True/False | Easy*
 
 **Question:** Reinforcement learning requires a labeled dataset of correct input-output pairs.
@@ -1504,48 +1339,6 @@
 ## Domain 2: Fundamentals of Generative AI
 
 ### D2-001
-*Multiple Choice | Easy*
-
-**Question:** What is generative AI?
-
-- A. A rules engine that selects pre-written responses
-- B. A database engine for generating primary keys
-- C. AI that creates new content, such as text, images, audio, code, or video, based on patterns learned from training data
-- D. AI that only classifies existing data into categories
-
-**Answer:** C
-
-**Explanation:** Generative AI models learn the distribution of their training data and produce novel outputs. Discriminative models, in contrast, mainly predict labels or values for existing inputs.
-
-### D2-002
-*Multiple Choice | Easy*
-
-**Question:** What is a foundation model (FM)?
-
-- A. A small model trained only for one narrow task
-- B. A database schema template
-- C. A rules-based expert system
-- D. A large model pretrained on broad data at scale that can be adapted to many downstream tasks
-
-**Answer:** D
-
-**Explanation:** Foundation models are trained on vast, diverse datasets, commonly with self-supervision. One model can then be prompted or adapted for summarization, Q&A, code generation, and more.
-
-### D2-003
-*Multiple Choice | Easy*
-
-**Question:** What is a large language model (LLM)?
-
-- A. A model that stores large files
-- B. A chart-rendering library
-- C. A foundation model, based on the transformer architecture, trained on huge text corpora to understand and generate language
-- D. A compression algorithm
-
-**Answer:** C
-
-**Explanation:** LLMs have billions of parameters and learn statistical relationships among tokens. They are a type of foundation model specialized for language.
-
-### D2-004
 *True/False | Easy*
 
 **Question:** Generative AI models can create new content, whereas traditional discriminative models mainly classify or predict labels for existing inputs.
@@ -1557,7 +1350,7 @@
 
 **Explanation:** Generative models produce new samples such as text or images, while discriminative models learn decision boundaries between classes or predict values.
 
-### D2-005
+### D2-002
 *Multiple Choice | Medium*
 
 **Question:** Which neural network architecture underlies most modern LLMs?
@@ -1571,7 +1364,7 @@
 
 **Explanation:** Transformers use self-attention to model relationships between all tokens in a sequence and process them in parallel, which enabled the scaling of modern LLMs.
 
-### D2-006
+### D2-003
 *Multiple Choice | Medium*
 
 **Question:** How do diffusion models generate images?
@@ -1585,35 +1378,7 @@
 
 **Explanation:** Diffusion models learn to reverse a gradual noising process. At generation time they start from noise and denoise step by step, often conditioned on a text prompt.
 
-### D2-007
-*Multiple Choice | Medium*
-
-**Question:** Which describes a generative adversarial network (GAN)?
-
-- A. A pair of networks, a generator and a discriminator, trained against each other
-- B. A single network that clusters data
-- C. A reinforcement learning agent
-- D. A decision tree ensemble
-
-**Answer:** A
-
-**Explanation:** The generator creates synthetic samples and the discriminator tries to tell them from real data. Competition between the two improves the realism of the output.
-
-### D2-008
-*Multiple Choice | Medium*
-
-**Question:** What is a variational autoencoder (VAE)?
-
-- A. A clustering algorithm
-- B. A tool that only compresses files
-- C. A model that encodes data into a probabilistic latent space and decodes samples from it to generate new data
-- D. A supervised regression model
-
-**Answer:** C
-
-**Explanation:** VAEs learn a smooth latent representation, so sampling from the latent space and decoding produces new, similar data.
-
-### D2-009
+### D2-004
 *Multiple Choice | Medium*
 
 **Question:** What is a multimodal model?
@@ -1627,21 +1392,7 @@
 
 **Explanation:** Multimodal FMs understand inputs like text, images, audio, or video, and can sometimes generate outputs in multiple modalities, such as describing an image in text.
 
-### D2-010
-*Multiple Choice | Easy*
-
-**Question:** In the context of LLMs, what is a token?
-
-- A. A security certificate
-- B. An API credential
-- C. A unit of text, such as a word, subword, or character, that the model processes
-- D. A billing account
-
-**Answer:** C
-
-**Explanation:** Text is split into tokens by a tokenizer. Model context limits and pricing are expressed in tokens rather than words.
-
-### D2-011
+### D2-005
 *Multiple Choice | Medium*
 
 **Question:** Why are tokens important for cost planning with models in Amazon Bedrock?
@@ -1655,21 +1406,7 @@
 
 **Explanation:** On-demand pricing for text models is usually charged per 1,000 input and output tokens, so prompt and response lengths directly affect cost.
 
-### D2-012
-*Multiple Choice | Medium*
-
-**Question:** What is an embedding?
-
-- A. A hash of a password
-- B. A compressed zip of a document
-- C. A type of database index only
-- D. A numerical vector that captures the semantic meaning of data such as text or images
-
-**Answer:** D
-
-**Explanation:** Embeddings map content into a high-dimensional space where semantically similar items are close together. This powers semantic search, clustering, and RAG.
-
-### D2-013
+### D2-006
 *Multiple Choice | Medium*
 
 **Question:** How is semantic similarity between two embeddings commonly measured?
@@ -1683,21 +1420,7 @@
 
 **Explanation:** Cosine similarity (or Euclidean distance or dot product) quantifies how close two vectors are, and thus how similar their meanings are.
 
-### D2-014
-*Multiple Choice | Medium*
-
-**Question:** What does the context window of an LLM define?
-
-- A. The physical memory of the GPU only
-- B. The number of users supported
-- C. The maximum number of tokens (input plus output) the model can consider in a single request
-- D. The time a session stays open
-
-**Answer:** C
-
-**Explanation:** If the content exceeds the context window, the model cannot use all of it. Applications must truncate, summarize, or retrieve only the relevant parts.
-
-### D2-015
+### D2-007
 *Multiple Choice | Easy*
 
 **Question:** What effect does lowering the temperature inference parameter have?
@@ -1711,7 +1434,7 @@
 
 **Explanation:** Lower temperature sharpens the probability distribution, so the model favors the most likely tokens. This suits factual or structured tasks.
 
-### D2-016
+### D2-008
 *Multiple Choice | Medium*
 
 **Question:** A marketing team wants more varied, creative taglines from a model. Which setting change is most appropriate?
@@ -1725,21 +1448,7 @@
 
 **Explanation:** A higher temperature flattens the distribution so less likely tokens are sampled more often, which increases diversity and creativity but also the risk of errors.
 
-### D2-017
-*Multiple Choice | Medium*
-
-**Question:** What does the top-p (nucleus sampling) parameter control?
-
-- A. The maximum response length
-- B. The model samples only from the smallest set of tokens whose cumulative probability reaches p
-- C. The number of GPUs used
-- D. The training data size
-
-**Answer:** B
-
-**Explanation:** Top-p restricts the candidate pool to the most probable tokens that sum to probability p, which balances diversity and coherence.
-
-### D2-018
+### D2-009
 *Multiple Choice | Medium*
 
 **Question:** What does top-k do?
@@ -1753,7 +1462,7 @@
 
 **Explanation:** Top-k truncates the candidate list to the k highest-probability tokens before sampling. Smaller k makes output more conservative.
 
-### D2-019
+### D2-010
 *Multiple Choice | Medium*
 
 **Question:** What is the purpose of the max tokens (maximum length) parameter?
@@ -1767,7 +1476,7 @@
 
 **Explanation:** It bounds response length, which controls cost and prevents runaway generation. If the cap is too low, the answer may be cut off.
 
-### D2-020
+### D2-011
 *Multiple Choice | Medium*
 
 **Question:** What is a stop sequence?
@@ -1781,7 +1490,7 @@
 
 **Explanation:** Stop sequences, such as a delimiter or a "Human:" marker, let applications end generation at a defined point.
 
-### D2-021
+### D2-012
 *Multiple Choice | Easy*
 
 **Question:** What is a hallucination in generative AI?
@@ -1795,7 +1504,7 @@
 
 **Explanation:** LLMs generate plausible text from patterns and may invent facts, citations, or details. Mitigations include RAG, grounding, guardrails, and human review.
 
-### D2-022
+### D2-013
 *True/False | Medium*
 
 **Question:** The same prompt sent to a generative model multiple times can produce different responses.
@@ -1807,7 +1516,7 @@
 
 **Explanation:** Sampling introduces randomness, so outputs are nondeterministic unless temperature is set near zero. Even then, some variability may remain.
 
-### D2-023
+### D2-014
 *Multiple Choice | Medium*
 
 **Question:** In generative AI, what is a prompt?
@@ -1821,7 +1530,7 @@
 
 **Explanation:** Prompts can include instructions, context, examples, and questions. Their quality strongly influences output quality.
 
-### D2-024
+### D2-015
 *Multiple Choice | Medium*
 
 **Question:** Which is a known limitation of foundation models?
@@ -1835,7 +1544,7 @@
 
 **Explanation:** Models only know what was in their training data. Techniques such as RAG supply current or private information at inference time.
 
-### D2-025
+### D2-016
 *Multiple Choice | Medium*
 
 **Question:** Which is a stage in the foundation model lifecycle?
@@ -1849,7 +1558,7 @@
 
 **Explanation:** Typical stages include data selection, model selection, pretraining, fine-tuning, evaluation, deployment, and feedback and monitoring.
 
-### D2-026
+### D2-017
 *Multiple Choice | Medium*
 
 **Question:** What is pretraining in the FM lifecycle?
@@ -1863,7 +1572,7 @@
 
 **Explanation:** Pretraining is self-supervised, such as predicting the next token. It gives the model general knowledge and language abilities, which can later be adapted.
 
-### D2-027
+### D2-018
 *Multiple Choice | Medium*
 
 **Question:** How does fine-tuning differ from pretraining?
@@ -1877,7 +1586,7 @@
 
 **Explanation:** Fine-tuning updates a pretrained model's weights on task-specific data, which is much cheaper than training from scratch.
 
-### D2-028
+### D2-019
 *Multiple Choice | Medium*
 
 **Question:** Which customization approach generally has the lowest cost and effort?
@@ -1891,7 +1600,7 @@
 
 **Explanation:** Prompt engineering needs no training. It only changes the input to guide the model.
 
-### D2-029
+### D2-020
 *Multiple Choice | Hard*
 
 **Question:** Which ordering lists FM customization approaches from lowest to highest typical cost and effort?
@@ -1905,7 +1614,7 @@
 
 **Explanation:** Prompt engineering is cheapest, then RAG (retrieval infrastructure), then fine-tuning (labeled data and training), then continued pretraining, then building a new model, which is the most expensive.
 
-### D2-030
+### D2-021
 *True/False | Medium*
 
 **Question:** Training a foundation model from scratch is generally quick and inexpensive for most organizations.
@@ -1917,7 +1626,7 @@
 
 **Explanation:** Pretraining requires massive datasets, large GPU or accelerator clusters, and specialized expertise. Most organizations adopt existing FMs and customize them.
 
-### D2-031
+### D2-022
 *Multiple Choice | Easy*
 
 **Question:** Which is a common business use case for generative AI?
@@ -1931,22 +1640,7 @@
 
 **Explanation:** Text generation, summarization, chat assistants, code generation, image creation, and search enhancement are typical generative AI applications.
 
-### D2-032
-*Multiple Response (Select TWO) | Medium*
-
-**Question:** Which TWO are advantages of generative AI? (Select TWO.)
-
-- A. Responsiveness through fast, on-demand content generation
-- B. Adaptability to many tasks without building a model for each
-- C. Complete determinism
-- D. Guaranteed factual accuracy
-- E. Zero risk of bias
-
-**Answer:** A, B
-
-**Explanation:** Generative AI offers adaptability, responsiveness, and simplicity. It does not guarantee accuracy or remove bias, and outputs are non-deterministic.
-
-### D2-033
+### D2-023
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO are challenges or disadvantages of generative AI? (Select TWO.)
@@ -1961,7 +1655,7 @@
 
 **Explanation:** Known challenges include hallucinations, toxicity, nondeterminism, interpretability issues, data privacy concerns, and regulatory or ethical risks.
 
-### D2-034
+### D2-024
 *Multiple Choice | Medium*
 
 **Question:** Which is an example of a business metric for evaluating a generative AI application?
@@ -1975,7 +1669,7 @@
 
 **Explanation:** Business metrics tie the application to outcomes, such as user satisfaction, average revenue per user (ARPU), conversion rate, and efficiency gains, rather than only model-level scores.
 
-### D2-035
+### D2-025
 *Multiple Choice | Medium*
 
 **Question:** What does ARPU stand for, and what does it measure?
@@ -1989,21 +1683,7 @@
 
 **Explanation:** ARPU shows the average revenue generated per user, and a generative feature such as personalized recommendations may be assessed by its effect on it.
 
-### D2-036
-*Multiple Choice | Medium*
-
-**Question:** A company deploys a generative AI shopping assistant and wants to measure whether it increases purchases. Which metric is most relevant?
-
-- A. Perplexity
-- B. Conversion rate
-- C. Token count
-- D. Model parameter count
-
-**Answer:** B
-
-**Explanation:** Conversion rate measures the share of users who complete a desired action such as buying. It is a direct business outcome.
-
-### D2-037
+### D2-026
 *Multiple Choice | Medium*
 
 **Question:** A support chatbot is intended to reduce agent workload. Which business metric best indicates efficiency gains?
@@ -2017,21 +1697,7 @@
 
 **Explanation:** Efficiency metrics such as handle time, tickets resolved by automation, and productivity gains show business impact.
 
-### D2-038
-*Multiple Choice | Easy*
-
-**Question:** What is Amazon Bedrock?
-
-- A. A fully managed service that offers a choice of foundation models from multiple providers through a single API, along with tools to build generative AI applications
-- B. A virtual private network
-- C. A relational database
-- D. A data labeling tool only
-
-**Answer:** A
-
-**Explanation:** Bedrock is serverless. It provides access to FMs from Amazon and other providers, plus capabilities such as Knowledge Bases, Agents, Guardrails, and model customization.
-
-### D2-039
+### D2-027
 *Multiple Choice | Medium*
 
 **Question:** Which statement about Amazon Bedrock is accurate?
@@ -2045,7 +1711,7 @@
 
 **Explanation:** Bedrock's serverless experience lets teams experiment with and switch between models, such as Amazon Nova and Titan, Anthropic Claude, Meta Llama, Mistral, Cohere, and Stability AI, using a unified API.
 
-### D2-040
+### D2-028
 *Multiple Choice | Medium*
 
 **Question:** What is Amazon Titan?
@@ -2059,7 +1725,7 @@
 
 **Explanation:** Titan models cover text generation, text and multimodal embeddings, and image generation, and they are accessed through Amazon Bedrock.
 
-### D2-041
+### D2-029
 *Multiple Choice | Medium*
 
 **Question:** What is Amazon Nova?
@@ -2073,7 +1739,7 @@
 
 **Explanation:** Amazon Nova is Amazon's FM family offered in Bedrock for text, multimodal understanding, and content generation, which gives builders more model choices on the same service.
 
-### D2-042
+### D2-030
 *Multiple Choice | Medium*
 
 **Question:** What is PartyRock?
@@ -2087,7 +1753,7 @@
 
 **Explanation:** PartyRock lets people create and share small generative AI applications without code and without needing an AWS account for basic exploration.
 
-### D2-043
+### D2-031
 *Multiple Choice | Easy*
 
 **Question:** What is Amazon Q Business?
@@ -2101,7 +1767,7 @@
 
 **Explanation:** Amazon Q Business connects to company data sources and applies access controls so employees get relevant answers based on content they are authorized to see.
 
-### D2-044
+### D2-032
 *Multiple Choice | Medium*
 
 **Question:** What is Amazon Q Developer?
@@ -2115,7 +1781,7 @@
 
 **Explanation:** Q Developer provides code suggestions, explanations, transformations, and AWS guidance within IDEs and the console.
 
-### D2-045
+### D2-033
 *Multiple Choice | Medium*
 
 **Question:** What is the purpose of the Amazon Bedrock playgrounds?
@@ -2129,7 +1795,7 @@
 
 **Explanation:** Playgrounds provide chat, text, and image interfaces where users can test prompts and inference parameters before integrating with applications.
 
-### D2-046
+### D2-034
 *Multiple Choice | Medium*
 
 **Question:** How does Amazon Bedrock handle customer prompts and data with respect to training the underlying base models?
@@ -2143,7 +1809,7 @@
 
 **Explanation:** AWS states that Bedrock does not use customer prompts and completions to train the base models or share them with model providers. Customizations remain private to the customer.
 
-### D2-047
+### D2-035
 *Multiple Choice | Medium*
 
 **Question:** What is the difference between on-demand and Provisioned Throughput pricing in Amazon Bedrock?
@@ -2157,7 +1823,7 @@
 
 **Explanation:** On-demand is flexible with no commitment, while Provisioned Throughput buys dedicated model units, which are required for custom models and steady high-volume workloads.
 
-### D2-048
+### D2-036
 *Multiple Choice | Medium*
 
 **Question:** How does SageMaker JumpStart generally differ from Amazon Bedrock for using foundation models?
@@ -2171,7 +1837,7 @@
 
 **Explanation:** Bedrock abstracts infrastructure. JumpStart gives more control over hosting, such as instance types and endpoint configuration, which is useful when you need that control or specific open models.
 
-### D2-049
+### D2-037
 *Multiple Choice | Medium*
 
 **Question:** What are AWS Trainium and AWS Inferentia?
@@ -2185,7 +1851,7 @@
 
 **Explanation:** Trainium targets training and Inferentia targets inference. Both aim to lower cost and raise performance for deep learning and generative AI workloads.
 
-### D2-050
+### D2-038
 *Multiple Choice | Medium*
 
 **Question:** Which is an advantage of using AWS for generative AI applications?
@@ -2199,7 +1865,7 @@
 
 **Explanation:** AWS provides managed services such as Bedrock and SageMaker, scalable infrastructure, and security controls, which lowers the cost and complexity of building generative AI.
 
-### D2-051
+### D2-039
 *Multiple Choice | Easy*
 
 **Question:** What does a vector database store and search?
@@ -2213,25 +1879,10 @@
 
 **Explanation:** Vector stores index high-dimensional embeddings so applications can find semantically similar items quickly. This is essential for RAG.
 
-### D2-052
-*Multiple Response (Select TWO) | Medium*
-
-**Question:** Which TWO AWS services can store and search vector embeddings? (Select TWO.)
-
-- A. Amazon Polly
-- B. Amazon Translate
-- C. Amazon OpenSearch Service
-- D. Amazon Aurora PostgreSQL with the pgvector extension
-- E. AWS CloudTrail
-
-**Answer:** C, D
-
-**Explanation:** OpenSearch (including Serverless) and PostgreSQL with pgvector support vector search. Polly, Translate, and CloudTrail do not store embeddings.
-
-### D2-053
+### D2-040
 *Multiple Choice | Medium*
 
-**Question:** What does Knowledge Bases for Amazon Bedrock do?
+**Question:** What does Amazon Bedrock Knowledge Bases do?
 
 - A. Monitors network packets
 - B. Manages DNS records
@@ -2242,7 +1893,7 @@
 
 **Explanation:** Knowledge Bases ingests documents, chunks them, creates embeddings, stores them in a vector store, and retrieves relevant context for prompts.
 
-### D2-054
+### D2-041
 *Multiple Choice | Medium*
 
 **Question:** How does semantic search differ from keyword search?
@@ -2256,7 +1907,7 @@
 
 **Explanation:** Embedding-based search retrieves conceptually related passages, such as "car" and "automobile", while keyword search depends on exact term overlap.
 
-### D2-055
+### D2-042
 *Multiple Choice | Medium*
 
 **Question:** What is chunking in a RAG pipeline?
@@ -2270,7 +1921,7 @@
 
 **Explanation:** Chunking keeps passages within embedding model limits and improves retrieval precision. Chunk size and overlap affect answer quality.
 
-### D2-056
+### D2-043
 *Multiple Choice | Medium*
 
 **Question:** Which Amazon model type is commonly used to convert text into vectors for semantic search?
@@ -2284,7 +1935,7 @@
 
 **Explanation:** Embedding models convert text to vectors that capture meaning, and the vectors are stored in a vector database for retrieval.
 
-### D2-057
+### D2-044
 *Multiple Choice | Medium*
 
 **Question:** Which metric is commonly used to evaluate the quality of text summaries by measuring overlap with reference summaries?
@@ -2298,7 +1949,7 @@
 
 **Explanation:** ROUGE (Recall-Oriented Understudy for Gisting Evaluation) compares n-gram and sequence overlap between generated and reference summaries.
 
-### D2-058
+### D2-045
 *Multiple Choice | Medium*
 
 **Question:** Which metric is traditionally used to evaluate machine translation quality?
@@ -2312,7 +1963,7 @@
 
 **Explanation:** BLEU (Bilingual Evaluation Understudy) measures n-gram precision against reference translations.
 
-### D2-059
+### D2-046
 *Multiple Choice | Medium*
 
 **Question:** What does BERTScore assess?
@@ -2326,7 +1977,7 @@
 
 **Explanation:** Unlike pure n-gram overlap, BERTScore uses embeddings to compare meaning, so paraphrases score well.
 
-### D2-060
+### D2-047
 *Multiple Choice | Medium*
 
 **Question:** What does perplexity indicate for a language model?
@@ -2340,7 +1991,7 @@
 
 **Explanation:** Perplexity is derived from the model's probability of held-out text. Lower values mean the model predicts the text better.
 
-### D2-061
+### D2-048
 *Multiple Choice | Hard*
 
 **Question:** A team evaluates a summarization model against human-written reference summaries. Which approach is most appropriate for an automated overlap-based score?
@@ -2354,7 +2005,7 @@
 
 **Explanation:** ROUGE is designed for summarization evaluation. Because overlap metrics miss meaning, it is often paired with BERTScore or human review.
 
-### D2-062
+### D2-049
 *Multiple Choice | Hard*
 
 **Question:** Why might relying only on overlap metrics such as BLEU or ROUGE be insufficient for evaluating generative output?
@@ -2368,7 +2019,7 @@
 
 **Explanation:** N-gram overlap penalizes outputs that are correct but worded differently, and it cannot detect hallucinations. Human evaluation and semantic or LLM-based metrics complement them.
 
-### D2-063
+### D2-050
 *True/False | Medium*
 
 **Question:** Automatic metrics alone are always sufficient to judge the quality of generative AI outputs.
@@ -2380,7 +2031,7 @@
 
 **Explanation:** Automatic metrics miss nuance such as helpfulness, tone, and factual accuracy. Human evaluation and task-specific tests remain important.
 
-### D2-064
+### D2-051
 *Multiple Choice | Medium*
 
 **Question:** What are benchmark datasets such as MMLU or GLUE used for?
@@ -2394,7 +2045,7 @@
 
 **Explanation:** Benchmarks provide consistent tasks and scoring for comparing models on language understanding, reasoning, and knowledge.
 
-### D2-065
+### D2-052
 *Multiple Choice | Medium*
 
 **Question:** In Amazon Bedrock, how is on-demand inference for text generation typically billed?
@@ -2408,7 +2059,7 @@
 
 **Explanation:** Billing counts the tokens in the prompt and the generated response, often at different rates, so concise prompts and bounded outputs reduce cost.
 
-### D2-066
+### D2-053
 *Multiple Choice | Medium*
 
 **Question:** How does model size typically relate to latency and cost?
@@ -2422,7 +2073,7 @@
 
 **Explanation:** Right-sizing the model for the task balances quality, latency, and spend. Smaller models are often adequate for classification or extraction.
 
-### D2-067
+### D2-054
 *Multiple Choice | Medium*
 
 **Question:** Which factors should be considered when selecting a foundation model?
@@ -2436,7 +2087,7 @@
 
 **Explanation:** Model selection should match task requirements and constraints such as quality, price, speed, compliance, and available customization.
 
-### D2-068
+### D2-055
 *Multiple Choice | Medium*
 
 **Question:** Why does AWS Region availability matter when choosing a model in Bedrock?
@@ -2450,7 +2101,7 @@
 
 **Explanation:** Not every model is offered in every Region. Teams must pick Regions that satisfy residency requirements and feature needs.
 
-### D2-069
+### D2-056
 *Multiple Choice | Hard*
 
 **Question:** An application needs consistent, predictable throughput and low latency for a fine-tuned custom model in Amazon Bedrock. Which option is required?
@@ -2464,7 +2115,7 @@
 
 **Explanation:** Custom models in Bedrock are served with Provisioned Throughput, which reserves model units to guarantee capacity and performance.
 
-### D2-070
+### D2-057
 *Multiple Choice | Medium*
 
 **Question:** Which describes an advantage of open-weight models?
@@ -2478,7 +2129,7 @@
 
 **Explanation:** Open-weight models can be fine-tuned and self-hosted, but their licenses may include restrictions that must be reviewed.
 
-### D2-071
+### D2-058
 *Multiple Choice | Medium*
 
 **Question:** Which is an example of a multimodal generative AI task?
@@ -2492,7 +2143,7 @@
 
 **Explanation:** A multimodal model accepts an image plus a text prompt and generates a textual description, which crosses modalities.
 
-### D2-072
+### D2-059
 *Multiple Choice | Medium*
 
 **Question:** Which type of model would be used to produce an image from a textual description?
@@ -2506,7 +2157,7 @@
 
 **Explanation:** Text-to-image FMs such as Amazon Titan Image Generator or Stability AI models generate images conditioned on prompts.
 
-### D2-073
+### D2-060
 *Multiple Choice | Medium*
 
 **Question:** Which use case best illustrates code generation with generative AI?
@@ -2520,7 +2171,7 @@
 
 **Explanation:** Assistants such as Amazon Q Developer generate code, tests, and explanations from natural language context.
 
-### D2-074
+### D2-061
 *Multiple Choice | Medium*
 
 **Question:** Which is a typical generative AI chatbot use case?
@@ -2534,7 +2185,7 @@
 
 **Explanation:** LLM-based assistants handle open-ended questions and can be grounded in company knowledge through RAG.
 
-### D2-075
+### D2-062
 *Multiple Choice | Medium*
 
 **Question:** Which scenario fits summarization?
@@ -2548,7 +2199,7 @@
 
 **Explanation:** Summarization condenses long content into shorter text that preserves key information. It is a primary LLM use case.
 
-### D2-076
+### D2-063
 *True/False | Medium*
 
 **Question:** LLMs generate text by repeatedly predicting the next token given the tokens so far.
@@ -2560,7 +2211,7 @@
 
 **Explanation:** Autoregressive LLMs compute a probability distribution over the next token, sample from it, append it, and repeat.
 
-### D2-077
+### D2-064
 *True/False | Medium*
 
 **Question:** Embeddings can only be created for text.
@@ -2572,19 +2223,7 @@
 
 **Explanation:** Embeddings can represent images, audio, and other data, and multimodal embedding models place different modalities in the same vector space.
 
-### D2-078
-*True/False | Medium*
-
-**Question:** Diffusion models typically start from random noise and iteratively refine it into an output.
-
-- A. True
-- B. False
-
-**Answer:** True
-
-**Explanation:** The generation process reverses a noising process by repeatedly denoising, guided by the prompt or conditioning.
-
-### D2-079
+### D2-065
 *True/False | Medium*
 
 **Question:** A model with more parameters is always the best choice for every task.
@@ -2596,7 +2235,7 @@
 
 **Explanation:** Larger models can be costlier and slower, and smaller or specialized models often meet requirements at lower cost.
 
-### D2-080
+### D2-066
 *True/False | Easy*
 
 **Question:** Amazon Bedrock is serverless, so customers do not need to manage the underlying infrastructure for foundation models.
@@ -2608,7 +2247,7 @@
 
 **Explanation:** Bedrock handles provisioning and scaling so teams can call models through APIs.
 
-### D2-081
+### D2-067
 *Multiple Choice | Medium*
 
 **Question:** What is the latent space in generative models?
@@ -2622,7 +2261,7 @@
 
 **Explanation:** Latent representations capture essential features. Sampling or interpolating within the latent space enables generation of new items.
 
-### D2-082
+### D2-068
 *Multiple Choice | Medium*
 
 **Question:** Which training approach lets LLMs learn from unlabeled text by predicting the next or masked tokens?
@@ -2636,7 +2275,7 @@
 
 **Explanation:** Self-supervised learning creates its own training signal from raw data, such as predicting hidden or upcoming tokens, which lets pretraining use huge unlabeled corpora.
 
-### D2-083
+### D2-069
 *Multiple Choice | Medium*
 
 **Question:** What is the difference between training and inference?
@@ -2650,7 +2289,7 @@
 
 **Explanation:** Training updates parameters, and inference runs the fixed model on new inputs. Cost, latency, and hardware needs differ between the two.
 
-### D2-084
+### D2-070
 *Multiple Choice | Medium*
 
 **Question:** What are instruction-tuned models?
@@ -2664,7 +2303,7 @@
 
 **Explanation:** Instruction tuning aligns pretrained models to follow prompts, which makes them more useful in assistants.
 
-### D2-085
+### D2-071
 *Multiple Choice | Medium*
 
 **Question:** What happens when a prompt plus the expected response exceeds a model's context window?
@@ -2678,7 +2317,7 @@
 
 **Explanation:** Context limits are hard limits. Developers use summarization, chunking, or retrieval to fit relevant content.
 
-### D2-086
+### D2-072
 *Multiple Choice | Easy*
 
 **Question:** Which statement best describes zero-shot prompting?
@@ -2692,7 +2331,7 @@
 
 **Explanation:** Zero-shot relies on the model's pretrained knowledge. Few-shot prompting adds examples to guide format and behavior.
 
-### D2-087
+### D2-073
 *Multiple Choice | Medium*
 
 **Question:** Which generative AI use case helps when real data is scarce or sensitive?
@@ -2706,7 +2345,7 @@
 
 **Explanation:** Generative models can create realistic synthetic records or images to augment training data, though quality and bias still need validation.
 
-### D2-088
+### D2-074
 *Multiple Choice | Medium*
 
 **Question:** Which AWS layer of the generative AI stack includes tools to build with FMs, such as Amazon Bedrock?
@@ -2720,7 +2359,7 @@
 
 **Explanation:** AWS describes three layers: infrastructure (chips, GPUs), tools and services (Bedrock, SageMaker), and applications (Amazon Q and others).
 
-### D2-089
+### D2-075
 *Multiple Choice | Medium*
 
 **Question:** Which providers' models can be accessed through Amazon Bedrock (availability varies by Region)?
@@ -2734,7 +2373,7 @@
 
 **Explanation:** Bedrock's marketplace-style choice lets customers evaluate and switch among providers through one API.
 
-### D2-090
+### D2-076
 *Multiple Choice | Medium*
 
 **Question:** Which capability is an example of using a foundation model for translation without building a dedicated translation model?
@@ -2748,7 +2387,7 @@
 
 **Explanation:** Multilingual FMs can translate via prompts. Dedicated services such as Amazon Translate remain an option for specialized, high-volume needs.
 
-### D2-091
+### D2-077
 *Multiple Choice | Medium*
 
 **Question:** What does "grounding" a model's response mean?
@@ -2762,7 +2401,7 @@
 
 **Explanation:** Grounding supplies verifiable context, typically via RAG, so answers reflect authoritative content and reduce hallucinations.
 
-### D2-092
+### D2-078
 *Multiple Choice | Medium*
 
 **Question:** What does the term "emergent abilities" refer to in large models?
@@ -2776,7 +2415,7 @@
 
 **Explanation:** Some abilities appear to arise as models scale, which helps explain why large FMs can perform tasks they were never directly trained on.
 
-### D2-093
+### D2-079
 *Multiple Choice | Medium*
 
 **Question:** Which factor makes foundation models adaptable?
@@ -2790,7 +2429,7 @@
 
 **Explanation:** Pretraining on diverse data gives general capabilities, so organizations can reuse one model across summarization, extraction, Q&A, and more.
 
-### D2-094
+### D2-080
 *Multiple Choice | Medium*
 
 **Question:** Which is a drawback of relying solely on a general-purpose LLM for answers about a company's internal policies?
@@ -2804,7 +2443,7 @@
 
 **Explanation:** Base models are not trained on private documents. RAG or customization is needed to provide accurate organization-specific answers.
 
-### D2-095
+### D2-081
 *Multiple Choice | Medium*
 
 **Question:** Why might an organization choose a smaller, task-specific model rather than the largest available model?
@@ -2818,7 +2457,7 @@
 
 **Explanation:** Model right-sizing reduces spend and speeds responses when the task, such as classification or extraction, doesn't need maximum capability.
 
-### D2-096
+### D2-082
 *Multiple Choice | Easy*
 
 **Question:** Which type of output can a text-to-speech service such as Amazon Polly generate?
@@ -2832,7 +2471,7 @@
 
 **Explanation:** Polly synthesizes natural-sounding speech from text. It is separate from generative text models but is often combined with them in voice assistants.
 
-### D2-097
+### D2-083
 *Multiple Choice | Medium*
 
 **Question:** Which statement about responsiveness as an advantage of generative AI is accurate?
@@ -2846,7 +2485,7 @@
 
 **Explanation:** Generative AI offers fast, interactive generation for drafting, Q&A, and personalization at scale.
 
-### D2-098
+### D2-084
 *Multiple Choice | Medium*
 
 **Question:** What does the "temperature = 0" setting generally aim for?
@@ -2860,19 +2499,7 @@
 
 **Explanation:** At or near zero, the model strongly favors the highest-probability tokens, giving more consistent output for tasks like extraction or classification.
 
-### D2-099
-*True/False | Easy*
-
-**Question:** A single foundation model can be adapted to many different tasks without building a separate model from scratch for each one.
-
-- A. True
-- B. False
-
-**Answer:** True
-
-**Explanation:** Broad pretraining gives foundation models general capabilities. Prompting, RAG, or fine-tuning then adapts them to specific tasks, which is the main reason FMs are reusable.
-
-### D2-100
+### D2-085
 *Multiple Choice | Easy*
 
 **Question:** Which AWS service offers a single API for accessing foundation models from multiple providers?
@@ -2886,7 +2513,7 @@
 
 **Explanation:** Amazon Bedrock provides serverless access to models from Amazon and other providers through one API. Polly is text-to-speech, Glue is data integration, and Macie discovers sensitive data in S3.
 
-### D2-101
+### D2-086
 *True/False | Easy*
 
 **Question:** A hallucination occurs when a generative model produces fluent text that is incorrect or not supported by facts or source material.
@@ -2898,7 +2525,7 @@
 
 **Explanation:** Models generate plausible token sequences, not verified facts, so they can fabricate details. Grounding and verification reduce the risk.
 
-### D2-102
+### D2-087
 *Multiple Choice | Easy*
 
 **Question:** Which of the following is an example of generative AI output?
@@ -2912,7 +2539,7 @@
 
 **Explanation:** Generative AI creates new content such as images, text, or audio. Scores, labels, and cluster assignments are outputs of predictive or discriminative models.
 
-### D2-103
+### D2-088
 *True/False | Easy*
 
 **Question:** Increasing the temperature parameter makes a model's output more deterministic.
@@ -2924,7 +2551,7 @@
 
 **Explanation:** Higher temperature increases randomness and diversity. Lower temperature, near zero, makes output more deterministic.
 
-### D2-104
+### D2-089
 *Multiple Choice | Hard*
 
 **Question:** A model's answers are accurate but frequently end abruptly in the middle of a sentence. Which inference setting is the most likely cause?
@@ -2938,7 +2565,7 @@
 
 **Explanation:** When the generated response reaches the max tokens limit, generation stops, even mid-sentence. Raising the limit, or asking for shorter answers, fixes the problem.
 
-### D2-105
+### D2-090
 *Multiple Choice | Hard*
 
 **Question:** Model X costs $3 per 1 million input tokens and $15 per 1 million output tokens. A workload uses 2 million input tokens and 1 million output tokens per month. What is the monthly cost with Model X?
@@ -2973,20 +2600,6 @@
 ### D3-002
 *Multiple Choice | Medium*
 
-**Question:** What is Retrieval Augmented Generation (RAG)?
-
-- A. A method to compress model weights
-- B. Retraining a model on every query
-- C. A way to encrypt prompts
-- D. A technique that retrieves relevant external information and adds it to the prompt so the model generates grounded answers
-
-**Answer:** D
-
-**Explanation:** RAG combines retrieval from a knowledge source with generation. The model answers using supplied context rather than relying only on its training data.
-
-### D3-003
-*Multiple Choice | Medium*
-
 **Question:** What is a key advantage of RAG compared with fine-tuning for keeping answers current?
 
 - A. RAG eliminates the need for any data
@@ -2998,7 +2611,7 @@
 
 **Explanation:** Updating a vector store is far cheaper and faster than retraining. RAG also enables citations, although it does not eliminate hallucinations entirely.
 
-### D3-004
+### D3-003
 *Multiple Choice | Medium*
 
 **Question:** Which sequence correctly describes a basic RAG workflow at query time?
@@ -3012,10 +2625,10 @@
 
 **Explanation:** The query is converted to an embedding, similar chunks are fetched, the prompt is built from the question and retrieved context, and the FM generates a grounded answer.
 
-### D3-005
+### D3-004
 *Multiple Choice | Medium*
 
-**Question:** Which data source do Knowledge Bases for Amazon Bedrock commonly ingest documents from?
+**Question:** Which data source do Amazon Bedrock Knowledge Bases commonly ingest documents from?
 
 - A. Amazon S3
 - B. Amazon Route 53
@@ -3026,10 +2639,10 @@
 
 **Explanation:** Knowledge Bases can sync documents from S3 and other supported connectors. The service handles chunking, embedding, and indexing into a vector store.
 
-### D3-006
+### D3-005
 *Multiple Choice | Medium*
 
-**Question:** Which is a supported vector store for Knowledge Bases for Amazon Bedrock?
+**Question:** Which is a supported vector store for Amazon Bedrock Knowledge Bases?
 
 - A. Amazon Aurora PostgreSQL with pgvector (among others, such as OpenSearch Serverless)
 - B. Amazon SQS
@@ -3040,7 +2653,7 @@
 
 **Explanation:** Supported stores include Amazon OpenSearch Serverless, Aurora PostgreSQL, and several third-party options. Bedrock can also create an OpenSearch Serverless collection for you.
 
-### D3-007
+### D3-006
 *Multiple Choice | Medium*
 
 **Question:** Which Bedrock capability queries a knowledge base and generates a response with citations in a single managed call?
@@ -3054,7 +2667,7 @@
 
 **Explanation:** RetrieveAndGenerate retrieves relevant chunks, builds the augmented prompt, calls the model, and returns the answer with source attributions. The Retrieve API returns only the chunks.
 
-### D3-008
+### D3-007
 *Multiple Choice | Hard*
 
 **Question:** A RAG application returns vague answers. Investigation shows the document chunks are very large and contain many unrelated topics. What is the most likely improvement?
@@ -3068,7 +2681,7 @@
 
 **Explanation:** Oversized chunks dilute relevance, while too-small chunks lose context. Tuning chunk size, overlap, or chunking strategy such as hierarchical or semantic chunking improves retrieval quality.
 
-### D3-009
+### D3-008
 *Multiple Choice | Medium*
 
 **Question:** Why would a team add metadata filtering to knowledge base retrieval?
@@ -3082,7 +2695,7 @@
 
 **Explanation:** Metadata filters restrict which chunks are considered, so answers come from the right subset of content.
 
-### D3-010
+### D3-009
 *Multiple Choice | Hard*
 
 **Question:** What is hybrid search in a RAG system?
@@ -3096,7 +2709,7 @@
 
 **Explanation:** Hybrid search blends meaning-based retrieval, which is good for paraphrases, with lexical matching, which is good for exact terms and identifiers.
 
-### D3-011
+### D3-010
 *Multiple Choice | Hard*
 
 **Question:** What does a reranking model do in a RAG pipeline?
@@ -3110,10 +2723,10 @@
 
 **Explanation:** Reranking applies a more precise relevance model to initially retrieved results, improving the quality of context that is passed to the FM.
 
-### D3-012
+### D3-011
 *Multiple Choice | Medium*
 
-**Question:** What are Agents for Amazon Bedrock?
+**Question:** What are Amazon Bedrock Agents?
 
 - A. A capability that lets an FM plan and execute multistep tasks by calling APIs and querying knowledge bases
 - B. Antivirus agents
@@ -3124,21 +2737,7 @@
 
 **Explanation:** Agents break down requests, decide which actions to take, invoke company APIs through action groups (often AWS Lambda), and use knowledge bases to complete tasks.
 
-### D3-013
-*Multiple Choice | Medium*
-
-**Question:** In Agents for Amazon Bedrock, what is an action group?
-
-- A. A group of IAM users
-- B. A defined set of actions, described by an OpenAPI schema or function definitions, that the agent can invoke, typically backed by Lambda
-- C. A set of S3 buckets
-- D. A set of Regions
-
-**Answer:** B
-
-**Explanation:** Action groups tell the agent what operations are available, such as checking order status, and which function runs them.
-
-### D3-014
+### D3-012
 *Multiple Choice | Medium*
 
 **Question:** How can an agent in Amazon Bedrock access private company knowledge?
@@ -3152,10 +2751,10 @@
 
 **Explanation:** Agents can query associated knowledge bases to ground their reasoning in company data, in addition to calling APIs.
 
-### D3-015
+### D3-013
 *Multiple Choice | Medium*
 
-**Question:** What are Guardrails for Amazon Bedrock?
+**Question:** What are Amazon Bedrock Guardrails?
 
 - A. Network ACLs
 - B. A model training tool
@@ -3166,7 +2765,7 @@
 
 **Explanation:** Guardrails provide content filters, denied topics, word filters, sensitive information filters (PII), and contextual grounding checks. They work across models and can also be applied independently via the ApplyGuardrail API.
 
-### D3-016
+### D3-014
 *Multiple Choice | Medium*
 
 **Question:** What does a contextual grounding check in Guardrails evaluate?
@@ -3180,7 +2779,7 @@
 
 **Explanation:** Grounding and relevance thresholds flag responses that are unsupported by the reference content or that stray from the question.
 
-### D3-017
+### D3-015
 *Multiple Choice | Medium*
 
 **Question:** A company wants its chatbot to refuse to give investment advice. Which Guardrails feature is the best fit?
@@ -3194,10 +2793,10 @@
 
 **Explanation:** Denied topics let you define subjects, with descriptions and examples, that the application must not discuss, and the guardrail blocks matching inputs or outputs.
 
-### D3-018
+### D3-016
 *Multiple Choice | Medium*
 
-**Question:** Which statement about Guardrails for Amazon Bedrock is accurate?
+**Question:** Which statement about Amazon Bedrock Guardrails is accurate?
 
 - A. They only work with Amazon Titan models
 - B. They only filter user inputs
@@ -3208,7 +2807,7 @@
 
 **Explanation:** Guardrails run on prompts and completions and can be attached to Bedrock model invocations or used on text from any source via ApplyGuardrail.
 
-### D3-019
+### D3-017
 *Multiple Choice | Easy*
 
 **Question:** What is prompt engineering?
@@ -3222,7 +2821,7 @@
 
 **Explanation:** Prompt engineering shapes instructions, context, examples, and format to improve output quality without changing model weights.
 
-### D3-020
+### D3-018
 *Multiple Choice | Medium*
 
 **Question:** Which elements are commonly included in an effective prompt?
@@ -3236,7 +2835,7 @@
 
 **Explanation:** Well-structured prompts state the task, supply context and data, specify constraints, and indicate how the answer should be formatted.
 
-### D3-021
+### D3-019
 *Multiple Choice | Medium*
 
 **Question:** What is few-shot prompting?
@@ -3250,7 +2849,7 @@
 
 **Explanation:** Few-shot examples help the model infer the pattern, format, and tone to follow. This is a form of in-context learning.
 
-### D3-022
+### D3-020
 *Multiple Choice | Medium*
 
 **Question:** What is chain-of-thought (CoT) prompting?
@@ -3264,7 +2863,7 @@
 
 **Explanation:** Asking for intermediate reasoning improves performance on multi-step problems such as math, logic, and planning.
 
-### D3-023
+### D3-021
 *Multiple Choice | Medium*
 
 **Question:** What is single-shot (one-shot) prompting?
@@ -3278,7 +2877,7 @@
 
 **Explanation:** One-shot prompting offers a single demonstration, which sits between zero-shot (none) and few-shot (several).
 
-### D3-024
+### D3-022
 *Multiple Choice | Medium*
 
 **Question:** What is negative prompting commonly used for, for example in image generation?
@@ -3292,7 +2891,7 @@
 
 **Explanation:** Negative prompts state unwanted elements or styles, such as "blurry" or "text watermark", to steer the output away from them.
 
-### D3-025
+### D3-023
 *Multiple Choice | Medium*
 
 **Question:** What is a prompt template?
@@ -3306,7 +2905,7 @@
 
 **Explanation:** Templates standardize instructions and context across requests, which promotes consistency and easier testing and versioning.
 
-### D3-026
+### D3-024
 *Multiple Choice | Medium*
 
 **Question:** What is the purpose of assigning a role or persona in a prompt, such as "You are a helpful financial analyst"?
@@ -3320,7 +2919,7 @@
 
 **Explanation:** Role prompting guides style and focus. It does not add knowledge the model lacks.
 
-### D3-027
+### D3-025
 *Multiple Choice | Medium*
 
 **Question:** Which prompt practice helps get machine-readable output?
@@ -3334,7 +2933,7 @@
 
 **Explanation:** Clear format instructions, often with an example schema, improve consistency and make responses easy to parse downstream.
 
-### D3-028
+### D3-026
 *Multiple Choice | Medium*
 
 **Question:** Why use delimiters or clear structure, such as XML-style tags, to separate instructions from user-provided content in a prompt?
@@ -3348,7 +2947,7 @@
 
 **Explanation:** Separating trusted instructions from untrusted input improves clarity and makes it harder for injected text to override the instructions.
 
-### D3-029
+### D3-027
 *Multiple Choice | Medium*
 
 **Question:** Which is a prompt engineering best practice?
@@ -3362,7 +2961,7 @@
 
 **Explanation:** Specificity, context, examples, and iterative refinement are core practices for reliable results.
 
-### D3-030
+### D3-028
 *Multiple Choice | Hard*
 
 **Question:** A team needs a model to classify customer reviews as positive, negative, or neutral in a company-specific way. They add three labeled example reviews to each prompt. Which technique is this?
@@ -3376,21 +2975,7 @@
 
 **Explanation:** Including a handful of labeled examples in the prompt demonstrates the desired classification behavior without any training.
 
-### D3-031
-*Multiple Choice | Hard*
-
-**Question:** A model gets multi-step word problems wrong when asked for the answer directly. Which prompt change is most likely to help?
-
-- A. Asking the model to think through the problem step by step before answering
-- B. Removing all context
-- C. Raising top-k to the maximum
-- D. Lowering max tokens to 5
-
-**Answer:** A
-
-**Explanation:** Chain-of-thought prompting elicits intermediate reasoning, which often improves accuracy on complex reasoning tasks.
-
-### D3-032
+### D3-029
 *Multiple Choice | Medium*
 
 **Question:** What is a prompt injection attack?
@@ -3404,7 +2989,7 @@
 
 **Explanation:** Attackers embed instructions in user input or retrieved content to override system prompts or exfiltrate data. Defenses are layered.
 
-### D3-033
+### D3-030
 *Multiple Choice | Medium*
 
 **Question:** What does "jailbreaking" an LLM refer to?
@@ -3418,7 +3003,7 @@
 
 **Explanation:** Jailbreaks use role play, obfuscation, or multi-step tricks to circumvent safety alignment.
 
-### D3-034
+### D3-031
 *Multiple Choice | Medium*
 
 **Question:** What is prompt leaking?
@@ -3432,7 +3017,7 @@
 
 **Explanation:** Attackers try to extract system prompts, which may contain proprietary logic or secrets. Sensitive data should not be placed in system prompts.
 
-### D3-035
+### D3-032
 *Multiple Choice | Hard*
 
 **Question:** Which combination best reduces prompt injection risk in a production application?
@@ -3446,7 +3031,7 @@
 
 **Explanation:** Defense in depth is required. Guardrails and validation filter content, structured prompts limit confusion, and least privilege limits impact if the model is manipulated.
 
-### D3-036
+### D3-033
 *True/False | Medium*
 
 **Question:** Providing examples in a prompt can improve the consistency of the output format.
@@ -3458,7 +3043,7 @@
 
 **Explanation:** Examples demonstrate the expected structure and style. This is why few-shot prompting is widely used.
 
-### D3-037
+### D3-034
 *Multiple Choice | Medium*
 
 **Question:** Which Bedrock feature helps teams create, version, and manage prompts for reuse across applications?
@@ -3472,7 +3057,7 @@
 
 **Explanation:** Prompt Management lets teams build, test, version, and share prompts, which supports governance and consistent behavior.
 
-### D3-038
+### D3-035
 *Multiple Choice | Medium*
 
 **Question:** What is Amazon Bedrock Flows used for?
@@ -3486,7 +3071,7 @@
 
 **Explanation:** Flows provides a visual builder to orchestrate multistep generative AI workflows without extensive code.
 
-### D3-039
+### D3-036
 *Multiple Choice | Medium*
 
 **Question:** What is the Amazon Bedrock Converse API?
@@ -3500,7 +3085,7 @@
 
 **Explanation:** Converse provides a consistent message format, system prompts, and tool use across models, which simplifies switching models.
 
-### D3-040
+### D3-037
 *Multiple Choice | Medium*
 
 **Question:** Which option returns model output incrementally as it is generated, improving perceived latency in chat applications?
@@ -3514,7 +3099,7 @@
 
 **Explanation:** Streaming sends tokens as they are produced, so users see text sooner rather than waiting for the full response.
 
-### D3-041
+### D3-038
 *Multiple Choice | Medium*
 
 **Question:** A company must process millions of documents overnight with no real-time requirement and wants to lower inference cost. Which Bedrock option fits?
@@ -3528,7 +3113,7 @@
 
 **Explanation:** Batch inference processes large sets of prompts asynchronously, typically at lower cost than on-demand, with results written to S3.
 
-### D3-042
+### D3-039
 *Multiple Choice | Medium*
 
 **Question:** What is the benefit of cross-Region inference in Amazon Bedrock?
@@ -3542,7 +3127,7 @@
 
 **Explanation:** Inference profiles distribute traffic to other Regions in a defined geography, which helps manage bursts. Teams must still confirm that data residency requirements are met.
 
-### D3-043
+### D3-040
 *Multiple Choice | Medium*
 
 **Question:** What does prompt caching in Bedrock do?
@@ -3556,7 +3141,7 @@
 
 **Explanation:** When large parts of a prompt, such as long documents or instructions, repeat across requests, caching avoids reprocessing them each time.
 
-### D3-044
+### D3-041
 *Multiple Choice | Medium*
 
 **Question:** How is training data typically provided for fine-tuning a model in Amazon Bedrock?
@@ -3570,7 +3155,7 @@
 
 **Explanation:** Fine-tuning uses labeled examples that show desired outputs for given inputs, stored in S3 with appropriate permissions.
 
-### D3-045
+### D3-042
 *Multiple Choice | Medium*
 
 **Question:** What is continued pretraining?
@@ -3584,7 +3169,7 @@
 
 **Explanation:** Continued pretraining uses large amounts of unlabeled text, such as industry documents, to adapt the model to a domain before or instead of task-specific fine-tuning.
 
-### D3-046
+### D3-043
 *Multiple Choice | Medium*
 
 **Question:** What is instruction tuning?
@@ -3598,21 +3183,7 @@
 
 **Explanation:** It improves instruction-following and is a common way to make base models more useful in assistants.
 
-### D3-047
-*Multiple Choice | Medium*
-
-**Question:** What is reinforcement learning from human feedback (RLHF)?
-
-- A. Reusing old prompts
-- B. Compressing models
-- C. Training with human preference rankings of outputs to align model behavior with human values and expectations
-- D. Labeling images
-
-**Answer:** C
-
-**Explanation:** Humans rank responses, a reward model learns those preferences, and the model is optimized to produce preferred outputs.
-
-### D3-048
+### D3-044
 *Multiple Choice | Medium*
 
 **Question:** Which statement best describes transfer learning when customizing a foundation model?
@@ -3626,7 +3197,7 @@
 
 **Explanation:** Starting from a pretrained model reduces data and compute needs. Fine-tuning an FM is an example.
 
-### D3-049
+### D3-045
 *Multiple Choice | Hard*
 
 **Question:** A company needs the model to consistently adopt a specific writing style and domain terminology across all outputs, and it has thousands of high-quality labeled examples. Which approach is most suitable?
@@ -3640,21 +3211,7 @@
 
 **Explanation:** When the goal is consistent behavior or style, rather than fresh knowledge, fine-tuning on curated examples is effective.
 
-### D3-050
-*Multiple Choice | Hard*
-
-**Question:** A company's product documentation changes daily, and the chatbot must always answer from the latest version. Which approach is most appropriate?
-
-- A. Lower the temperature
-- B. Fine-tune the model every day
-- C. Pretrain a new model weekly
-- D. RAG over the documentation, re-indexing as content changes
-
-**Answer:** D
-
-**Explanation:** RAG supplies current content at query time, whereas fine-tuning bakes knowledge into weights and would need constant retraining.
-
-### D3-051
+### D3-046
 *Multiple Choice | Medium*
 
 **Question:** Which factor is most important when preparing data for fine-tuning?
@@ -3668,7 +3225,7 @@
 
 **Explanation:** Fine-tuned behavior reflects the data. Poor, biased, or noisy examples degrade results, and sensitive content needs governance.
 
-### D3-052
+### D3-047
 *Multiple Choice | Medium*
 
 **Question:** What is catastrophic forgetting in fine-tuning?
@@ -3682,7 +3239,7 @@
 
 **Explanation:** Over-specialization can degrade general knowledge. Remedies include lower learning rates, fewer epochs, and mixing in broader data.
 
-### D3-053
+### D3-048
 *Multiple Choice | Medium*
 
 **Question:** What is model distillation?
@@ -3696,7 +3253,7 @@
 
 **Explanation:** Distillation transfers capability from a large model to a smaller one, which preserves much of the quality for specific tasks at lower inference cost.
 
-### D3-054
+### D3-049
 *Multiple Choice | Medium*
 
 **Question:** What does Amazon Bedrock Custom Model Import allow?
@@ -3710,7 +3267,7 @@
 
 **Explanation:** Teams that fine-tuned a supported open architecture elsewhere can bring the model into Bedrock and invoke it through the Bedrock APIs.
 
-### D3-055
+### D3-050
 *Multiple Choice | Medium*
 
 **Question:** What must typically be purchased to run a customized (fine-tuned) model in Amazon Bedrock?
@@ -3724,7 +3281,7 @@
 
 **Explanation:** Custom models are served through Provisioned Throughput, which reserves dedicated capacity.
 
-### D3-056
+### D3-051
 *Multiple Choice | Medium*
 
 **Question:** What is domain adaptation fine-tuning?
@@ -3738,7 +3295,7 @@
 
 **Explanation:** Domain adaptation tailors terminology and knowledge to a field, improving relevance on domain-specific tasks.
 
-### D3-057
+### D3-052
 *True/False | Medium*
 
 **Question:** Fine-tuning a model for instruction following typically uses labeled prompt-and-response examples.
@@ -3750,7 +3307,7 @@
 
 **Explanation:** Supervised fine-tuning needs paired inputs and desired outputs to teach the model the target behavior.
 
-### D3-058
+### D3-053
 *Multiple Choice | Medium*
 
 **Question:** What is the purpose of parameter-efficient fine-tuning (PEFT) techniques such as LoRA?
@@ -3764,7 +3321,7 @@
 
 **Explanation:** PEFT methods update a small set of parameters or adapters while keeping most weights frozen, which makes fine-tuning cheaper and faster.
 
-### D3-059
+### D3-054
 *Multiple Choice | Medium*
 
 **Question:** Which are typical hyperparameters adjusted in fine-tuning jobs?
@@ -3778,7 +3335,7 @@
 
 **Explanation:** These settings control training duration, step size, and how many examples are processed per update. Poor choices can cause under- or overfitting.
 
-### D3-060
+### D3-055
 *Multiple Choice | Medium*
 
 **Question:** What evaluation approaches does Amazon Bedrock Model Evaluation support?
@@ -3792,7 +3349,7 @@
 
 **Explanation:** Teams can compare models or prompts using built-in metrics such as accuracy, robustness, and toxicity, human reviewers, or a judge model.
 
-### D3-061
+### D3-056
 *Multiple Choice | Medium*
 
 **Question:** Why include human evaluation when assessing generative AI outputs?
@@ -3806,7 +3363,7 @@
 
 **Explanation:** Human judgments complement automated scores, especially for style, safety, and usefulness.
 
-### D3-062
+### D3-057
 *Multiple Choice | Medium*
 
 **Question:** What is the LLM-as-a-judge evaluation approach?
@@ -3820,21 +3377,7 @@
 
 **Explanation:** Judge models scale evaluation cheaply and quickly. Calibrating them against human ratings is still advisable.
 
-### D3-063
-*Multiple Choice | Medium*
-
-**Question:** What are benchmark datasets used for in FM evaluation?
-
-- A. Increasing latency
-- B. Measuring model performance on standardized tasks to compare models objectively
-- C. Training reward models only
-- D. Storing user data
-
-**Answer:** B
-
-**Explanation:** Datasets such as MMLU or HELM-style suites provide common tasks and scoring, though they may not reflect your domain, so custom evaluation sets matter too.
-
-### D3-064
+### D3-058
 *Multiple Choice | Medium*
 
 **Question:** Which metric measures overlap of n-grams between generated and reference summaries?
@@ -3848,21 +3391,7 @@
 
 **Explanation:** ROUGE-N counts overlapping n-grams, and ROUGE-L uses the longest common subsequence. It is common in summarization evaluation.
 
-### D3-065
-*Multiple Choice | Medium*
-
-**Question:** Which metric is commonly used for evaluating machine translation by comparing n-gram precision to references?
-
-- A. MAE
-- B. BLEU
-- C. ROUGE
-- D. Recall@k
-
-**Answer:** B
-
-**Explanation:** BLEU measures how many n-grams of the output appear in reference translations, with a brevity penalty.
-
-### D3-066
+### D3-059
 *Multiple Choice | Medium*
 
 **Question:** Which metric uses contextual embeddings to evaluate semantic similarity between generated and reference text?
@@ -3876,7 +3405,7 @@
 
 **Explanation:** BERTScore compares token embeddings, so it rewards meaning-preserving paraphrases that n-gram metrics might penalize.
 
-### D3-067
+### D3-060
 *Multiple Choice | Hard*
 
 **Question:** How can a company determine whether a foundation model application effectively meets business objectives?
@@ -3890,7 +3419,7 @@
 
 **Explanation:** Model-level scores are not enough. Business outcomes such as time saved, resolution rate, and user satisfaction demonstrate real value.
 
-### D3-068
+### D3-061
 *Multiple Choice | Hard*
 
 **Question:** Which set of measures is appropriate for evaluating a RAG application?
@@ -3904,21 +3433,7 @@
 
 **Explanation:** RAG quality depends on retrieving the right context and on the model staying faithful to it. Bedrock RAG evaluation checks both.
 
-### D3-069
-*Multiple Choice | Medium*
-
-**Question:** Which built-in dimensions can automatic model evaluation in Amazon Bedrock assess?
-
-- A. Disk throughput only
-- B. Task-specific measures such as accuracy, robustness, and toxicity
-- C. IAM policy size
-- D. Billing accuracy only
-
-**Answer:** B
-
-**Explanation:** Evaluation jobs for tasks like summarization, Q&A, classification, and generation report metrics such as accuracy, robustness, and toxicity.
-
-### D3-070
+### D3-062
 *Multiple Choice | Medium*
 
 **Question:** A team wants to compare two prompts in production using real users to see which produces better outcomes. Which method fits?
@@ -3932,7 +3447,7 @@
 
 **Explanation:** A/B testing splits traffic between variants and compares outcome metrics, which provides real-world evidence of which performs better.
 
-### D3-071
+### D3-063
 *Multiple Choice | Medium*
 
 **Question:** Which generative AI application is an example of converting natural language into database queries?
@@ -3946,7 +3461,7 @@
 
 **Explanation:** With schema context in the prompt, FMs can draft SQL queries. Results should be validated and executed with least-privilege access.
 
-### D3-072
+### D3-064
 *Multiple Choice | Medium*
 
 **Question:** How can embeddings be used for recommendations or similar-item search?
@@ -3960,7 +3475,7 @@
 
 **Explanation:** Nearest-neighbor search in embedding space retrieves semantically similar products, articles, or images.
 
-### D3-073
+### D3-065
 *Multiple Choice | Medium*
 
 **Question:** How can a chatbot built on a stateless FM API remember earlier turns of a conversation?
@@ -3974,7 +3489,7 @@
 
 **Explanation:** FM calls are independent. Applications must supply prior messages or summaries, within context window limits.
 
-### D3-074
+### D3-066
 *Multiple Choice | Medium*
 
 **Question:** Amazon Q Business respects existing access permissions from connected data sources. Why is this important?
@@ -3988,7 +3503,7 @@
 
 **Explanation:** Honoring source permissions prevents oversharing of confidential information through the assistant.
 
-### D3-075
+### D3-067
 *Multiple Choice | Medium*
 
 **Question:** A company wants to automatically block or mask toxic content and PII in model responses across applications. Which service capability is most appropriate?
@@ -3996,13 +3511,13 @@
 - A. Amazon Route 53
 - B. AWS Direct Connect
 - C. AWS Shield
-- D. Guardrails for Amazon Bedrock
+- D. Amazon Bedrock Guardrails
 
 **Answer:** D
 
 **Explanation:** Guardrails apply content filters and sensitive-information filters, such as blocking or masking PII, consistently to prompts and responses.
 
-### D3-076
+### D3-068
 *Multiple Choice | Medium*
 
 **Question:** Which prompt technique helps extract structured fields, such as invoice number and date, from unstructured text?
@@ -4016,13 +3531,13 @@
 
 **Explanation:** Defining the expected schema and showing examples, with low temperature, yields reliable structured extraction.
 
-### D3-077
+### D3-069
 *Multiple Choice | Hard*
 
 **Question:** A travel company wants an assistant that can check flight availability and create bookings by calling its internal APIs. Which Bedrock capability fits best?
 
 - A. Model evaluation
-- B. Agents for Amazon Bedrock with action groups
+- B. Amazon Bedrock Agents with action groups
 - C. Amazon Polly
 - D. Guardrails
 
@@ -4030,7 +3545,7 @@
 
 **Explanation:** Agents plan multistep tasks and invoke APIs through action groups, which makes them ideal for task-completing assistants.
 
-### D3-078
+### D3-070
 *Multiple Choice | Hard*
 
 **Question:** A firm wants employees to ask questions answered from 20,000 internal PDFs that are updated weekly, with source citations. Which solution best fits?
@@ -4038,13 +3553,13 @@
 - A. Training a model from scratch
 - B. A prompt with no context
 - C. Fine-tuning monthly with no retrieval
-- D. Knowledge Bases for Amazon Bedrock (RAG) with periodic data sync
+- D. Amazon Bedrock Knowledge Bases (RAG) with periodic data sync
 
 **Answer:** D
 
 **Explanation:** RAG with a managed knowledge base provides current, cited answers without retraining, and re-syncing keeps the index fresh.
 
-### D3-079
+### D3-071
 *Multiple Choice | Hard*
 
 **Question:** A brand needs all generated copy to match a distinctive voice, and the team wants the lowest-effort first attempt before investing in training. What should they try first?
@@ -4058,7 +3573,7 @@
 
 **Explanation:** Prompting is the cheapest, fastest experiment. Only if it falls short should the team move up to fine-tuning.
 
-### D3-080
+### D3-072
 *Multiple Choice | Hard*
 
 **Question:** A legal-summary app must prevent personal data in documents from appearing in outputs. Which feature should be configured?
@@ -4072,7 +3587,7 @@
 
 **Explanation:** PII filters can redact or block entities such as names, SSNs, and emails in prompts or responses.
 
-### D3-081
+### D3-073
 *Multiple Choice | Hard*
 
 **Question:** A customer-facing chat application needs fast perceived responses and low cost per request. Which combination is most appropriate?
@@ -4086,7 +3601,7 @@
 
 **Explanation:** Smaller models and short prompts reduce latency and tokens, and streaming improves perceived responsiveness.
 
-### D3-082
+### D3-074
 *Multiple Choice | Hard*
 
 **Question:** An analytics team will summarize 500,000 archived support tickets over a weekend with no user waiting. Which approach minimizes cost?
@@ -4100,7 +3615,7 @@
 
 **Explanation:** Asynchronous, non-interactive workloads suit batch inference, which is typically cheaper per token.
 
-### D3-083
+### D3-075
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO components are essential parts of a RAG architecture? (Select TWO.)
@@ -4115,7 +3630,7 @@
 
 **Explanation:** RAG needs embeddings to represent content and queries, plus an index to retrieve relevant chunks. The generator FM then uses them.
 
-### D3-084
+### D3-076
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO approaches help reduce hallucinations? (Select TWO.)
@@ -4130,7 +3645,7 @@
 
 **Explanation:** Supplying authoritative context and verifying grounding both reduce unsupported claims. Higher temperature and vague prompts tend to increase errors.
 
-### D3-085
+### D3-077
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO are prompt engineering techniques? (Select TWO.)
@@ -4145,7 +3660,7 @@
 
 **Explanation:** Few-shot and chain-of-thought are prompting methods. The other options are training or ML algorithms.
 
-### D3-086
+### D3-078
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO capabilities can an agent for Amazon Bedrock use to complete a user's request? (Select TWO.)
@@ -4160,7 +3675,7 @@
 
 **Explanation:** Agents orchestrate API calls and retrieval within the permissions and definitions they are given. They cannot exceed their configured scope.
 
-### D3-087
+### D3-079
 *True/False | Medium*
 
 **Question:** RAG permanently changes the weights of the foundation model.
@@ -4172,10 +3687,10 @@
 
 **Explanation:** RAG supplies retrieved context in the prompt at inference time. It does not alter model weights, which is why knowledge updates need no retraining.
 
-### D3-088
+### D3-080
 *True/False | Medium*
 
-**Question:** Knowledge Bases for Amazon Bedrock can return source attributions (citations) for generated answers.
+**Question:** Amazon Bedrock Knowledge Bases can return source attributions (citations) for generated answers.
 
 - A. True
 - B. False
@@ -4184,10 +3699,10 @@
 
 **Explanation:** Responses include references to the retrieved chunks and source documents, which supports verification and trust.
 
-### D3-089
+### D3-081
 *True/False | Medium*
 
-**Question:** Guardrails for Amazon Bedrock evaluate only the model's outputs and never the user's inputs.
+**Question:** Amazon Bedrock Guardrails evaluate only the model's outputs and never the user's inputs.
 
 - A. True
 - B. False
@@ -4196,7 +3711,7 @@
 
 **Explanation:** Guardrails can screen both user inputs and model outputs, blocking harmful prompts and filtering responses.
 
-### D3-090
+### D3-082
 *True/False | Medium*
 
 **Question:** A high temperature setting is generally recommended for deterministic data extraction tasks.
@@ -4208,7 +3723,7 @@
 
 **Explanation:** Extraction needs consistent, accurate output, so low temperature is recommended. High temperature adds randomness.
 
-### D3-091
+### D3-083
 *Multiple Choice | Medium*
 
 **Question:** What is in-context learning?
@@ -4222,21 +3737,7 @@
 
 **Explanation:** Few-shot examples and instructions let a frozen model adapt its behavior within a single request.
 
-### D3-092
-*Multiple Choice | Medium*
-
-**Question:** What is the role of a system prompt?
-
-- A. It stores training data
-- B. It sets high-level instructions, persona, and constraints that guide the model's behavior across a conversation
-- C. It sets the AWS Region
-- D. It encrypts messages
-
-**Answer:** B
-
-**Explanation:** System prompts define behavior and rules. They should not be treated as a secure place for secrets.
-
-### D3-093
+### D3-084
 *Multiple Choice | Medium*
 
 **Question:** Which approach reduces response latency for a chat application?
@@ -4250,7 +3751,7 @@
 
 **Explanation:** Fewer input and output tokens and a lighter model speed up generation.
 
-### D3-094
+### D3-085
 *Multiple Choice | Medium*
 
 **Question:** A multilingual customer base needs support in many languages. What should the team check when selecting a model?
@@ -4264,7 +3765,7 @@
 
 **Explanation:** Language coverage and quality vary by model. Evaluate in the target languages before choosing.
 
-### D3-095
+### D3-086
 *Multiple Choice | Medium*
 
 **Question:** A document is longer than a model's context window. Which strategy helps?
@@ -4278,7 +3779,7 @@
 
 **Explanation:** Context limits are hard constraints. Use long-context models or map-reduce style summarization or RAG to handle long inputs.
 
-### D3-096
+### D3-087
 *Multiple Choice | Medium*
 
 **Question:** When creating a vector index for a knowledge base, which setting must align with the embeddings model?
@@ -4292,7 +3793,7 @@
 
 **Explanation:** The index's vector dimensions must match the output dimension of the embedding model used for ingestion and queries.
 
-### D3-097
+### D3-088
 *Multiple Choice | Medium*
 
 **Question:** Why should the same embedding model be used for indexing documents and embedding user queries?
@@ -4306,7 +3807,7 @@
 
 **Explanation:** Each model defines its own vector space. Mixing models breaks meaningful distance comparisons.
 
-### D3-098
+### D3-089
 *Multiple Choice | Medium*
 
 **Question:** In a retrieval step, what does the "number of retrieved results" (top-k) setting control?
@@ -4320,7 +3821,7 @@
 
 **Explanation:** Retrieving too few chunks may miss relevant context, and too many increases cost and noise.
 
-### D3-099
+### D3-090
 *Multiple Choice | Medium*
 
 **Question:** Why is it valuable for a RAG application to display source citations?
@@ -4334,7 +3835,7 @@
 
 **Explanation:** Citations point to the supporting documents, which helps users validate responses and supports auditing.
 
-### D3-100
+### D3-091
 *Multiple Choice | Medium*
 
 **Question:** Which Amazon Titan model type enables searching images with text queries and vice versa?
@@ -4348,7 +3849,7 @@
 
 **Explanation:** Multimodal embeddings map text and images into a shared vector space so cross-modal similarity search is possible.
 
-### D3-101
+### D3-092
 *True/False | Easy*
 
 **Question:** Few-shot prompting places a few examples of the desired input and output in the prompt to guide the model's response.
@@ -4360,12 +3861,12 @@
 
 **Explanation:** The examples show the model the task pattern, format, and tone, so it can imitate them without any weight updates.
 
-### D3-102
+### D3-093
 *Multiple Choice | Hard*
 
 **Question:** A RAG chatbot retrieves the correct passages, but its answers sometimes contradict them. Which control is most directly aimed at catching this problem?
 
-- A. Using a contextual grounding check in Guardrails for Amazon Bedrock
+- A. Using a contextual grounding check in Amazon Bedrock Guardrails
 - B. Increasing top-k retrieval to the maximum
 - C. Shortening the chunk size to one word
 - D. Raising the temperature
@@ -4374,7 +3875,7 @@
 
 **Explanation:** Contextual grounding checks compare the response with the supplied source content and flag claims that are unsupported or contradictory. Higher temperature would make contradictions more likely.
 
-### D3-103
+### D3-094
 *Multiple Choice | Hard*
 
 **Question:** A team has only about 50 labeled examples and wants to improve output quality for a new task. What is the most sensible first step?
@@ -4388,7 +3889,7 @@
 
 **Explanation:** With very little data, few-shot prompting is the cheapest, fastest approach and avoids overfitting risks. Fine-tuning generally benefits from larger curated datasets.
 
-### D3-104
+### D3-095
 *True/False | Medium*
 
 **Question:** Using larger and larger chunk sizes always improves retrieval quality in a RAG system.
@@ -4400,7 +3901,7 @@
 
 **Explanation:** Very large chunks mix unrelated topics and dilute relevance, and they consume more of the context window. Chunk size should be tuned and evaluated.
 
-### D3-105
+### D3-096
 *True/False | Medium*
 
 **Question:** Prompt injection can originate from retrieved documents or web content, not only from the user's direct input.
@@ -4417,20 +3918,6 @@
 ## Domain 4: Guidelines for Responsible AI
 
 ### D4-001
-*Multiple Choice | Easy*
-
-**Question:** What does responsible AI refer to?
-
-- A. Only increasing accuracy
-- B. Practices for designing, developing, and using AI systems that are fair, safe, transparent, secure, and aligned with ethical and legal expectations
-- C. Only reducing model training cost
-- D. Only choosing the fastest hardware
-
-**Answer:** B
-
-**Explanation:** Responsible AI covers principles and processes that reduce harm and build trust across the entire AI lifecycle, not just technical performance.
-
-### D4-002
 *Multiple Choice | Medium*
 
 **Question:** Which list contains core dimensions of responsible AI as described by AWS?
@@ -4444,7 +3931,7 @@
 
 **Explanation:** AWS frames responsible AI around these dimensions. Each addresses a different class of risk, from biased outcomes to opaque decisions and unsafe behavior.
 
-### D4-003
+### D4-002
 *Multiple Choice | Easy*
 
 **Question:** What does the fairness dimension of responsible AI aim for?
@@ -4458,21 +3945,7 @@
 
 **Explanation:** Fairness considers the impact of AI on different stakeholder groups and works to prevent discriminatory outcomes.
 
-### D4-004
-*Multiple Choice | Easy*
-
-**Question:** What does explainability mean for an AI system?
-
-- A. Making the model larger
-- B. Reducing latency
-- C. Making the model open source
-- D. The ability to describe how and why a model produced a particular output in human-understandable terms
-
-**Answer:** D
-
-**Explanation:** Explainability builds trust and supports debugging and compliance by showing which inputs influenced a prediction.
-
-### D4-005
+### D4-003
 *Multiple Choice | Medium*
 
 **Question:** What does the privacy and security dimension emphasize?
@@ -4486,7 +3959,7 @@
 
 **Explanation:** It covers consent, data protection, and securing models and pipelines from theft and attacks.
 
-### D4-006
+### D4-004
 *Multiple Choice | Medium*
 
 **Question:** What does the safety dimension of responsible AI address?
@@ -4500,7 +3973,7 @@
 
 **Explanation:** Safety focuses on avoiding harmful behaviors such as dangerous advice, toxic content, or unsafe actions.
 
-### D4-007
+### D4-005
 *Multiple Choice | Medium*
 
 **Question:** What does controllability refer to in responsible AI?
@@ -4514,7 +3987,7 @@
 
 **Explanation:** Controllability ensures humans can align, correct, or stop systems when outputs or behaviors go wrong.
 
-### D4-008
+### D4-006
 *Multiple Choice | Medium*
 
 **Question:** What do veracity and robustness mean in responsible AI?
@@ -4528,7 +4001,7 @@
 
 **Explanation:** Veracity concerns truthfulness and correctness. Robustness means stable behavior despite noise, edge cases, or attacks.
 
-### D4-009
+### D4-007
 *Multiple Choice | Medium*
 
 **Question:** What does the governance dimension cover?
@@ -4542,7 +4015,7 @@
 
 **Explanation:** Governance defines who is responsible, how risks are assessed, what standards apply, and how decisions are audited.
 
-### D4-010
+### D4-008
 *Multiple Choice | Medium*
 
 **Question:** What does transparency mean for responsible AI?
@@ -4556,7 +4029,7 @@
 
 **Explanation:** Transparency allows users and regulators to understand what an AI system does and what its limitations are, for example through documentation such as model cards.
 
-### D4-011
+### D4-009
 *Multiple Choice | Easy*
 
 **Question:** In machine learning, what is bias?
@@ -4570,7 +4043,7 @@
 
 **Explanation:** Bias in data, models, or processes can produce discriminatory or inaccurate results for some groups.
 
-### D4-012
+### D4-010
 *Multiple Choice | Medium*
 
 **Question:** A training set for a voice assistant contains mostly recordings from one accent. This is an example of which kind of bias?
@@ -4584,7 +4057,7 @@
 
 **Explanation:** If the training sample does not represent the population the system will serve, performance will be poorer for underrepresented groups.
 
-### D4-013
+### D4-011
 *Multiple Choice | Medium*
 
 **Question:** A sensor consistently records values that are slightly inaccurate for one group of devices, skewing model inputs. Which type of bias is this?
@@ -4598,7 +4071,7 @@
 
 **Explanation:** Measurement bias arises when the data collection method or instrument systematically distorts values.
 
-### D4-014
+### D4-012
 *Multiple Choice | Medium*
 
 **Question:** A hiring model trained on past decisions reproduces a historical preference for certain candidates. Which bias is most evident?
@@ -4612,7 +4085,7 @@
 
 **Explanation:** Data that reflects past prejudices teaches models to replicate them, even when the data is accurate.
 
-### D4-015
+### D4-013
 *Multiple Choice | Medium*
 
 **Question:** What is confirmation bias in the context of building AI?
@@ -4626,7 +4099,7 @@
 
 **Explanation:** Teams may unconsciously select or interpret data to confirm expectations, which skews models and evaluation.
 
-### D4-016
+### D4-014
 *Multiple Choice | Medium*
 
 **Question:** What is algorithmic bias?
@@ -4640,7 +4113,7 @@
 
 **Explanation:** Even with balanced data, choices such as the loss function, features, or thresholds can systematically disadvantage groups.
 
-### D4-017
+### D4-015
 *Multiple Choice | Medium*
 
 **Question:** What is selection bias?
@@ -4654,7 +4127,7 @@
 
 **Explanation:** Non-random selection, such as only surveying volunteers, makes the data unrepresentative.
 
-### D4-018
+### D4-016
 *Multiple Choice | Medium*
 
 **Question:** Which dataset characteristics help promote fairness and reduce bias?
@@ -4668,7 +4141,7 @@
 
 **Explanation:** Datasets should represent the populations affected, be carefully sourced and documented, and be audited for imbalance.
 
-### D4-019
+### D4-017
 *Multiple Choice | Medium*
 
 **Question:** What can result from biased AI outputs?
@@ -4682,7 +4155,7 @@
 
 **Explanation:** Biased systems can violate regulations, harm people, and damage brand trust.
 
-### D4-020
+### D4-018
 *Multiple Choice | Medium*
 
 **Question:** Which SageMaker feature can detect bias in datasets before training?
@@ -4696,7 +4169,7 @@
 
 **Explanation:** Clarify computes pre-training bias metrics, such as class imbalance, across facets (sensitive attributes) in the data.
 
-### D4-021
+### D4-019
 *Multiple Choice | Medium*
 
 **Question:** Which are examples of bias metrics that SageMaker Clarify can report?
@@ -4710,7 +4183,7 @@
 
 **Explanation:** Clarify provides pre- and post-training bias metrics that quantify differences in outcomes or representation across groups.
 
-### D4-022
+### D4-020
 *Multiple Choice | Medium*
 
 **Question:** Which approach does SageMaker Clarify use to explain individual predictions?
@@ -4724,7 +4197,7 @@
 
 **Explanation:** SHAP-based attributions estimate how much each feature contributed to a prediction, which supports transparency and debugging.
 
-### D4-023
+### D4-021
 *Multiple Choice | Medium*
 
 **Question:** What do partial dependence plots (PDPs) show?
@@ -4738,7 +4211,7 @@
 
 **Explanation:** PDPs help interpret how a feature influences predictions on average, which supports explainability.
 
-### D4-024
+### D4-022
 *Multiple Choice | Medium*
 
 **Question:** Which service can monitor deployed models for bias drift and feature attribution drift over time?
@@ -4752,7 +4225,7 @@
 
 **Explanation:** Model Monitor integrates with Clarify to detect changes in bias metrics and feature importance after deployment.
 
-### D4-025
+### D4-023
 *Multiple Choice | Medium*
 
 **Question:** What does Amazon Augmented AI (A2I) provide for responsible AI?
@@ -4766,7 +4239,7 @@
 
 **Explanation:** A2I routes low-confidence or sampled predictions to human reviewers, which supports controllability and safety.
 
-### D4-026
+### D4-024
 *Multiple Choice | Medium*
 
 **Question:** What is the purpose of SageMaker Model Cards?
@@ -4780,21 +4253,7 @@
 
 **Explanation:** Model Cards centralize key model information for stakeholders and audits.
 
-### D4-027
-*Multiple Choice | Medium*
-
-**Question:** What are AWS AI Service Cards?
-
-- A. Billing statements
-- B. Hardware catalogs
-- C. Network diagrams
-- D. Transparency documentation for AWS AI services describing intended use cases, limitations, design choices, and responsible AI best practices
-
-**Answer:** D
-
-**Explanation:** Service cards help customers understand how AWS services such as Rekognition or Titan models should and should not be used.
-
-### D4-028
+### D4-025
 *Multiple Choice | Medium*
 
 **Question:** Which Bedrock capability helps prevent toxic or harmful content in model inputs and outputs?
@@ -4802,13 +4261,13 @@
 - A. Amazon Macie
 - B. AWS CloudFormation
 - C. Amazon SQS
-- D. Guardrails for Amazon Bedrock
+- D. Amazon Bedrock Guardrails
 
 **Answer:** D
 
 **Explanation:** Guardrails provide configurable filters for categories such as hate, insults, sexual content, violence, misconduct, and prompt attacks, plus denied topics and PII filters.
 
-### D4-029
+### D4-026
 *Multiple Choice | Medium*
 
 **Question:** What can Amazon Bedrock Model Evaluation help assess for responsible AI?
@@ -4822,7 +4281,7 @@
 
 **Explanation:** Evaluation jobs can run built-in datasets and human review to test for toxicity, stereotyping, and other responsible AI dimensions.
 
-### D4-030
+### D4-027
 *Multiple Choice | Medium*
 
 **Question:** What is the difference between an interpretable model and an explainable model?
@@ -4836,7 +4295,7 @@
 
 **Explanation:** Linear models and small trees are interpretable by construction. For deep models, tools such as SHAP provide approximate explanations.
 
-### D4-031
+### D4-028
 *Multiple Choice | Medium*
 
 **Question:** Which describes a trade-off in responsible AI design?
@@ -4850,21 +4309,7 @@
 
 **Explanation:** Teams must balance competing goals such as performance versus explainability, and safety versus utility, based on risk and context.
 
-### D4-032
-*Multiple Choice | Medium*
-
-**Question:** Which principles guide human-centered design for explainable AI?
-
-- A. Maximize automation without review
-- B. Design for amplified decision-making, unbiased decision-making, and human and AI learning
-- C. Replace all humans
-- D. Hide decisions from users
-
-**Answer:** B
-
-**Explanation:** Human-centered design supports human judgment by presenting clear explanations and reducing bias, and it creates feedback loops for improvement.
-
-### D4-033
+### D4-029
 *Multiple Choice | Medium*
 
 **Question:** Which is a legal or business risk of generative AI?
@@ -4878,7 +4323,7 @@
 
 **Explanation:** Generative AI can reproduce protected content, give inaccurate information, or produce biased or harmful outputs, which creates legal and reputational exposure.
 
-### D4-034
+### D4-030
 *Multiple Choice | Medium*
 
 **Question:** What is toxicity in generative AI outputs?
@@ -4892,7 +4337,7 @@
 
 **Explanation:** Toxicity can appear when models mimic harmful patterns in training data. It is mitigated with curation, alignment, guardrails, and monitoring.
 
-### D4-035
+### D4-031
 *Multiple Choice | Medium*
 
 **Question:** Which approach best mitigates hallucinations in a customer-facing generative AI app?
@@ -4906,7 +4351,7 @@
 
 **Explanation:** Multiple layers of mitigation reduce unsupported claims, since no single technique eliminates hallucinations.
 
-### D4-036
+### D4-032
 *Multiple Choice | Medium*
 
 **Question:** What is data poisoning?
@@ -4920,7 +4365,7 @@
 
 **Explanation:** Poisoned data can insert backdoors or bias. Defenses include data provenance, validation, and access controls.
 
-### D4-037
+### D4-033
 *Multiple Choice | Medium*
 
 **Question:** Which consideration is important when using open-source foundation models?
@@ -4934,7 +4379,7 @@
 
 **Explanation:** Open models come with specific license terms and varying transparency about data, so legal and responsible AI reviews are still necessary.
 
-### D4-038
+### D4-034
 *Multiple Choice | Medium*
 
 **Question:** Which is an environmental consideration in responsible AI?
@@ -4948,7 +4393,7 @@
 
 **Explanation:** Sustainability can be improved by right-sizing models, using efficient accelerators, and reusing pretrained models rather than training from scratch.
 
-### D4-039
+### D4-035
 *Multiple Choice | Hard*
 
 **Question:** A facial analysis model has much higher error rates for people with darker skin tones. What is the most likely root cause?
@@ -4962,7 +4407,7 @@
 
 **Explanation:** Underrepresentation in training data is a common cause of uneven performance. Improving data diversity and evaluating by subgroup are key remedies.
 
-### D4-040
+### D4-036
 *Multiple Choice | Hard*
 
 **Question:** A resume-screening model trained on past hiring data penalizes candidates from certain groups. Which type of bias does this most likely reflect?
@@ -4976,7 +4421,7 @@
 
 **Explanation:** Past decisions embed societal preferences, and the model learns to replicate them.
 
-### D4-041
+### D4-037
 *Multiple Choice | Hard*
 
 **Question:** A lender must tell applicants why their loan was denied. Which capability is most relevant?
@@ -4990,7 +4435,7 @@
 
 **Explanation:** Explainability tools show which factors most influenced a decision, which supports transparency and regulatory requirements.
 
-### D4-042
+### D4-038
 *Multiple Choice | Hard*
 
 **Question:** A customer-support chatbot occasionally produces offensive replies. Which controls are most appropriate?
@@ -5004,7 +4449,7 @@
 
 **Explanation:** Filters block harmful content, while monitoring and escalation address residual failures.
 
-### D4-043
+### D4-039
 *Multiple Choice | Hard*
 
 **Question:** A clinical decision-support model has low confidence on certain cases. Which approach best supports safety?
@@ -5018,7 +4463,7 @@
 
 **Explanation:** Human review for uncertain, high-stakes cases provides oversight and reduces the risk of harm.
 
-### D4-044
+### D4-040
 *Multiple Choice | Hard*
 
 **Question:** A chatbot confidently tells customers about a refund policy that does not exist. Which issue is this, and what is a primary mitigation?
@@ -5032,7 +4477,7 @@
 
 **Explanation:** The model fabricated plausible but false content. Grounding in trusted sources and checks reduces such errors.
 
-### D4-045
+### D4-041
 *Multiple Choice | Hard*
 
 **Question:** An image-generation feature produces output that closely imitates a living artist's protected work. Which risk is most directly raised?
@@ -5046,7 +4491,7 @@
 
 **Explanation:** Generative models may reproduce protected styles or content, which creates copyright risk and requires policy, filtering, and legal review.
 
-### D4-046
+### D4-042
 *Multiple Choice | Medium*
 
 **Question:** Which fairness metric compares the proportion of positive outcomes across groups?
@@ -5060,7 +4505,7 @@
 
 **Explanation:** Demographic parity checks whether groups receive positive outcomes at similar rates. Clarify reports related metrics such as difference in proportions of labels.
 
-### D4-047
+### D4-043
 *Multiple Choice | Medium*
 
 **Question:** Which technique can help reduce bias in a training dataset?
@@ -5074,7 +4519,7 @@
 
 **Explanation:** Balancing representation and improving data coverage mitigate skewed learning.
 
-### D4-048
+### D4-044
 *Multiple Choice | Medium*
 
 **Question:** Why is a diverse team valuable in AI development?
@@ -5088,7 +4533,7 @@
 
 **Explanation:** Inclusive teams improve problem framing, data review, and risk identification.
 
-### D4-049
+### D4-045
 *Multiple Choice | Medium*
 
 **Question:** What should transparency documentation for an AI system typically include?
@@ -5102,7 +4547,7 @@
 
 **Explanation:** Documentation allows stakeholders to judge whether a system is appropriate for a given use and to understand its limits.
 
-### D4-050
+### D4-046
 *Multiple Choice | Medium*
 
 **Question:** Why should users be informed when they interact with an AI system or AI-generated content?
@@ -5116,7 +4561,7 @@
 
 **Explanation:** Disclosure lets people calibrate their reliance on outputs and meets many regulatory expectations.
 
-### D4-051
+### D4-047
 *Multiple Choice | Medium*
 
 **Question:** What is automation bias (overreliance)?
@@ -5130,7 +4575,7 @@
 
 **Explanation:** Overreliance can lead to uncritical acceptance of model outputs, which is why human oversight and uncertainty communication matter.
 
-### D4-052
+### D4-048
 *Multiple Choice | Medium*
 
 **Question:** What is red teaming in the context of AI?
@@ -5144,7 +4589,7 @@
 
 **Explanation:** Red teams simulate attackers and misuse, such as jailbreaks, to find weaknesses before real users do.
 
-### D4-053
+### D4-049
 *Multiple Choice | Medium*
 
 **Question:** What is an adversarial example?
@@ -5158,7 +4603,7 @@
 
 **Explanation:** Small perturbations can mislead models. Robustness testing and adversarial training improve resilience.
 
-### D4-054
+### D4-050
 *Multiple Choice | Medium*
 
 **Question:** What does robustness mean for an AI model?
@@ -5172,7 +4617,7 @@
 
 **Explanation:** A robust system degrades gracefully and resists manipulation.
 
-### D4-055
+### D4-051
 *Multiple Choice | Medium*
 
 **Question:** Why is continuous monitoring part of responsible AI?
@@ -5186,7 +4631,7 @@
 
 **Explanation:** Real-world conditions change. Monitoring detects drift, bias drift, and emerging harms so teams can respond.
 
-### D4-056
+### D4-052
 *Multiple Choice | Medium*
 
 **Question:** What is a feedback loop that can amplify bias?
@@ -5200,7 +4645,7 @@
 
 **Explanation:** When predictions shape the data collected next, small biases can compound over time.
 
-### D4-057
+### D4-053
 *Multiple Choice | Medium*
 
 **Question:** Why is explainability particularly challenging for large language models?
@@ -5214,19 +4659,7 @@
 
 **Explanation:** The scale and opacity of LLMs make attribution difficult. Techniques such as citations, grounding, and reasoning traces provide partial transparency.
 
-### D4-058
-*True/False | Medium*
-
-**Question:** Removing a sensitive attribute such as gender from the dataset guarantees that the model will not be biased with respect to that attribute.
-
-- A. True
-- B. False
-
-**Answer:** False
-
-**Explanation:** Other features can act as proxies, such as zip code or purchase history, and still encode the sensitive attribute. Bias must be measured, not just assumed away.
-
-### D4-059
+### D4-054
 *True/False | Medium*
 
 **Question:** A model can have high overall accuracy yet perform poorly for a specific subgroup.
@@ -5238,7 +4671,7 @@
 
 **Explanation:** Aggregate metrics can hide subgroup disparities, so evaluation should be disaggregated across relevant groups.
 
-### D4-060
+### D4-055
 *True/False | Medium*
 
 **Question:** If a model is explainable, governance processes are no longer necessary.
@@ -5250,7 +4683,7 @@
 
 **Explanation:** Explainability is one tool among many. Governance covers policies, accountability, risk assessment, and compliance across the lifecycle.
 
-### D4-061
+### D4-056
 *True/False | Medium*
 
 **Question:** Human oversight is a component of many responsible AI practices, especially for high-risk decisions.
@@ -5262,7 +4695,7 @@
 
 **Explanation:** Human-in-the-loop review and the ability to override or stop systems support safety and accountability.
 
-### D4-062
+### D4-057
 *True/False | Medium*
 
 **Question:** Responsible AI practices only need to be applied right before deployment.
@@ -5274,7 +4707,7 @@
 
 **Explanation:** They should be integrated throughout the lifecycle: design, data collection, training, evaluation, deployment, and monitoring.
 
-### D4-063
+### D4-058
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO actions help mitigate dataset bias? (Select TWO.)
@@ -5289,7 +4722,7 @@
 
 **Explanation:** Improving representation and balancing the data reduce skew. Ignoring subgroups or documentation worsens the risk.
 
-### D4-064
+### D4-059
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO capabilities does SageMaker Clarify provide? (Select TWO.)
@@ -5304,7 +4737,7 @@
 
 **Explanation:** Clarify supports bias detection and explainability. Labeling is Ground Truth, and edge compilation is Neo.
 
-### D4-065
+### D4-060
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO are risks commonly associated with generative AI outputs? (Select TWO.)
@@ -5319,22 +4752,7 @@
 
 **Explanation:** Generative models can fabricate facts and produce harmful or biased content, which makes mitigation and monitoring essential.
 
-### D4-066
-*Multiple Response (Select TWO) | Hard*
-
-**Question:** Which TWO practices best support transparency? (Select TWO.)
-
-- A. Concealing known limitations
-- B. Documenting data sources and evaluation results
-- C. Deleting audit trails
-- D. Avoiding any disclosure that content is AI-generated
-- E. Publishing model cards with intended use and limitations
-
-**Answer:** B, E
-
-**Explanation:** Clear documentation of what the system does, how it was built, and where it fails lets stakeholders make informed decisions.
-
-### D4-067
+### D4-061
 *Multiple Choice | Medium*
 
 **Question:** Which Guardrails content filter categories are available for harmful content?
@@ -5348,7 +4766,7 @@
 
 **Explanation:** Guardrails offers configurable strengths for these categories on both inputs and outputs.
 
-### D4-068
+### D4-062
 *Multiple Choice | Medium*
 
 **Question:** What does adjusting the strength of a Guardrails content filter do?
@@ -5362,7 +4780,7 @@
 
 **Explanation:** Higher strength blocks more borderline content. The right level depends on the application's audience and risk.
 
-### D4-069
+### D4-063
 *Multiple Choice | Medium*
 
 **Question:** Which Guardrails feature can block specific profanity or custom phrases?
@@ -5376,7 +4794,7 @@
 
 **Explanation:** Word filters let you define words or phrases to block, such as profanity or competitor names.
 
-### D4-070
+### D4-064
 *Multiple Choice | Medium*
 
 **Question:** Which capability supports privacy by detecting and masking personal information in prompts and responses?
@@ -5390,7 +4808,7 @@
 
 **Explanation:** PII filters can detect entities such as names, emails, and account numbers and either block or mask them.
 
-### D4-071
+### D4-065
 *Multiple Choice | Medium*
 
 **Question:** Which principle supports privacy by limiting what is collected and retained?
@@ -5404,7 +4822,7 @@
 
 **Explanation:** Collect and keep only what is needed for the purpose, which reduces exposure if data is compromised.
 
-### D4-072
+### D4-066
 *Multiple Choice | Medium*
 
 **Question:** Why is obtaining proper consent and ensuring ethical sourcing of training data important?
@@ -5418,7 +4836,7 @@
 
 **Explanation:** Data should be collected lawfully and ethically, with attention to rights, licensing, and privacy.
 
-### D4-073
+### D4-067
 *Multiple Choice | Medium*
 
 **Question:** What is the purpose of an AI impact assessment before deployment?
@@ -5432,21 +4850,7 @@
 
 **Explanation:** Impact assessments identify risks early, which informs design choices, controls, and go/no-go decisions.
 
-### D4-074
-*Multiple Choice | Medium*
-
-**Question:** Which information is typically recorded in a model card?
-
-- A. Only the S3 path
-- B. Only the VPC ID
-- C. Intended use, training data summary, evaluation results, limitations, and risk considerations
-- D. Only the billing ID
-
-**Answer:** C
-
-**Explanation:** Model cards communicate how and where a model should be used, plus known limitations.
-
-### D4-075
+### D4-068
 *Multiple Choice | Medium*
 
 **Question:** Why should stakeholders, including affected users, be engaged during AI design?
@@ -5460,7 +4864,7 @@
 
 **Explanation:** Participatory design improves relevance and reduces unforeseen harm.
 
-### D4-076
+### D4-069
 *Multiple Choice | Medium*
 
 **Question:** What should be evaluated when selecting a model from a responsible AI perspective?
@@ -5474,7 +4878,7 @@
 
 **Explanation:** Responsible selection looks beyond raw capability to risk, documentation, and legal terms.
 
-### D4-077
+### D4-070
 *Multiple Choice | Medium*
 
 **Question:** What is a typical trade-off between open-source and proprietary models related to transparency?
@@ -5488,7 +4892,7 @@
 
 **Explanation:** The right choice depends on the need for inspection and customization versus managed safety features and support.
 
-### D4-078
+### D4-071
 *Multiple Choice | Medium*
 
 **Question:** What does accountability mean in AI governance?
@@ -5502,7 +4906,7 @@
 
 **Explanation:** Defined roles and audit trails make it possible to answer for the system's behavior and to correct issues.
 
-### D4-079
+### D4-072
 *Multiple Choice | Medium*
 
 **Question:** What can SageMaker Model Monitor detect in production that is relevant to responsible AI?
@@ -5516,7 +4920,7 @@
 
 **Explanation:** Ongoing checks identify when a model's behavior or fairness characteristics deviate from baselines.
 
-### D4-080
+### D4-073
 *Multiple Choice | Medium*
 
 **Question:** What is model alignment?
@@ -5530,7 +4934,7 @@
 
 **Explanation:** Alignment techniques steer models toward helpful, honest, and harmless behavior.
 
-### D4-081
+### D4-074
 *Multiple Choice | Medium*
 
 **Question:** Why should evaluation datasets be inclusive and representative?
@@ -5544,7 +4948,7 @@
 
 **Explanation:** Evaluating only on a narrow population can hide failures that affect underrepresented users.
 
-### D4-082
+### D4-075
 *Multiple Choice | Medium*
 
 **Question:** How can annotator bias be reduced when labeling data?
@@ -5558,7 +4962,7 @@
 
 **Explanation:** Diverse workforces and multi-annotator consensus reduce idiosyncratic judgments. Ground Truth supports these workflows.
 
-### D4-083
+### D4-076
 *Multiple Choice | Medium*
 
 **Question:** What is differential privacy?
@@ -5572,7 +4976,7 @@
 
 **Explanation:** Differential privacy offers mathematical guarantees that the presence or absence of one person's data has limited influence on results.
 
-### D4-084
+### D4-077
 *Multiple Choice | Medium*
 
 **Question:** How can synthetic data help with responsible AI?
@@ -5586,7 +4990,7 @@
 
 **Explanation:** Synthetic data is a useful tool but needs quality and bias checks.
 
-### D4-085
+### D4-078
 *Multiple Choice | Medium*
 
 **Question:** Which technique can estimate local explanations of individual model predictions by approximating the model near a data point?
@@ -5600,7 +5004,7 @@
 
 **Explanation:** LIME fits a simple interpretable model around a prediction to explain it, and it is model-agnostic.
 
-### D4-086
+### D4-079
 *Multiple Choice | Medium*
 
 **Question:** Which of the following is an inherently interpretable model type?
@@ -5614,7 +5018,7 @@
 
 **Explanation:** The structure of trees and linear models can be inspected directly to understand how predictions are made.
 
-### D4-087
+### D4-080
 *Multiple Choice | Medium*
 
 **Question:** What does feature importance help explain?
@@ -5628,7 +5032,7 @@
 
 **Explanation:** It supports transparency and debugging by highlighting influential variables, which can also reveal proxies for sensitive attributes.
 
-### D4-088
+### D4-081
 *Multiple Choice | Medium*
 
 **Question:** How does the Amazon Titan Image Generator support transparency regarding AI-generated images?
@@ -5642,7 +5046,7 @@
 
 **Explanation:** Watermarking helps trace the origin of content and reduces misinformation risk.
 
-### D4-089
+### D4-082
 *Multiple Choice | Medium*
 
 **Question:** Which risk is associated with deepfakes and synthetic media?
@@ -5656,7 +5060,7 @@
 
 **Explanation:** Realistic synthetic media can mislead or defraud, so provenance and watermarking, and detection and policy controls, are important.
 
-### D4-090
+### D4-083
 *Multiple Choice | Medium*
 
 **Question:** For a customer-facing chatbot handling sensitive issues, which design supports controllability and safety?
@@ -5670,7 +5074,7 @@
 
 **Explanation:** Human handoff ensures that complex or high-risk cases get appropriate care.
 
-### D4-091
+### D4-084
 *Multiple Choice | Medium*
 
 **Question:** What does the safety dimension aim to prevent?
@@ -5684,7 +5088,7 @@
 
 **Explanation:** Safety work reduces the chance that systems cause physical, psychological, or societal harm.
 
-### D4-092
+### D4-085
 *Multiple Choice | Medium*
 
 **Question:** Which of the following is NOT a bias mitigation technique?
@@ -5698,7 +5102,7 @@
 
 **Explanation:** Ignoring subgroups exacerbates bias. The other options are accepted mitigation or detection practices.
 
-### D4-093
+### D4-086
 *Multiple Choice | Medium*
 
 **Question:** What does the veracity dimension emphasize?
@@ -5712,7 +5116,7 @@
 
 **Explanation:** Veracity concerns that outputs are accurate and reliable, which is why grounding, evaluation, and verification matter.
 
-### D4-094
+### D4-087
 *Multiple Choice | Medium*
 
 **Question:** Why should high-stakes decisions, such as loan denials or medical triage, include human review?
@@ -5726,7 +5130,7 @@
 
 **Explanation:** Humans provide judgment, context, and recourse, and they are essential where errors cause significant harm.
 
-### D4-095
+### D4-088
 *Multiple Choice | Medium*
 
 **Question:** What problem can arise when a classification dataset has heavily imbalanced classes?
@@ -5740,7 +5144,7 @@
 
 **Explanation:** Without mitigation, the model can learn to favor the majority class, which hurts minority groups or rare events.
 
-### D4-096
+### D4-089
 *Multiple Choice | Medium*
 
 **Question:** How do AWS AI Service Cards differ from SageMaker Model Cards?
@@ -5754,7 +5158,7 @@
 
 **Explanation:** Service Cards describe AWS-provided services, while Model Cards let customers record details for models they build or fine-tune.
 
-### D4-097
+### D4-090
 *Multiple Choice | Medium*
 
 **Question:** At which stages of the AI lifecycle should responsible AI be considered?
@@ -5768,7 +5172,7 @@
 
 **Explanation:** Responsible AI is a continuous practice integrated at every stage, not a one-time review.
 
-### D4-098
+### D4-091
 *Multiple Choice | Medium*
 
 **Question:** What can Amazon Bedrock human evaluation workflows use?
@@ -5782,7 +5186,7 @@
 
 **Explanation:** Human evaluation jobs collect ratings from reviewers to complement automatic metrics.
 
-### D4-099
+### D4-092
 *Multiple Choice | Medium*
 
 **Question:** Which ethical consideration applies when using personal content to train or fine-tune models?
@@ -5796,7 +5200,7 @@
 
 **Explanation:** Teams must ensure they have the right to use data and that it is handled lawfully and ethically.
 
-### D4-100
+### D4-093
 *Multiple Choice | Hard*
 
 **Question:** A hospital considers a highly accurate but opaque deep model versus a slightly less accurate, interpretable model for diagnosis support. Which factor should weigh most in the decision?
@@ -5810,7 +5214,7 @@
 
 **Explanation:** In high-stakes domains, explainability and accountability may outweigh small accuracy gains. The trade-off should be decided based on risk.
 
-### D4-101
+### D4-094
 *True/False | Easy*
 
 **Question:** Biased training data can lead to unfair outcomes in a model's predictions.
@@ -5822,7 +5226,7 @@
 
 **Explanation:** Models learn patterns from their data, including skewed representation or historical prejudice, and can reproduce or amplify those patterns in their outputs.
 
-### D4-102
+### D4-095
 *True/False | Easy*
 
 **Question:** Transparency in responsible AI includes openly communicating a system's capabilities, limitations, and intended use.
@@ -5834,7 +5238,7 @@
 
 **Explanation:** Clear communication, such as through model cards and service cards, lets stakeholders judge whether a system is appropriate and trustworthy.
 
-### D4-103
+### D4-096
 *Multiple Choice | Easy*
 
 **Question:** Which responsible AI dimension focuses on being able to describe how a model arrived at its output?
@@ -5848,7 +5252,7 @@
 
 **Explanation:** Explainability provides human-understandable reasons for predictions, which supports trust, debugging, and regulatory compliance.
 
-### D4-104
+### D4-097
 *Multiple Choice | Hard*
 
 **Question:** A loan model has similar overall accuracy for two demographic groups, yet it approves equally qualified applicants from one group at a much lower rate. Which concern does this best illustrate?
@@ -5862,7 +5266,7 @@
 
 **Explanation:** Overall accuracy can hide unequal treatment. Group-level metrics, such as differences in approval rates, reveal fairness gaps that must be investigated and mitigated.
 
-### D4-105
+### D4-098
 *True/False | Medium*
 
 **Question:** Because a very large model is highly capable, its generative AI outputs can safely be used for high-stakes decisions without human review.
@@ -5879,20 +5283,6 @@
 ## Domain 5: Security, Compliance, and Governance
 
 ### D5-001
-*Multiple Choice | Easy*
-
-**Question:** Under the AWS shared responsibility model, what is AWS responsible for?
-
-- A. Configuring customer IAM policies
-- B. Writing customer prompts
-- C. Classifying customer data
-- D. Security of the cloud: the physical facilities, hardware, and foundational services infrastructure
-
-**Answer:** D
-
-**Explanation:** AWS secures the infrastructure that runs its services. Customers are responsible for security in the cloud, including data, identity and access management, and configuration.
-
-### D5-002
 *Multiple Choice | Medium*
 
 **Question:** When using Amazon Bedrock, which of the following is the customer's responsibility under the shared responsibility model?
@@ -5906,21 +5296,7 @@
 
 **Explanation:** AWS manages the underlying service infrastructure, while customers control who can invoke models, how data is handled, and how applications are secured.
 
-### D5-003
-*Multiple Choice | Easy*
-
-**Question:** What is the primary purpose of AWS Identity and Access Management (IAM)?
-
-- A. To translate text
-- B. To securely control who is authenticated and authorized to access AWS resources
-- C. To store embeddings
-- D. To scan code for vulnerabilities
-
-**Answer:** B
-
-**Explanation:** IAM manages identities (users, groups, roles) and the permissions (policies) that determine what actions they can perform.
-
-### D5-004
+### D5-002
 *Multiple Choice | Easy*
 
 **Question:** What does the principle of least privilege mean?
@@ -5934,7 +5310,7 @@
 
 **Explanation:** Limiting permissions reduces the blast radius of mistakes or compromised credentials.
 
-### D5-005
+### D5-003
 *Multiple Choice | Medium*
 
 **Question:** Why are IAM roles generally preferred over long-term access keys for applications running on AWS?
@@ -5948,21 +5324,7 @@
 
 **Explanation:** Temporary credentials reduce the risk of leaked, long-lived secrets.
 
-### D5-006
-*Multiple Choice | Medium*
-
-**Question:** How can an organization restrict a role so it can invoke only a specific foundation model in Amazon Bedrock?
-
-- A. Turn off CloudTrail
-- B. Rename the role
-- C. Increase the model temperature
-- D. Use an IAM policy that allows bedrock:InvokeModel only on the specific model's resource ARN
-
-**Answer:** D
-
-**Explanation:** IAM policies can scope actions to specific resources, which enforces least privilege on model access.
-
-### D5-007
+### D5-004
 *Multiple Choice | Medium*
 
 **Question:** What additional protection does multi-factor authentication (MFA) provide?
@@ -5976,7 +5338,7 @@
 
 **Explanation:** MFA helps prevent unauthorized access even if a password is compromised.
 
-### D5-008
+### D5-005
 *Multiple Choice | Medium*
 
 **Question:** What are service control policies (SCPs) in AWS Organizations used for?
@@ -5990,7 +5352,7 @@
 
 **Explanation:** SCPs define the upper limit of what accounts can do, for example denying use of unapproved AI services or Regions, regardless of IAM policies.
 
-### D5-009
+### D5-006
 *Multiple Choice | Medium*
 
 **Question:** Which service is used to create and control encryption keys for encrypting data at rest across AWS services?
@@ -6004,7 +5366,7 @@
 
 **Explanation:** KMS manages cryptographic keys and integrates with S3, SageMaker, Bedrock, and many other services.
 
-### D5-010
+### D5-007
 *Multiple Choice | Medium*
 
 **Question:** Which mechanism protects data as it travels between a client and an AWS service endpoint?
@@ -6018,7 +5380,7 @@
 
 **Explanation:** TLS encrypts traffic on the network so data cannot be read if intercepted.
 
-### D5-011
+### D5-008
 *Multiple Choice | Medium*
 
 **Question:** Why might a company choose customer managed KMS keys instead of AWS managed keys?
@@ -6032,7 +5394,7 @@
 
 **Explanation:** Customer managed keys give explicit control and audit capability, which is often required for compliance.
 
-### D5-012
+### D5-009
 *Multiple Choice | Medium*
 
 **Question:** How can customers encrypt the artifacts of a custom model created in Amazon Bedrock?
@@ -6046,7 +5408,7 @@
 
 **Explanation:** Bedrock supports KMS encryption for customization jobs and custom model artifacts, as well as for stored data such as knowledge base content.
 
-### D5-013
+### D5-010
 *Multiple Choice | Medium*
 
 **Question:** What do AWS PrivateLink and VPC interface endpoints enable for Amazon Bedrock?
@@ -6060,7 +5422,7 @@
 
 **Explanation:** Interface endpoints keep traffic on the AWS network, which helps meet security and compliance requirements.
 
-### D5-014
+### D5-011
 *Multiple Choice | Medium*
 
 **Question:** Which AWS network controls restrict traffic to and from resources within a VPC?
@@ -6074,21 +5436,7 @@
 
 **Explanation:** Security groups are stateful instance-level firewalls, and network ACLs are stateless subnet-level controls.
 
-### D5-015
-*Multiple Choice | Medium*
-
-**Question:** Which service uses machine learning to discover and protect sensitive data, such as PII, in Amazon S3?
-
-- A. Amazon Lex
-- B. AWS Shield
-- C. Amazon Macie
-- D. Amazon Polly
-
-**Answer:** C
-
-**Explanation:** Macie scans S3 buckets and classifies sensitive data, which helps prevent PII from leaking into training or retrieval datasets.
-
-### D5-016
+### D5-012
 *Multiple Choice | Medium*
 
 **Question:** Which service records API calls and account activity for auditing and governance, including calls to Amazon Bedrock?
@@ -6102,7 +5450,7 @@
 
 **Explanation:** CloudTrail logs who called which API, when, and from where, which supports audits and security investigations.
 
-### D5-017
+### D5-013
 *Multiple Choice | Medium*
 
 **Question:** Which service collects metrics and logs, and sets alarms, to monitor applications and models?
@@ -6116,7 +5464,7 @@
 
 **Explanation:** CloudWatch provides observability for operational and security monitoring, including Bedrock and SageMaker metrics.
 
-### D5-018
+### D5-014
 *Multiple Choice | Medium*
 
 **Question:** What does Amazon Bedrock model invocation logging provide?
@@ -6130,7 +5478,7 @@
 
 **Explanation:** Invocation logging helps with auditing, troubleshooting, and compliance. Logs themselves must be protected because they can contain sensitive content.
 
-### D5-019
+### D5-015
 *Multiple Choice | Medium*
 
 **Question:** What does AWS Config do?
@@ -6144,7 +5492,7 @@
 
 **Explanation:** Config continuously assesses whether resources, such as S3 buckets or encryption settings, meet desired configurations.
 
-### D5-020
+### D5-016
 *Multiple Choice | Medium*
 
 **Question:** What does AWS Audit Manager help with?
@@ -6158,7 +5506,7 @@
 
 **Explanation:** Audit Manager automates evidence collection and maps it to controls, which simplifies audit preparation.
 
-### D5-021
+### D5-017
 *Multiple Choice | Medium*
 
 **Question:** What is AWS Artifact?
@@ -6172,7 +5520,7 @@
 
 **Explanation:** Artifact provides audit artifacts such as SOC and ISO reports and lets customers accept agreements such as business associate addendums.
 
-### D5-022
+### D5-018
 *Multiple Choice | Medium*
 
 **Question:** What does Amazon Inspector do?
@@ -6186,7 +5534,7 @@
 
 **Explanation:** Inspector provides continuous vulnerability management and helps secure the compute used for ML and generative AI applications.
 
-### D5-023
+### D5-019
 *Multiple Choice | Medium*
 
 **Question:** What does AWS Trusted Advisor provide?
@@ -6200,7 +5548,7 @@
 
 **Explanation:** Trusted Advisor inspects the environment against best practices and flags issues such as open security groups.
 
-### D5-024
+### D5-020
 *Multiple Choice | Medium*
 
 **Question:** Which service helps store, rotate, and retrieve secrets such as API keys and database credentials?
@@ -6214,7 +5562,7 @@
 
 **Explanation:** Secrets Manager avoids hard-coding credentials and supports automatic rotation.
 
-### D5-025
+### D5-021
 *Multiple Choice | Medium*
 
 **Question:** Which service provides intelligent threat detection by analyzing logs and activity for malicious behavior?
@@ -6228,7 +5576,7 @@
 
 **Explanation:** GuardDuty monitors CloudTrail, VPC flow logs, and DNS logs to detect suspicious behavior such as unusual API calls.
 
-### D5-026
+### D5-022
 *Multiple Choice | Medium*
 
 **Question:** Which service aggregates and prioritizes security findings from multiple AWS services and partner tools?
@@ -6242,7 +5590,7 @@
 
 **Explanation:** Security Hub gives a centralized view of security posture and compliance checks across accounts.
 
-### D5-027
+### D5-023
 *Multiple Choice | Medium*
 
 **Question:** What is the purpose of a data catalog, such as the AWS Glue Data Catalog, in data governance?
@@ -6256,7 +5604,7 @@
 
 **Explanation:** Cataloging improves discoverability, ownership tracking, and policy application across data assets.
 
-### D5-028
+### D5-024
 *Multiple Choice | Medium*
 
 **Question:** What is data lineage?
@@ -6270,7 +5618,7 @@
 
 **Explanation:** Lineage lets teams trace outputs back to sources, which helps with debugging, compliance, and trust.
 
-### D5-029
+### D5-025
 *Multiple Choice | Medium*
 
 **Question:** Why is documenting data provenance and source citations important for AI applications?
@@ -6284,7 +5632,7 @@
 
 **Explanation:** Knowing where data and answers come from lets organizations verify, audit, and correct them.
 
-### D5-030
+### D5-026
 *Multiple Choice | Medium*
 
 **Question:** Which practices are part of secure data engineering for AI?
@@ -6298,7 +5646,7 @@
 
 **Explanation:** These measures help ensure that training and retrieval data are accurate, protected, and used appropriately.
 
-### D5-031
+### D5-027
 *Multiple Choice | Medium*
 
 **Question:** What is the difference between data masking and tokenization?
@@ -6312,7 +5660,7 @@
 
 **Explanation:** Both reduce exposure of sensitive data. The choice depends on whether the original must be recoverable.
 
-### D5-032
+### D5-028
 *Multiple Choice | Medium*
 
 **Question:** What does data residency refer to?
@@ -6326,21 +5674,7 @@
 
 **Explanation:** Many regulations require data to remain in specific countries or Regions, so choosing AWS Regions, including for inference, matters.
 
-### D5-033
-*Multiple Choice | Medium*
-
-**Question:** What is a data retention policy?
-
-- A. A policy for GPU use
-- B. A policy defining how long data is kept and when it must be deleted or archived
-- C. A policy for model color
-- D. A policy for naming files
-
-**Answer:** B
-
-**Explanation:** Retention policies limit unnecessary storage of sensitive data and satisfy legal requirements.
-
-### D5-034
+### D5-029
 *Multiple Choice | Medium*
 
 **Question:** Which S3 feature helps prevent accidental public exposure of buckets containing training data?
@@ -6354,7 +5688,7 @@
 
 **Explanation:** Block Public Access overrides policies and ACLs that would otherwise make buckets or objects public.
 
-### D5-035
+### D5-030
 *Multiple Choice | Medium*
 
 **Question:** Which AWS service provides fine-grained access control, down to table, column, or row, for data lakes used in analytics and ML?
@@ -6368,7 +5702,7 @@
 
 **Explanation:** Lake Formation centralizes permissions on data lake resources so that users and services only see authorized data.
 
-### D5-036
+### D5-031
 *Multiple Choice | Medium*
 
 **Question:** Which of the following is on the OWASP Top 10 for LLM applications?
@@ -6382,7 +5716,7 @@
 
 **Explanation:** Prompt injection is a leading risk. Others include insecure output handling, training data poisoning, model denial of service, supply chain vulnerabilities, sensitive information disclosure, excessive agency, and model theft.
 
-### D5-037
+### D5-032
 *Multiple Choice | Medium*
 
 **Question:** What is insecure output handling in LLM applications?
@@ -6396,7 +5730,7 @@
 
 **Explanation:** Treat model output as untrusted input. Validate and sanitize before using it in browsers, shells, databases, or APIs.
 
-### D5-038
+### D5-033
 *Multiple Choice | Medium*
 
 **Question:** What is model theft?
@@ -6410,7 +5744,7 @@
 
 **Explanation:** Protect model artifacts with access controls and encryption, and limit queries that could enable extraction.
 
-### D5-039
+### D5-034
 *Multiple Choice | Medium*
 
 **Question:** What does excessive agency mean for an LLM-based agent?
@@ -6424,7 +5758,7 @@
 
 **Explanation:** Limit tools and permissions to the minimum required and require human approval for high-impact actions.
 
-### D5-040
+### D5-035
 *Multiple Choice | Medium*
 
 **Question:** What is sensitive information disclosure in an LLM application?
@@ -6438,7 +5772,7 @@
 
 **Explanation:** Mitigations include data minimization, filtering, access controls, and keeping secrets out of prompts.
 
-### D5-041
+### D5-036
 *Multiple Choice | Medium*
 
 **Question:** How can an application reduce the risk of denial-of-service or runaway costs from excessive LLM requests?
@@ -6452,7 +5786,7 @@
 
 **Explanation:** Throttling and quotas protect availability and cost. AWS WAF and API Gateway usage plans can help.
 
-### D5-042
+### D5-037
 *Multiple Choice | Medium*
 
 **Question:** Which AWS service helps protect web applications and APIs that front generative AI features from common web exploits and bots?
@@ -6466,7 +5800,7 @@
 
 **Explanation:** AWS WAF filters malicious requests and supports rate-based rules before they reach the application.
 
-### D5-043
+### D5-038
 *Multiple Choice | Medium*
 
 **Question:** In the Generative AI Security Scoping Matrix, what best describes consuming a pretrained foundation model through an API, such as Amazon Bedrock, to build your own application?
@@ -6480,7 +5814,7 @@
 
 **Explanation:** When using pretrained models through managed APIs, the provider secures the model hosting, while the customer secures prompts, data, identity, and application logic.
 
-### D5-044
+### D5-039
 *Multiple Choice | Medium*
 
 **Question:** Which are examples of compliance standards or regulations relevant to AI workloads?
@@ -6494,7 +5828,7 @@
 
 **Explanation:** Organizations must map AI workloads to standards such as ISO, SOC, GDPR, and HIPAA, depending on industry and geography.
 
-### D5-045
+### D5-040
 *Multiple Choice | Medium*
 
 **Question:** What is ISO/IEC 42001?
@@ -6508,7 +5842,7 @@
 
 **Explanation:** ISO/IEC 42001 specifies requirements for establishing and improving an AI management system.
 
-### D5-046
+### D5-041
 *Multiple Choice | Medium*
 
 **Question:** What is the NIST AI Risk Management Framework (AI RMF) organized around?
@@ -6522,21 +5856,7 @@
 
 **Explanation:** The AI RMF is a voluntary framework that helps organizations identify and manage AI risks across the lifecycle.
 
-### D5-047
-*Multiple Choice | Medium*
-
-**Question:** How does the EU AI Act generally approach regulation?
-
-- A. It bans all AI
-- B. It applies no obligations
-- C. It uses a risk-based approach, with stricter obligations for higher-risk AI systems
-- D. It regulates only advertising
-
-**Answer:** C
-
-**Explanation:** Obligations scale with risk categories, such as prohibited, high-risk, limited-risk, and minimal-risk systems.
-
-### D5-048
+### D5-042
 *Multiple Choice | Medium*
 
 **Question:** Which regulation primarily governs the protection of personal data of individuals in the European Union?
@@ -6550,7 +5870,7 @@
 
 **Explanation:** The General Data Protection Regulation sets rules for processing personal data, including consent, purpose limitation, and data subject rights.
 
-### D5-049
+### D5-043
 *Multiple Choice | Medium*
 
 **Question:** Which U.S. regulation protects individually identifiable health information handled by covered entities and business associates?
@@ -6564,7 +5884,7 @@
 
 **Explanation:** HIPAA governs protected health information. AWS offers HIPAA-eligible services, and customers must sign a business associate addendum and configure services appropriately.
 
-### D5-050
+### D5-044
 *Multiple Choice | Medium*
 
 **Question:** Which is a regulatory compliance challenge specific to generative AI?
@@ -6578,7 +5898,7 @@
 
 **Explanation:** Generative AI raises new questions about explainability, data usage, and liability, and laws are still developing.
 
-### D5-051
+### D5-045
 *Multiple Choice | Medium*
 
 **Question:** How can a customer obtain a business associate addendum (BAA) and download AWS compliance reports?
@@ -6592,7 +5912,7 @@
 
 **Explanation:** Artifact provides access to compliance documents and lets customers review and accept agreements.
 
-### D5-052
+### D5-046
 *Multiple Choice | Medium*
 
 **Question:** Which statement about Amazon Bedrock and compliance is accurate?
@@ -6606,7 +5926,7 @@
 
 **Explanation:** AWS publishes which services are in scope for programs such as SOC, ISO, and HIPAA eligibility. Compliance remains a shared effort.
 
-### D5-053
+### D5-047
 *Multiple Choice | Medium*
 
 **Question:** Which elements are part of an AI governance strategy?
@@ -6620,7 +5940,7 @@
 
 **Explanation:** Governance establishes the rules, oversight, and education needed to manage AI risks consistently.
 
-### D5-054
+### D5-048
 *Multiple Choice | Medium*
 
 **Question:** What is the role of an AI governance committee or board?
@@ -6634,7 +5954,7 @@
 
 **Explanation:** A cross-functional body, including legal, security, data, and business roles, sets standards and reviews high-risk use cases.
 
-### D5-055
+### D5-049
 *Multiple Choice | Medium*
 
 **Question:** Why must organizations train teams on AI policies and responsible use?
@@ -6648,7 +5968,7 @@
 
 **Explanation:** Training turns policy into practice and reduces mistakes such as pasting confidential data into unapproved tools.
 
-### D5-056
+### D5-050
 *Multiple Choice | Medium*
 
 **Question:** Which activities are typical data governance strategies for AI?
@@ -6662,7 +5982,7 @@
 
 **Explanation:** Defined policies and controls over how data is collected, stored, used, monitored, and deleted underpin trustworthy AI.
 
-### D5-057
+### D5-051
 *Multiple Choice | Medium*
 
 **Question:** What is the purpose of defining a regular review cadence for AI systems and policies?
@@ -6676,7 +5996,7 @@
 
 **Explanation:** Regular reviews keep controls effective and catch drift, new threats, and regulatory updates.
 
-### D5-058
+### D5-052
 *Multiple Choice | Medium*
 
 **Question:** How can resource tagging support AI governance?
@@ -6690,7 +6010,7 @@
 
 **Explanation:** Consistent tags identify owners, environments, and data sensitivity, and they can be used with tag policies and IAM conditions.
 
-### D5-059
+### D5-053
 *Multiple Choice | Medium*
 
 **Question:** What is the best practice for the IAM role used by an action group's Lambda function in a Bedrock agent?
@@ -6704,7 +6024,7 @@
 
 **Explanation:** Agents can act on systems, so each function needs narrowly scoped permissions to limit impact if the agent is manipulated.
 
-### D5-060
+### D5-054
 *Multiple Choice | Medium*
 
 **Question:** Which approach provides defense in depth against prompt injection?
@@ -6718,7 +6038,7 @@
 
 **Explanation:** No single control is sufficient, so multiple layers reduce both likelihood and impact.
 
-### D5-061
+### D5-055
 *Multiple Choice | Medium*
 
 **Question:** How can a RAG application ensure users only see answers derived from documents they are authorized to access?
@@ -6732,7 +6052,7 @@
 
 **Explanation:** Authorization must be applied before content reaches the prompt. Amazon Q Business, for example, honors source access controls.
 
-### D5-062
+### D5-056
 *Multiple Choice | Medium*
 
 **Question:** Why should vector stores that hold embeddings of sensitive documents be secured?
@@ -6746,7 +6066,7 @@
 
 **Explanation:** Embeddings are derived from original content and may be inverted or queried to reveal sensitive information.
 
-### D5-063
+### D5-057
 *Multiple Choice | Medium*
 
 **Question:** Why is it important to protect model invocation logs?
@@ -6760,7 +6080,7 @@
 
 **Explanation:** Logs help audits but can themselves become a data exposure risk if not secured and retained appropriately.
 
-### D5-064
+### D5-058
 *Multiple Choice | Medium*
 
 **Question:** Why does AWS Region selection matter for generative AI workloads from a governance perspective?
@@ -6774,7 +6094,7 @@
 
 **Explanation:** Regional choices help meet sovereignty requirements and constrain where data flows, including when using cross-Region inference.
 
-### D5-065
+### D5-059
 *Multiple Choice | Medium*
 
 **Question:** What is the difference between anonymization and pseudonymization?
@@ -6788,7 +6108,7 @@
 
 **Explanation:** Regulations like GDPR treat them differently. Truly anonymous data falls outside many privacy rules, while pseudonymized data is still personal data.
 
-### D5-066
+### D5-060
 *Multiple Choice | Medium*
 
 **Question:** Which dimension of data quality is checked when verifying that values are complete, accurate, and consistent?
@@ -6802,7 +6122,7 @@
 
 **Explanation:** Poor-quality data undermines model performance and trust, so quality checks are part of secure and responsible data engineering.
 
-### D5-067
+### D5-061
 *Multiple Choice | Medium*
 
 **Question:** How can data integrity be protected during storage and transfer?
@@ -6816,7 +6136,7 @@
 
 **Explanation:** Integrity controls ensure that data has not been tampered with, which protects against poisoning and corruption.
 
-### D5-068
+### D5-062
 *Multiple Choice | Medium*
 
 **Question:** Which service helps mitigate distributed denial-of-service (DDoS) attacks on public endpoints?
@@ -6830,7 +6150,7 @@
 
 **Explanation:** AWS Shield provides managed DDoS protection, with Shield Standard enabled by default.
 
-### D5-069
+### D5-063
 *Multiple Choice | Medium*
 
 **Question:** Which AWS service adds user sign-up, sign-in, and access control to web and mobile applications, such as a generative AI chat front end?
@@ -6844,7 +6164,7 @@
 
 **Explanation:** Cognito provides authentication and authorization for application users, so only approved users can reach AI features.
 
-### D5-070
+### D5-064
 *Multiple Choice | Medium*
 
 **Question:** Which service provides centralized workforce single sign-on access to multiple AWS accounts and applications?
@@ -6858,7 +6178,7 @@
 
 **Explanation:** IAM Identity Center simplifies and centralizes access management with SSO and permission sets.
 
-### D5-071
+### D5-065
 *Multiple Choice | Medium*
 
 **Question:** Which SageMaker network security option helps keep training and inference traffic private?
@@ -6872,7 +6192,7 @@
 
 **Explanation:** VPC configuration, endpoints, and network isolation restrict data movement and reduce exposure.
 
-### D5-072
+### D5-066
 *Multiple Choice | Medium*
 
 **Question:** What does Amazon SageMaker Role Manager help with?
@@ -6886,7 +6206,7 @@
 
 **Explanation:** Role Manager provides templates and guided setup for persona-based permissions.
 
-### D5-073
+### D5-067
 *Multiple Choice | Medium*
 
 **Question:** Which SageMaker features support model governance?
@@ -6900,7 +6220,7 @@
 
 **Explanation:** These help document models, control versions and approvals, and monitor model risk across the organization.
 
-### D5-074
+### D5-068
 *Multiple Choice | Medium*
 
 **Question:** What supply chain risk exists when using third-party models or datasets?
@@ -6914,7 +6234,7 @@
 
 **Explanation:** Vet sources, check licenses and integrity, and scan artifacts before use in production.
 
-### D5-075
+### D5-069
 *Multiple Choice | Medium*
 
 **Question:** Why implement model versioning and approval workflows?
@@ -6928,7 +6248,7 @@
 
 **Explanation:** Registries and approval steps support governance and reproducibility.
 
-### D5-076
+### D5-070
 *Multiple Choice | Medium*
 
 **Question:** Why are audit trails essential for AI governance?
@@ -6942,7 +6262,7 @@
 
 **Explanation:** CloudTrail, invocation logs, and registry history let organizations demonstrate control and investigate incidents.
 
-### D5-077
+### D5-071
 *Multiple Choice | Medium*
 
 **Question:** Which step belongs in an AI incident response plan?
@@ -6956,35 +6276,7 @@
 
 **Explanation:** Having runbooks and roles in place shortens response time and reduces harm.
 
-### D5-078
-*Multiple Choice | Hard*
-
-**Question:** A healthcare company must ensure that calls to Amazon Bedrock never traverse the public internet. What should it configure?
-
-- A. An unencrypted VPN
-- B. A VPC interface endpoint (AWS PrivateLink) for Amazon Bedrock
-- C. A public NAT only
-- D. Disabling TLS
-
-**Answer:** B
-
-**Explanation:** PrivateLink keeps traffic within the AWS network, which supports strict privacy requirements.
-
-### D5-079
-*Multiple Choice | Hard*
-
-**Question:** Before fine-tuning a model, a company needs to verify that its S3 training data does not contain unprotected PII. Which service fits?
-
-- A. Amazon Macie
-- B. Amazon Lex
-- C. Amazon Polly
-- D. AWS Shield
-
-**Answer:** A
-
-**Explanation:** Macie automatically discovers and classifies sensitive data in S3 so it can be remediated before use.
-
-### D5-080
+### D5-072
 *Multiple Choice | Hard*
 
 **Question:** Auditors ask who invoked which foundation models and when. Which combination best provides this evidence?
@@ -6998,7 +6290,7 @@
 
 **Explanation:** CloudTrail captures API calls and identities, and invocation logging stores prompts and responses for deeper audits.
 
-### D5-081
+### D5-073
 *Multiple Choice | Hard*
 
 **Question:** A compliance officer wants to download SOC and ISO reports for AWS services used in an AI solution. Which service should they use?
@@ -7012,7 +6304,7 @@
 
 **Explanation:** Artifact is the self-service portal for AWS compliance reports and agreements.
 
-### D5-082
+### D5-074
 *Multiple Choice | Hard*
 
 **Question:** A developer should be able to invoke only one approved model in Amazon Bedrock. What is the most appropriate control?
@@ -7026,7 +6318,7 @@
 
 **Explanation:** Resource-level permissions enforce least privilege and prevent use of unapproved models.
 
-### D5-083
+### D5-075
 *Multiple Choice | Hard*
 
 **Question:** A company wants to automatically detect and alert if any S3 bucket holding training data is made public or lacks encryption. Which service is best suited?
@@ -7040,21 +6332,21 @@
 
 **Explanation:** Config evaluates resource settings against rules and can trigger remediation or notifications when they drift out of compliance.
 
-### D5-084
+### D5-076
 *Multiple Choice | Hard*
 
 **Question:** An enterprise wants to prevent employees' prompts from exposing credit card numbers or national IDs to a model and from returning them in responses. Which feature should be applied?
 
 - A. Larger context windows
 - B. Higher temperature
-- C. Guardrails for Amazon Bedrock sensitive information filters
+- C. Amazon Bedrock Guardrails sensitive information filters
 - D. Provisioned Throughput
 
 **Answer:** C
 
 **Explanation:** PII filters can detect and mask or block sensitive entities in inputs and outputs.
 
-### D5-085
+### D5-077
 *Multiple Choice | Hard*
 
 **Question:** A large enterprise wants to prohibit all member accounts from using unapproved AWS Regions or AI services, regardless of local IAM permissions. Which control is best?
@@ -7068,7 +6360,7 @@
 
 **Explanation:** SCPs set organization-wide permission boundaries that local administrators cannot override.
 
-### D5-086
+### D5-078
 *Multiple Choice | Hard*
 
 **Question:** A security team wants to control encryption keys for AI training data, including rotation and the ability to disable keys. Which approach should they use?
@@ -7082,7 +6374,7 @@
 
 **Explanation:** Customer managed keys offer control and auditability, including automatic rotation and the ability to revoke access.
 
-### D5-087
+### D5-079
 *Multiple Choice | Hard*
 
 **Question:** A regulated company wants to continuously gather evidence to demonstrate that its generative AI controls meet a compliance framework. Which service is designed for this?
@@ -7096,7 +6388,7 @@
 
 **Explanation:** Audit Manager maps AWS usage to control frameworks and automates evidence collection for audits.
 
-### D5-088
+### D5-080
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO AWS services help with logging and monitoring of AI workloads? (Select TWO.)
@@ -7111,7 +6403,7 @@
 
 **Explanation:** CloudTrail records API activity, and CloudWatch collects metrics, logs, and alarms. The others are AI services, not monitoring tools.
 
-### D5-089
+### D5-081
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO practices strengthen data protection for AI workloads? (Select TWO.)
@@ -7126,7 +6418,7 @@
 
 **Explanation:** Encryption at rest and in transit are baseline controls. The other options increase risk.
 
-### D5-090
+### D5-082
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO actions apply the principle of least privilege? (Select TWO.)
@@ -7141,7 +6433,7 @@
 
 **Explanation:** Narrow permissions and short-lived credentials limit exposure. Broad access and shared keys violate least privilege.
 
-### D5-091
+### D5-083
 *Multiple Response (Select TWO) | Hard*
 
 **Question:** Which TWO are on the OWASP Top 10 for LLM applications? (Select TWO.)
@@ -7156,7 +6448,7 @@
 
 **Explanation:** OWASP lists prompt injection, insecure output handling, training data poisoning, model denial of service, supply chain vulnerabilities, sensitive information disclosure, excessive agency, and others.
 
-### D5-092
+### D5-084
 *Multiple Response (Select TWO) | Medium*
 
 **Question:** Which TWO are elements of data governance for AI? (Select TWO.)
@@ -7171,19 +6463,7 @@
 
 **Explanation:** Governance includes lifecycle management, monitoring, residency, and access controls, so that data is used appropriately.
 
-### D5-093
-*True/False | Medium*
-
-**Question:** Under the shared responsibility model, AWS is responsible for classifying and protecting the customer's data stored in Amazon S3.
-
-- A. True
-- B. False
-
-**Answer:** False
-
-**Explanation:** Customers are responsible for their data, including classification, encryption choices, and access control. AWS secures the underlying infrastructure.
-
-### D5-094
+### D5-085
 *True/False | Medium*
 
 **Question:** Amazon Bedrock uses customers' prompts and completions to train the base foundation models shared with other customers.
@@ -7195,7 +6475,7 @@
 
 **Explanation:** AWS states that Bedrock does not use customer inputs or outputs to train base models or share them with model providers.
 
-### D5-095
+### D5-086
 *True/False | Medium*
 
 **Question:** AWS CloudTrail can record API calls made to Amazon Bedrock.
@@ -7207,7 +6487,7 @@
 
 **Explanation:** CloudTrail captures management events and supports logging of API activity for auditing and security analysis.
 
-### D5-096
+### D5-087
 *True/False | Medium*
 
 **Question:** Granting only the permissions required for a task is consistent with the principle of least privilege.
@@ -7219,7 +6499,7 @@
 
 **Explanation:** Minimizing permissions reduces risk and is a foundational security practice.
 
-### D5-097
+### D5-088
 *True/False | Medium*
 
 **Question:** If data is encrypted, strict access controls are no longer necessary.
@@ -7231,7 +6511,7 @@
 
 **Explanation:** Encryption complements but does not replace authentication, authorization, and monitoring. Authorized principals can still decrypt and misuse data.
 
-### D5-098
+### D5-089
 *True/False | Medium*
 
 **Question:** Data residency regulations may require that data remain in specific geographic locations.
@@ -7243,7 +6523,7 @@
 
 **Explanation:** Many laws restrict cross-border data transfers, so Region selection and data flow design are governance issues.
 
-### D5-099
+### D5-090
 *True/False | Medium*
 
 **Question:** Because AWS holds compliance certifications, any workload a customer runs on AWS is automatically compliant.
@@ -7255,7 +6535,7 @@
 
 **Explanation:** Certifications cover AWS's responsibilities. Customers must configure and operate workloads in line with applicable requirements.
 
-### D5-100
+### D5-091
 *Multiple Choice | Medium*
 
 **Question:** What does defense in depth mean?
@@ -7269,7 +6549,7 @@
 
 **Explanation:** Layers such as identity, network, data, application, and monitoring controls together reduce risk.
 
-### D5-101
+### D5-092
 *Multiple Choice | Medium*
 
 **Question:** Why is data classification a foundational governance activity?
@@ -7283,7 +6563,7 @@
 
 **Explanation:** You cannot protect or govern data properly if you do not know which data is sensitive or regulated.
 
-### D5-102
+### D5-093
 *Multiple Choice | Medium*
 
 **Question:** A financial firm is starting a generative AI project. What is an appropriate first compliance step?
@@ -7297,7 +6577,7 @@
 
 **Explanation:** Understanding obligations up front lets teams design controls and documentation, rather than retrofitting them.
 
-### D5-103
+### D5-094
 *Multiple Choice | Medium*
 
 **Question:** What can administrators configure in Amazon Q Business to help control what the assistant can discuss or retrieve?
@@ -7311,7 +6591,7 @@
 
 **Explanation:** Q Business offers administrative controls and respects source permissions so answers stay within approved topics and authorized content.
 
-### D5-104
+### D5-095
 *True/False | Easy*
 
 **Question:** Using IAM roles with temporary credentials is generally safer than embedding long-term access keys in application code.
@@ -7323,7 +6603,7 @@
 
 **Explanation:** Temporary credentials expire automatically and are not stored in code, which reduces the risk and impact of credential leakage.
 
-### D5-105
+### D5-096
 *Multiple Choice | Hard*
 
 **Question:** A team stores Bedrock model invocation logs, containing prompts and responses, in Amazon S3. Which step best reduces the privacy risk of those logs?
@@ -7345,129 +6625,120 @@
 
 | Q | Ans | Q | Ans | Q | Ans | Q | Ans | Q | Ans |
 |---|---|---|---|---|---|---|---|---|---|
-| D1-001 | C | D1-002 | True | D1-003 | D | D1-004 | C | D1-005 | A |
-| D1-006 | A | D1-007 | D | D1-008 | D | D1-009 | True | D1-010 | A |
-| D1-011 | B | D1-012 | D | D1-013 | B | D1-014 | A | D1-015 | True |
-| D1-016 | C | D1-017 | C | D1-018 | C | D1-019 | A | D1-020 | A |
-| D1-021 | B | D1-022 | B | D1-023 | B | D1-024 | D | D1-025 | A |
-| D1-026 | B | D1-027 | B | D1-028 | C, D | D1-029 | A | D1-030 | C |
-| D1-031 | A | D1-032 | A | D1-033 | C | D1-034 | C | D1-035 | B |
-| D1-036 | A | D1-037 | D | D1-038 | A | D1-039 | C | D1-040 | D |
-| D1-041 | C | D1-042 | False | D1-043 | D | D1-044 | B | D1-045 | A |
-| D1-046 | A | D1-047 | B | D1-048 | C | D1-049 | B | D1-050 | A |
-| D1-051 | B | D1-052 | B | D1-053 | D | D1-054 | A | D1-055 | A |
-| D1-056 | D | D1-057 | D | D1-058 | D | D1-059 | A | D1-060 | D |
-| D1-061 | B | D1-062 | D | D1-063 | B | D1-064 | B | D1-065 | A |
-| D1-066 | C | D1-067 | A | D1-068 | D | D1-069 | D | D1-070 | A |
-| D1-071 | B | D1-072 | C | D1-073 | A | D1-074 | A | D1-075 | D |
-| D1-076 | D | D1-077 | A | D1-078 | D | D1-079 | D | D1-080 | A |
-| D1-081 | B | D1-082 | B | D1-083 | B | D1-084 | C | D1-085 | A |
-| D1-086 | D | D1-087 | D | D1-088 | C | D1-089 | B | D1-090 | D |
-| D1-091 | C | D1-092 | B | D1-093 | D | D1-094 | C | D1-095 | A |
-| D1-096 | D | D1-097 | A | D1-098 | C, E | D1-099 | B | D1-100 | A |
-| D1-101 | False | D1-102 | C, D | D1-103 | True | D1-104 | A | D1-105 | False |
+| D1-001 | True | D1-002 | D | D1-003 | C | D1-004 | A | D1-005 | A |
+| D1-006 | D | D1-007 | D | D1-008 | True | D1-009 | A | D1-010 | B |
+| D1-011 | D | D1-012 | B | D1-013 | A | D1-014 | True | D1-015 | C |
+| D1-016 | C | D1-017 | A | D1-018 | A | D1-019 | B | D1-020 | B |
+| D1-021 | B | D1-022 | D | D1-023 | A | D1-024 | B | D1-025 | B |
+| D1-026 | A | D1-027 | C | D1-028 | A | D1-029 | A | D1-030 | C |
+| D1-031 | C | D1-032 | B | D1-033 | D | D1-034 | A | D1-035 | C |
+| D1-036 | D | D1-037 | C | D1-038 | False | D1-039 | D | D1-040 | B |
+| D1-041 | A | D1-042 | B | D1-043 | C | D1-044 | B | D1-045 | B |
+| D1-046 | B | D1-047 | D | D1-048 | A | D1-049 | D | D1-050 | D |
+| D1-051 | D | D1-052 | B | D1-053 | D | D1-054 | B | D1-055 | B |
+| D1-056 | A | D1-057 | C | D1-058 | D | D1-059 | D | D1-060 | A |
+| D1-061 | B | D1-062 | C | D1-063 | A | D1-064 | A | D1-065 | D |
+| D1-066 | A | D1-067 | D | D1-068 | D | D1-069 | A | D1-070 | B |
+| D1-071 | B | D1-072 | B | D1-073 | A | D1-074 | D | D1-075 | D |
+| D1-076 | C | D1-077 | B | D1-078 | D | D1-079 | C | D1-080 | B |
+| D1-081 | D | D1-082 | C | D1-083 | A | D1-084 | D | D1-085 | A |
+| D1-086 | C, E | D1-087 | B | D1-088 | A | D1-089 | False | D1-090 | C, D |
+| D1-091 | True | D1-092 | A | D1-093 | False |  |  |  |  |
 
 ### Domain 2: Fundamentals of Generative AI
 
 | Q | Ans | Q | Ans | Q | Ans | Q | Ans | Q | Ans |
 |---|---|---|---|---|---|---|---|---|---|
-| D2-001 | C | D2-002 | D | D2-003 | C | D2-004 | True | D2-005 | D |
-| D2-006 | A | D2-007 | A | D2-008 | C | D2-009 | D | D2-010 | C |
-| D2-011 | C | D2-012 | D | D2-013 | B | D2-014 | C | D2-015 | C |
-| D2-016 | A | D2-017 | B | D2-018 | D | D2-019 | B | D2-020 | C |
-| D2-021 | B | D2-022 | True | D2-023 | C | D2-024 | A | D2-025 | B |
-| D2-026 | D | D2-027 | D | D2-028 | B | D2-029 | C | D2-030 | False |
-| D2-031 | C | D2-032 | A, B | D2-033 | C, E | D2-034 | D | D2-035 | D |
-| D2-036 | B | D2-037 | C | D2-038 | A | D2-039 | C | D2-040 | D |
-| D2-041 | B | D2-042 | B | D2-043 | B | D2-044 | D | D2-045 | B |
-| D2-046 | D | D2-047 | A | D2-048 | D | D2-049 | C | D2-050 | B |
-| D2-051 | C | D2-052 | C, D | D2-053 | D | D2-054 | C | D2-055 | C |
-| D2-056 | C | D2-057 | B | D2-058 | D | D2-059 | B | D2-060 | A |
-| D2-061 | C | D2-062 | A | D2-063 | False | D2-064 | A | D2-065 | A |
-| D2-066 | B | D2-067 | B | D2-068 | B | D2-069 | D | D2-070 | A |
-| D2-071 | A | D2-072 | D | D2-073 | B | D2-074 | B | D2-075 | D |
-| D2-076 | True | D2-077 | False | D2-078 | True | D2-079 | False | D2-080 | True |
-| D2-081 | B | D2-082 | A | D2-083 | D | D2-084 | B | D2-085 | B |
-| D2-086 | C | D2-087 | C | D2-088 | B | D2-089 | D | D2-090 | C |
-| D2-091 | D | D2-092 | A | D2-093 | D | D2-094 | C | D2-095 | B |
-| D2-096 | A | D2-097 | C | D2-098 | B | D2-099 | True | D2-100 | C |
-| D2-101 | True | D2-102 | A | D2-103 | False | D2-104 | C | D2-105 | A |
+| D2-001 | True | D2-002 | D | D2-003 | A | D2-004 | D | D2-005 | C |
+| D2-006 | B | D2-007 | C | D2-008 | A | D2-009 | D | D2-010 | B |
+| D2-011 | C | D2-012 | B | D2-013 | True | D2-014 | C | D2-015 | A |
+| D2-016 | B | D2-017 | D | D2-018 | D | D2-019 | B | D2-020 | C |
+| D2-021 | False | D2-022 | C | D2-023 | C, E | D2-024 | D | D2-025 | D |
+| D2-026 | C | D2-027 | C | D2-028 | D | D2-029 | B | D2-030 | B |
+| D2-031 | B | D2-032 | D | D2-033 | B | D2-034 | D | D2-035 | A |
+| D2-036 | D | D2-037 | C | D2-038 | B | D2-039 | C | D2-040 | D |
+| D2-041 | C | D2-042 | C | D2-043 | C | D2-044 | B | D2-045 | D |
+| D2-046 | B | D2-047 | A | D2-048 | C | D2-049 | A | D2-050 | False |
+| D2-051 | A | D2-052 | A | D2-053 | B | D2-054 | B | D2-055 | B |
+| D2-056 | D | D2-057 | A | D2-058 | A | D2-059 | D | D2-060 | B |
+| D2-061 | B | D2-062 | D | D2-063 | True | D2-064 | False | D2-065 | False |
+| D2-066 | True | D2-067 | B | D2-068 | A | D2-069 | D | D2-070 | B |
+| D2-071 | B | D2-072 | C | D2-073 | C | D2-074 | B | D2-075 | D |
+| D2-076 | C | D2-077 | D | D2-078 | A | D2-079 | D | D2-080 | C |
+| D2-081 | B | D2-082 | A | D2-083 | C | D2-084 | B | D2-085 | C |
+| D2-086 | True | D2-087 | A | D2-088 | False | D2-089 | C | D2-090 | A |
 
 ### Domain 3: Applications of Foundation Models
 
 | Q | Ans | Q | Ans | Q | Ans | Q | Ans | Q | Ans |
 |---|---|---|---|---|---|---|---|---|---|
-| D3-001 | D | D3-002 | D | D3-003 | D | D3-004 | B | D3-005 | A |
-| D3-006 | A | D3-007 | B | D3-008 | C | D3-009 | B | D3-010 | D |
-| D3-011 | D | D3-012 | A | D3-013 | B | D3-014 | A | D3-015 | C |
-| D3-016 | B | D3-017 | C | D3-018 | C | D3-019 | D | D3-020 | B |
-| D3-021 | B | D3-022 | B | D3-023 | C | D3-024 | B | D3-025 | B |
-| D3-026 | A | D3-027 | B | D3-028 | A | D3-029 | D | D3-030 | D |
-| D3-031 | A | D3-032 | C | D3-033 | C | D3-034 | C | D3-035 | A |
-| D3-036 | True | D3-037 | C | D3-038 | B | D3-039 | B | D3-040 | A |
-| D3-041 | B | D3-042 | C | D3-043 | D | D3-044 | D | D3-045 | A |
-| D3-046 | C | D3-047 | C | D3-048 | A | D3-049 | D | D3-050 | D |
-| D3-051 | C | D3-052 | B | D3-053 | B | D3-054 | B | D3-055 | A |
-| D3-056 | C | D3-057 | True | D3-058 | A | D3-059 | D | D3-060 | A |
-| D3-061 | C | D3-062 | A | D3-063 | B | D3-064 | C | D3-065 | B |
-| D3-066 | D | D3-067 | A | D3-068 | A | D3-069 | B | D3-070 | A |
-| D3-071 | D | D3-072 | A | D3-073 | A | D3-074 | C | D3-075 | D |
-| D3-076 | A | D3-077 | B | D3-078 | D | D3-079 | C | D3-080 | A |
-| D3-081 | B | D3-082 | A | D3-083 | A, E | D3-084 | A, B | D3-085 | D, E |
-| D3-086 | A, C | D3-087 | False | D3-088 | True | D3-089 | False | D3-090 | False |
-| D3-091 | A | D3-092 | B | D3-093 | B | D3-094 | C | D3-095 | D |
-| D3-096 | C | D3-097 | A | D3-098 | D | D3-099 | B | D3-100 | B |
-| D3-101 | True | D3-102 | A | D3-103 | C | D3-104 | False | D3-105 | True |
+| D3-001 | D | D3-002 | D | D3-003 | B | D3-004 | A | D3-005 | A |
+| D3-006 | B | D3-007 | C | D3-008 | B | D3-009 | D | D3-010 | D |
+| D3-011 | A | D3-012 | A | D3-013 | C | D3-014 | B | D3-015 | C |
+| D3-016 | C | D3-017 | D | D3-018 | B | D3-019 | B | D3-020 | B |
+| D3-021 | C | D3-022 | B | D3-023 | B | D3-024 | A | D3-025 | B |
+| D3-026 | A | D3-027 | D | D3-028 | D | D3-029 | C | D3-030 | C |
+| D3-031 | C | D3-032 | A | D3-033 | True | D3-034 | C | D3-035 | B |
+| D3-036 | B | D3-037 | A | D3-038 | B | D3-039 | C | D3-040 | D |
+| D3-041 | D | D3-042 | A | D3-043 | C | D3-044 | A | D3-045 | D |
+| D3-046 | C | D3-047 | B | D3-048 | B | D3-049 | B | D3-050 | A |
+| D3-051 | C | D3-052 | True | D3-053 | A | D3-054 | D | D3-055 | A |
+| D3-056 | C | D3-057 | A | D3-058 | C | D3-059 | D | D3-060 | A |
+| D3-061 | A | D3-062 | A | D3-063 | D | D3-064 | A | D3-065 | A |
+| D3-066 | C | D3-067 | D | D3-068 | A | D3-069 | B | D3-070 | D |
+| D3-071 | C | D3-072 | A | D3-073 | B | D3-074 | A | D3-075 | A, E |
+| D3-076 | A, B | D3-077 | D, E | D3-078 | A, C | D3-079 | False | D3-080 | True |
+| D3-081 | False | D3-082 | False | D3-083 | A | D3-084 | B | D3-085 | C |
+| D3-086 | D | D3-087 | C | D3-088 | A | D3-089 | D | D3-090 | B |
+| D3-091 | B | D3-092 | True | D3-093 | A | D3-094 | C | D3-095 | False |
+| D3-096 | True |  |  |  |  |  |  |  |  |
 
 ### Domain 4: Guidelines for Responsible AI
 
 | Q | Ans | Q | Ans | Q | Ans | Q | Ans | Q | Ans |
 |---|---|---|---|---|---|---|---|---|---|
-| D4-001 | B | D4-002 | C | D4-003 | B | D4-004 | D | D4-005 | D |
-| D4-006 | A | D4-007 | C | D4-008 | D | D4-009 | C | D4-010 | D |
-| D4-011 | D | D4-012 | C | D4-013 | D | D4-014 | D | D4-015 | A |
-| D4-016 | B | D4-017 | D | D4-018 | D | D4-019 | A | D4-020 | C |
-| D4-021 | C | D4-022 | A | D4-023 | A | D4-024 | D | D4-025 | D |
-| D4-026 | D | D4-027 | D | D4-028 | D | D4-029 | A | D4-030 | A |
-| D4-031 | B | D4-032 | B | D4-033 | B | D4-034 | C | D4-035 | B |
-| D4-036 | A | D4-037 | C | D4-038 | B | D4-039 | A | D4-040 | B |
-| D4-041 | D | D4-042 | D | D4-043 | C | D4-044 | D | D4-045 | B |
-| D4-046 | A | D4-047 | D | D4-048 | A | D4-049 | B | D4-050 | A |
-| D4-051 | D | D4-052 | B | D4-053 | C | D4-054 | C | D4-055 | B |
-| D4-056 | A | D4-057 | C | D4-058 | False | D4-059 | True | D4-060 | False |
-| D4-061 | True | D4-062 | False | D4-063 | A, D | D4-064 | A, B | D4-065 | B, E |
-| D4-066 | B, E | D4-067 | C | D4-068 | A | D4-069 | D | D4-070 | C |
-| D4-071 | A | D4-072 | C | D4-073 | D | D4-074 | C | D4-075 | A |
-| D4-076 | B | D4-077 | D | D4-078 | B | D4-079 | D | D4-080 | A |
-| D4-081 | D | D4-082 | D | D4-083 | C | D4-084 | B | D4-085 | C |
-| D4-086 | A | D4-087 | D | D4-088 | D | D4-089 | D | D4-090 | D |
-| D4-091 | C | D4-092 | A | D4-093 | B | D4-094 | A | D4-095 | D |
-| D4-096 | B | D4-097 | D | D4-098 | C | D4-099 | C | D4-100 | B |
-| D4-101 | True | D4-102 | True | D4-103 | A | D4-104 | C | D4-105 | False |
+| D4-001 | C | D4-002 | B | D4-003 | D | D4-004 | A | D4-005 | C |
+| D4-006 | D | D4-007 | C | D4-008 | D | D4-009 | D | D4-010 | C |
+| D4-011 | D | D4-012 | D | D4-013 | A | D4-014 | B | D4-015 | D |
+| D4-016 | D | D4-017 | A | D4-018 | C | D4-019 | C | D4-020 | A |
+| D4-021 | A | D4-022 | D | D4-023 | D | D4-024 | D | D4-025 | D |
+| D4-026 | A | D4-027 | A | D4-028 | B | D4-029 | B | D4-030 | C |
+| D4-031 | B | D4-032 | A | D4-033 | C | D4-034 | B | D4-035 | A |
+| D4-036 | B | D4-037 | D | D4-038 | D | D4-039 | C | D4-040 | D |
+| D4-041 | B | D4-042 | A | D4-043 | D | D4-044 | A | D4-045 | B |
+| D4-046 | A | D4-047 | D | D4-048 | B | D4-049 | C | D4-050 | C |
+| D4-051 | B | D4-052 | A | D4-053 | C | D4-054 | True | D4-055 | False |
+| D4-056 | True | D4-057 | False | D4-058 | A, D | D4-059 | A, B | D4-060 | B, E |
+| D4-061 | C | D4-062 | A | D4-063 | D | D4-064 | C | D4-065 | A |
+| D4-066 | C | D4-067 | D | D4-068 | A | D4-069 | B | D4-070 | D |
+| D4-071 | B | D4-072 | D | D4-073 | A | D4-074 | D | D4-075 | D |
+| D4-076 | C | D4-077 | B | D4-078 | C | D4-079 | A | D4-080 | D |
+| D4-081 | D | D4-082 | D | D4-083 | D | D4-084 | C | D4-085 | A |
+| D4-086 | B | D4-087 | A | D4-088 | D | D4-089 | B | D4-090 | D |
+| D4-091 | C | D4-092 | C | D4-093 | B | D4-094 | True | D4-095 | True |
+| D4-096 | A | D4-097 | C | D4-098 | False |  |  |  |  |
 
 ### Domain 5: Security, Compliance, and Governance
 
 | Q | Ans | Q | Ans | Q | Ans | Q | Ans | Q | Ans |
 |---|---|---|---|---|---|---|---|---|---|
-| D5-001 | D | D5-002 | B | D5-003 | B | D5-004 | C | D5-005 | B |
-| D5-006 | D | D5-007 | B | D5-008 | B | D5-009 | A | D5-010 | B |
-| D5-011 | A | D5-012 | D | D5-013 | D | D5-014 | B | D5-015 | C |
-| D5-016 | A | D5-017 | B | D5-018 | C | D5-019 | C | D5-020 | A |
-| D5-021 | D | D5-022 | A | D5-023 | A | D5-024 | A | D5-025 | B |
-| D5-026 | A | D5-027 | C | D5-028 | B | D5-029 | B | D5-030 | D |
-| D5-031 | D | D5-032 | D | D5-033 | B | D5-034 | D | D5-035 | C |
-| D5-036 | C | D5-037 | B | D5-038 | D | D5-039 | D | D5-040 | D |
-| D5-041 | C | D5-042 | B | D5-043 | B | D5-044 | C | D5-045 | D |
-| D5-046 | B | D5-047 | C | D5-048 | A | D5-049 | A | D5-050 | C |
-| D5-051 | A | D5-052 | A | D5-053 | B | D5-054 | B | D5-055 | C |
-| D5-056 | D | D5-057 | B | D5-058 | C | D5-059 | C | D5-060 | A |
-| D5-061 | C | D5-062 | B | D5-063 | A | D5-064 | A | D5-065 | A |
-| D5-066 | B | D5-067 | C | D5-068 | B | D5-069 | C | D5-070 | B |
-| D5-071 | B | D5-072 | A | D5-073 | B | D5-074 | A | D5-075 | A |
-| D5-076 | D | D5-077 | B | D5-078 | B | D5-079 | A | D5-080 | C |
-| D5-081 | C | D5-082 | B | D5-083 | A | D5-084 | C | D5-085 | C |
-| D5-086 | C | D5-087 | B | D5-088 | A, E | D5-089 | A, B | D5-090 | C, D |
-| D5-091 | B, C | D5-092 | C, D | D5-093 | False | D5-094 | False | D5-095 | True |
-| D5-096 | True | D5-097 | False | D5-098 | True | D5-099 | False | D5-100 | A |
-| D5-101 | A | D5-102 | D | D5-103 | B | D5-104 | True | D5-105 | D |
-
+| D5-001 | B | D5-002 | C | D5-003 | B | D5-004 | B | D5-005 | B |
+| D5-006 | A | D5-007 | B | D5-008 | A | D5-009 | D | D5-010 | D |
+| D5-011 | B | D5-012 | A | D5-013 | B | D5-014 | C | D5-015 | C |
+| D5-016 | A | D5-017 | D | D5-018 | A | D5-019 | A | D5-020 | A |
+| D5-021 | B | D5-022 | A | D5-023 | C | D5-024 | B | D5-025 | B |
+| D5-026 | D | D5-027 | D | D5-028 | D | D5-029 | D | D5-030 | C |
+| D5-031 | C | D5-032 | B | D5-033 | D | D5-034 | D | D5-035 | D |
+| D5-036 | C | D5-037 | B | D5-038 | B | D5-039 | C | D5-040 | D |
+| D5-041 | B | D5-042 | A | D5-043 | A | D5-044 | C | D5-045 | A |
+| D5-046 | A | D5-047 | B | D5-048 | B | D5-049 | C | D5-050 | D |
+| D5-051 | B | D5-052 | C | D5-053 | C | D5-054 | A | D5-055 | C |
+| D5-056 | B | D5-057 | A | D5-058 | A | D5-059 | A | D5-060 | B |
+| D5-061 | C | D5-062 | B | D5-063 | C | D5-064 | B | D5-065 | B |
+| D5-066 | A | D5-067 | B | D5-068 | A | D5-069 | A | D5-070 | D |
+| D5-071 | B | D5-072 | C | D5-073 | C | D5-074 | B | D5-075 | A |
+| D5-076 | C | D5-077 | C | D5-078 | C | D5-079 | B | D5-080 | A, E |
+| D5-081 | A, B | D5-082 | C, D | D5-083 | B, C | D5-084 | C, D | D5-085 | False |
+| D5-086 | True | D5-087 | True | D5-088 | False | D5-089 | True | D5-090 | False |
+| D5-091 | A | D5-092 | A | D5-093 | D | D5-094 | B | D5-095 | True |
+| D5-096 | D |  |  |  |  |  |  |  |  |

@@ -1,0 +1,29 @@
+// markdownlint-cli2 configuration (used locally and by .github/workflows/docs-quality.yml)
+// Rules are tuned to this repo's content conventions (see CLAUDE.md and docs/question-schema.md).
+{
+  "config": {
+    "default": true,
+
+    // Long prose lines and wide tables are normal in study notes.
+    "MD013": false,
+
+    // Collapsible answers use <details>/<summary>; <br> is used inside table cells.
+    "MD033": { "allowed_elements": ["details", "summary", "b", "br", "kbd", "sup", "sub"] },
+
+    // Question headings (### / ####) are immediately followed by an italic metadata line,
+    // e.g. "### D1-001" + "*Multiple Choice | Easy*". Allow that for h3/h4 only.
+    "MD022": { "lines_above": 1, "lines_below": [1, 1, -1, -1, 1, 1] },
+
+    // Those italic metadata lines and bold labels such as "**Tech Stack**" are not headings.
+    "MD036": false,
+
+    // Answer keys repeat the domain names used as section headings.
+    "MD024": { "siblings_only": true },
+
+    // Several files still use more than one H1 (rounds / domains). Tracked as roadmap item F-04;
+    // re-enable this rule when F-04 is done.
+    "MD025": false
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules/**", ".git/**"]
+}

@@ -1,7 +1,7 @@
 # AWS Certified AI Practitioner (AIF-C01): Exam-Style Questions
 
 > **Last reviewed:** 2026-11-13 against the AIF-C01 exam guide (v1.4) · AI-assisted structural and staleness review · see [review-log.md](review-log.md)
-
+>
 > **Format:** 57 exam-style questions · single answer unless marked **(Select TWO.)** · each tagged with its exam domain
 > **Answers:** Each answer is directly below its question inside a collapsible **"Show answer"** block, with an explanation. If your Markdown viewer doesn't support collapsible blocks, the answers will show as plain text, so cover them while you practise.
 > **Source:** These questions are collected exam-style practice material. They are not original to this repository, and they are not confirmed real exam questions.

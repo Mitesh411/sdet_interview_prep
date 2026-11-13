@@ -8,6 +8,16 @@ Everything is plain Markdown. Read it on GitHub or clone it and open it in any M
 
 ## Contents
 
+### Study Plans
+
+Day-by-day paths through this repo, each with hands-on tasks and checkpoints. See [study-plans/](study-plans/README.md) for the overview.
+
+| Plan | Best for | Length |
+|---|---|---|
+| [AIF-C01 in 7 Days](study-plans/aif-c01-7-day-cram.md) | AWS Certified AI Practitioner exam | 7 days, 3–4 h/day |
+| [SDET in 2 Weeks: Selenium + Java](study-plans/sdet-selenium-java-2-week.md) | Java / Selenium / TestNG / REST Assured roles. Covers every Deloitte and Capgemini question | 14 days, 2–3 h/day |
+| [Playwright in 5 Days](study-plans/playwright-5-day.md) | Playwright + TypeScript roles | 5 days, 2–3 h/day |
+
 ### Company Interview Experiences
 
 Real questions grouped by company and round, each with a long-form answer and code samples (Java, TypeScript, SQL, YAML).
@@ -61,12 +71,16 @@ All material is organized by the five official exam domains:
 
 ## How to Use
 
+The quickest way in is a [study plan](#study-plans). To study on your own instead:
+
 **Interview prep**
+
 1. Read the company write-up for the role you're targeting, then the Playwright guide if the job uses it.
 2. Try each question out loud before reading the answer. Many answers start with a short summary you can say first, then go into detail.
 3. Type out and run the code samples yourself. They're illustrative and aren't kept as a runnable project.
 
 **AIF-C01 exam prep**
+
 1. Read `exam-notes.md` for the overview, then `extra-details-notes.md` one domain at a time.
 2. Practice each domain in Question Bank 1 (`ch*.md`). Hide the answers and check yourself after each question. Use Question Bank 2 for more practice on weak domains.
 3. Take `practice-exam-set-1.md` as a timed mock exam (90 minutes) and fill in the score tracker. Aim for **80%+** (52/65).
@@ -76,12 +90,17 @@ All material is organized by the five official exam domains:
 
 ## Repository Structure
 
-```
+```text
 .
 ├── Capgemini/               # Capgemini L2 QA interview Q&A
 ├── Deloitte/                # Deloitte Automation Test Engineer + Sr. QA interviews
 ├── Playwright/              # 100 Playwright interview questions (.md + .pdf)
 ├── AWS-AI-Practitioner/     # AIF-C01 study notes, question banks, mock exams, review log
+├── study-plans/             # Day-by-day study plans (AIF-C01, SDET Selenium/Java, Playwright)
+├── docs/                    # Canonical question schema, JSON Schema, file template
+├── .github/workflows/       # Docs quality CI: markdownlint, cspell, lychee
+├── .cspell/                 # Custom tech dictionary for the spell check
+├── CONTRIBUTING.md          # How to add questions and run the checks locally
 ├── ProductRoadmap.md        # Planned improvements, known issues, priorities
 ├── CLAUDE.md                # Guidance for AI coding assistants working on this repo
 └── LICENSE                  # MIT
@@ -92,8 +111,9 @@ All material is organized by the five official exam domains:
 ## Roadmap
 
 Planned work is tracked in [ProductRoadmap.md](ProductRoadmap.md). Highlights:
+
 - Finishing the Playwright guide (Q81–100)
-- Using one question format across all files
+- Migrating every file to the [canonical question schema](docs/question-schema.md)
 - New modules: API testing, Java for SDET, SQL, CI/CD, behavioral and test strategy, AI in testing
 - A searchable static site with an interactive quiz and mock-exam mode
 - AI-assisted mock interviews and answer grading
@@ -102,12 +122,12 @@ Planned work is tracked in [ProductRoadmap.md](ProductRoadmap.md). Highlights:
 
 ## Contributing
 
-Contributions are welcome, especially **your own interview experiences**.
+Contributions are welcome, especially **your own interview experiences**. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the details. In short:
 
-- Add new company material as `CompanyName/role-name.md` (kebab-case file names, no spaces or `&`), with questions as `## N) Question`, grouped under round headings.
-- Put code in fenced blocks with a language tag (` ```java `, ` ```ts `, ` ```sql `).
+- New question files follow the [canonical question schema](docs/question-schema.md). Start from the [template](docs/templates/question-file-template.md).
+- Use kebab-case file names (`CompanyName/role-name.md`), hide answers in `<details>` blocks, and give every code block a language tag.
 - Leave out interviewer names and any material covered by an NDA.
-- If you find an incorrect or outdated answer, open an issue or a PR with a source.
+- Every pull request runs the **Docs quality** workflow (Markdown lint, spell check, link check). You can also start it by hand from the Actions tab.
 
 ---
 

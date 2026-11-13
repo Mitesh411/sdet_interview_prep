@@ -4,43 +4,41 @@
 
 Common, manager-friendly metrics you can actually track and action:
 
--   **Requirement Coverage** = (# requirements with tests) / (total requirements)
-    
--   **Test Case Effectiveness** = (defects found by testing) / (total defects found pre-prod + in prod)
-    
--   **Defect Density** = defects / KLOC or per module
-    
--   **Defect Leakage (Escape Rate)** = prod defects / total defects
-    
--   **Defect Removal Efficiency (DRE)** = defects removed before release / total defects
-    
--   **Pass/Fail Rate** per cycle & **Execution Progress** (% executed)
-    
--   **Flake Rate** (automation stability): flaky tests / total automated tests
-    
--   **Automation Coverage** = automated test cases / total eligible test cases
-    
--   **Build Health / MTTR**: failing builds, mean time to restore
-    
--   **Code Coverage** (unit/integration) — line/branch/function (contextual, not a goal)
-    
+- **Requirement Coverage** = (# requirements with tests) / (total requirements)
+
+- **Test Case Effectiveness** = (defects found by testing) / (total defects found pre-prod + in prod)
+
+- **Defect Density** = defects / KLOC or per module
+
+- **Defect Leakage (Escape Rate)** = prod defects / total defects
+
+- **Defect Removal Efficiency (DRE)** = defects removed before release / total defects
+
+- **Pass/Fail Rate** per cycle & **Execution Progress** (% executed)
+
+- **Flake Rate** (automation stability): flaky tests / total automated tests
+
+- **Automation Coverage** = automated test cases / total eligible test cases
+
+- **Build Health / MTTR**: failing builds, mean time to restore
+
+- **Code Coverage** (unit/integration) — line/branch/function (contextual, not a goal)
 
 ----------
 
 ## 2) How will you validate the backend data?
 
--   **DB validation**: Query the DB (SQL) to verify persistence, constraints, and business rules.
-    
--   **API ↔ DB reconciliation**: Compare API payloads with DB rows (including timestamps, IDs).
-    
--   **ETL/Data pipelines**: Row counts, checksums, referential integrity, and transformation rules.
-    
--   **Events/Queues**: Validate messages on Kafka/SQS; assert correct schema & headers.
-    
--   **Repeatability**: Seed known test data; use Testcontainers/local DB snapshots.
-    
--   **Tooling**: JDBC/ODBC, `pg`/`mysql2` (Node), `psycopg2` (Python), ORM read-only repos.
-    
+- **DB validation**: Query the DB (SQL) to verify persistence, constraints, and business rules.
+
+- **API ↔ DB reconciliation**: Compare API payloads with DB rows (including timestamps, IDs).
+
+- **ETL/Data pipelines**: Row counts, checksums, referential integrity, and transformation rules.
+
+- **Events/Queues**: Validate messages on Kafka/SQS; assert correct schema & headers.
+
+- **Repeatability**: Seed known test data; use Testcontainers/local DB snapshots.
+
+- **Tooling**: JDBC/ODBC, `pg`/`mysql2` (Node), `psycopg2` (Python), ORM read-only repos.
 
 > Example (Node + PostgreSQL):
 
@@ -56,14 +54,13 @@ Common, manager-friendly metrics you can actually track and action:
 
 ## 3) What is GitHub Actions?
 
--   **CI/CD platform** built into GitHub.
-    
--   **Workflows** (YAML) run on **events** (push/PR/schedule).
-    
--   **Jobs** run on **runners** (Ubuntu/Windows/macOS or self-hosted).
-    
--   Built-in **secrets**, **caching**, **matrix** builds, and **marketplace actions**.
-    
+- **CI/CD platform** built into GitHub.
+
+- **Workflows** (YAML) run on **events** (push/PR/schedule).
+
+- **Jobs** run on **runners** (Ubuntu/Windows/macOS or self-hosted).
+
+- Built-in **secrets**, **caching**, **matrix** builds, and **marketplace actions**.
 
 > Minimal example:
 
@@ -83,29 +80,26 @@ Common, manager-friendly metrics you can actually track and action:
 
 ## 4) Difference between Git and Bitbucket?
 
--   **Git**: Distributed version control **tool** (CLI, open-source).
-    
--   **Bitbucket**: Hosted **service** by Atlassian that hosts Git repos, PRs, code reviews, pipelines, permissions, project governance.
-    
+- **Git**: Distributed version control **tool** (CLI, open-source).
+
+- **Bitbucket**: Hosted **service** by Atlassian that hosts Git repos, PRs, code reviews, pipelines, permissions, project governance.
 
 ----------
 
 ## 5) Difference between TypeScript and JavaScript?
 
--   **JavaScript**: Dynamic, interpreted in browsers/Node.js.
-    
--   **TypeScript**: Superset of JS with **static typing**, interfaces, generics; **compiles to JS**.  
+- **JavaScript**: Dynamic, interpreted in browsers/Node.js.
+
+- **TypeScript**: Superset of JS with **static typing**, interfaces, generics; **compiles to JS**.  
     Benefits: early error detection, better IDE tooling, safer refactors. Runtime is still JS.
-    
 
 ----------
 
 ## 6) Protocols used in Selenium and Playwright?
 
--   **Selenium**: Uses the **W3C WebDriver protocol** (HTTP/JSON) to drive browsers via drivers (chromedriver/geckodriver/edgedriver).
-    
--   **Playwright**: Uses a **WebSocket-based protocol** to control browser engines directly; for Chromium it leverages **CDP (Chrome DevTools Protocol)**; Firefox/WebKit via their native protocols. Result: faster, more deterministic control.
-    
+- **Selenium**: Uses the **W3C WebDriver protocol** (HTTP/JSON) to drive browsers via drivers (chromedriver/geckodriver/edgedriver).
+
+- **Playwright**: Uses a **WebSocket-based protocol** to control browser engines directly; for Chromium it leverages **CDP (Chrome DevTools Protocol)**; Firefox/WebKit via their native protocols. Result: faster, more deterministic control.
 
 ----------
 
@@ -113,53 +107,49 @@ Common, manager-friendly metrics you can actually track and action:
 
 Yes. Typical usage:
 
--   **Authoring tests quicker** (Playwright locators, assertions, test data builders).
-    
--   **Generating boilerplate** (page objects, fixtures, API clients).
-    
--   **Regex and SQL** suggestions; **docstrings** and **inline comments**.
-    
--   **Guardrails**: Always review suggestions, run linters/security scans, and keep licenses/compliance in mind.
-    
+- **Authoring tests quicker** (Playwright locators, assertions, test data builders).
+
+- **Generating boilerplate** (page objects, fixtures, API clients).
+
+- **Regex and SQL** suggestions; **docstrings** and **inline comments**.
+
+- **Guardrails**: Always review suggestions, run linters/security scans, and keep licenses/compliance in mind.
 
 ----------
 
 ## 8) Challenges you’ve faced in automation
 
--   **Flaky tests** (timing/async waits). Solved with **strict locators**, **auto-waits**, and **test retries**.
-    
--   **Environment instability** & **test data** drift. Solved with **idempotent seeding**, **contract tests**, and **sandbox mocks**.
-    
--   **Cross-browser**/mobile differences. Solved with **visual diffs**, **per-browser config**, **feature flags**.
-    
--   **Auth (SSO/MFA/CAPTCHA)**. Solved with **test accounts**, **bypass tokens**, **API-level login**.
-    
--   **Parallelization** & resource limits. Solved with **sharding**, **containerized runners**, **artifact retention**.
-    
--   **Maintenance debt**. Solved via **page objects**, **data builders**, **conventions**, and **linting**.
-    
+- **Flaky tests** (timing/async waits). Solved with **strict locators**, **auto-waits**, and **test retries**.
+
+- **Environment instability** & **test data** drift. Solved with **idempotent seeding**, **contract tests**, and **sandbox mocks**.
+
+- **Cross-browser**/mobile differences. Solved with **visual diffs**, **per-browser config**, **feature flags**.
+
+- **Auth (SSO/MFA/CAPTCHA)**. Solved with **test accounts**, **bypass tokens**, **API-level login**.
+
+- **Parallelization** & resource limits. Solved with **sharding**, **containerized runners**, **artifact retention**.
+
+- **Maintenance debt**. Solved via **page objects**, **data builders**, **conventions**, and **linting**.
 
 ----------
 
 ## 9) Have you configured any tools?
 
--   **Jenkins** agents, node labels, Node/Java toolchains; **shared libraries**.
-    
--   **GitHub Actions** runners, secrets, environments, branch protection.
-    
--   **SonarQube** scanner integration; **Allure/Playwright HTML** reports.
-    
--   **Docker** builds/caching; **S3/Slack** notifications; **SAML/SSO** for tools.
-    
+- **Jenkins** agents, node labels, Node/Java toolchains; **shared libraries**.
+
+- **GitHub Actions** runners, secrets, environments, branch protection.
+
+- **SonarQube** scanner integration; **Allure/Playwright HTML** reports.
+
+- **Docker** builds/caching; **S3/Slack** notifications; **SAML/SSO** for tools.
 
 ----------
 
 ## 10) How will you schedule jobs in Jenkins?
 
--   Use **“Build periodically”** (CRON) or in a **Jenkinsfile**.
-    
--   Alternative: **SCM polling**, **webhooks**, or **upstream/downstream** triggers.
-    
+- Use **“Build periodically”** (CRON) or in a **Jenkinsfile**.
+
+- Alternative: **SCM polling**, **webhooks**, or **upstream/downstream** triggers.
 
 > `Jenkinsfile` example:
 
@@ -175,16 +165,15 @@ Yes. Typical usage:
 
 ## 11) What does a utilities file contain in a framework?
 
--   **Helpers**: waits, retries, time/date, random data, UUIDs.
-    
--   **HTTP/API client** wrappers; **DB** helpers.
-    
--   **File** helpers (CSV/XLSX/PDF read/write).
-    
--   **Logger** config; **assertion** extensions; **config** loader.
-    
--   **Selectors/constants**, **email/SMS** readers (test inbox), **encryption** utils.
-    
+- **Helpers**: waits, retries, time/date, random data, UUIDs.
+
+- **HTTP/API client** wrappers; **DB** helpers.
+
+- **File** helpers (CSV/XLSX/PDF read/write).
+
+- **Logger** config; **assertion** extensions; **config** loader.
+
+- **Selectors/constants**, **email/SMS** readers (test inbox), **encryption** utils.
 
 ----------
 
@@ -206,22 +195,19 @@ Yes. Typical usage:
     git revert <commit>            # revert safely
     git reset --hard <commit>      # reset (careful)
 
-
-
 ----------
 
 ## 13) Have you automated the PDF file?
 
 Yes — typical validations:
 
--   **Content**: Extract and assert text, fonts, metadata.
-    
--   **Structure**: Page count, bookmarks, form fields.
-    
--   **Tables**: Parse with Tabula/camelot (Python) or pdf-parse (Node).
-    
--   **Visuals**: Render to images and **snapshot diff** for layout regressions.
-    
+- **Content**: Extract and assert text, fonts, metadata.
+
+- **Structure**: Page count, bookmarks, form fields.
+
+- **Tables**: Parse with Tabula/camelot (Python) or pdf-parse (Node).
+
+- **Visuals**: Render to images and **snapshot diff** for layout regressions.
 
 > Node example (pdf-parse):
 
@@ -229,7 +215,6 @@ Yes — typical validations:
     import pdf from "pdf-parse";
     const data = await pdf(fs.readFileSync("invoice.pdf"));
     expect(data.text).toContain("Total: $99.00");
-
 
 ----------
 
@@ -239,13 +224,11 @@ Two angles:
 
 **A) Validate macro output data**
 
--   Open the Excel file (manually or via automation), **run macro**, save as XLSX/CSV, then **read** with ExcelJS/xlsx (Node) or `pandas` (Python) and **assert** values.
-    
+- Open the Excel file (manually or via automation), **run macro**, save as XLSX/CSV, then **read** with ExcelJS/xlsx (Node) or `pandas` (Python) and **assert** values.
 
 **B) Programmatically trigger macros (Windows)**
 
--   Use **COM automation** (PyWin32 / VBA) to run a macro, then validate outputs.
-    
+- Use **COM automation** (PyWin32 / VBA) to run a macro, then validate outputs.
 
 > Python (Windows COM) example:
 
@@ -263,12 +246,11 @@ Two angles:
 
 ## 15) What is a schema validation?
 
--   **Verifying payload structure** (types, required fields, formats, enums) against a **schema**.
-    
--   Used for **APIs** (JSON Schema/OpenAPI), **events** (Avro/Protobuf), and **DB** constraints.
-    
--   Catches breaking changes early and supports **contract testing**.
-    
+- **Verifying payload structure** (types, required fields, formats, enums) against a **schema**.
+
+- Used for **APIs** (JSON Schema/OpenAPI), **events** (Avro/Protobuf), and **DB** constraints.
+
+- Catches breaking changes early and supports **contract testing**.
 
 > JSON Schema (Node + Ajv) example:
 
@@ -293,9 +275,6 @@ Two angles:
 
 ### Bonus: Selenium vs Playwright quick picks
 
--   **Selenium**: Broad language support, W3C WebDriver, huge ecosystem.
-    
--   **Playwright**: Faster, auto-waits, network mocking, trace viewer, first-class parallelism.
+- **Selenium**: Broad language support, W3C WebDriver, huge ecosystem.
 
-
-
+- **Playwright**: Faster, auto-waits, network mocking, trace viewer, first-class parallelism.

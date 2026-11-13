@@ -4,11 +4,10 @@
 
 # 𝗥𝗼𝘂𝗻𝗱 𝟭: 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗦𝗰𝗿𝗲𝗲𝗻𝗶𝗻𝗴
 
-
 ## 1) Walk me through your automation framework – which tools, design patterns, and reporting mechanisms do you use?
 
-    
 **Tech Stack**
+
 - **Language**: Java 11+
 - **UI Automation**: Selenium WebDriver
 - **API Automation**: Rest Assured (with TestNG)
@@ -19,7 +18,8 @@
 - **Utilities**: Apache POI (Excel), Jackson/Gson (JSON), Lombok (DTOs), WebDriverManager
 
 **Project Layout (Maven)**
-```
+
+```text
 project-root/
   src/test/java/
     base/              # DriverManager, TestBase, ConfigFactory
@@ -34,6 +34,7 @@ project-root/
 ```
 
 **Design Patterns**
+
 - **Page Object Model (POM)**: Encapsulates page structure & behaviors.
 - **Page Factory (optional)**: For `@FindBy` annotations.
 - **Factory Pattern**: `DriverFactory`, `EnvironmentFactory` for cross-browser/env.
@@ -43,6 +44,7 @@ project-root/
 - **Command/Service Layer**: Reusable workflows (e.g., `LoginService`).
 
 **Reporting & Observability**
+
 - **Extent**: Rich HTML, screenshots, categorization, BDD-like steps.
 - **Allure**: History trends, attachments, retries, steps annotations.
 - **Loggers**: SLF4J/Logback per test with correlation IDs.
@@ -52,6 +54,7 @@ project-root/
 ## 2) Explain how you use **Selenium WebDriver with Java**. How do you handle dynamic web elements?
 
 **Driver Bootstrap**
+
 ```java
 public class DriverManager {
   private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
@@ -71,6 +74,7 @@ public class DriverManager {
 ```
 
 **Handling Dynamic Web Elements**
+
 - Use **robust locators** (CSS/XPath) anchored on stable attributes (data-* ids).
 - **Relative XPath** with functions: `contains()`, `starts-with()`, `normalize-space()`.
 - **Explicit waits** for presence/visibility/clickability to avoid stale/detached nodes.
@@ -103,11 +107,13 @@ public void resilientClick(By locator) {
 ## 3) What is the role of TestNG in your framework? How do you implement data-driven testing using `@DataProvider`?
 
 **Why TestNG?**
+
 - Flexible test orchestration: grouping, parallel execution, dependencies.
 - Built-in **data providers**, **retry**, and **listeners** (`ITestListener`).
 - Rich suite XML for environment-driven runs.
 
 **Data-Driven Example**
+
 ```java
 public class LoginTests extends TestBase {
 
@@ -136,15 +142,20 @@ Optionally load from Excel/CSV/JSON using Apache POI/Jackson.
 ## 4) How do you handle waits in Selenium? What’s the difference between implicit, explicit, and fluent waits?
 
 - **Implicit Wait**: Sets a default polling time for **findElement**. Global, may mask sync issues. Use sparingly.
+
   ```java
   DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(0)); // often disable
   ```
+
 - **Explicit Wait**: Wait for a specific condition (visibility, clickability, URL, JS). Preferred.
+
   ```java
   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
   WebElement el = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
   ```
+
 - **Fluent Wait**: Custom polling, exception ignoring.
+
   ```java
   Wait<WebDriver> fluent = new FluentWait<>(driver)
       .withTimeout(Duration.ofSeconds(20))
@@ -152,6 +163,7 @@ Optionally load from Excel/CSV/JSON using Apache POI/Jackson.
       .ignoring(NoSuchElementException.class);
   WebElement el = fluent.until(d -> d.findElement(locator));
   ```
+
 **Best Practice**: Avoid mixing implicit & explicit waits together.
 
 ---
@@ -159,6 +171,7 @@ Optionally load from Excel/CSV/JSON using Apache POI/Jackson.
 ## 5) How do you manage test execution in Jenkins? Have you set up CI pipelines for automated test runs?
 
 **Pipeline-as-Code (Declarative)**
+
 ```groovy
 pipeline {
   agent any
@@ -182,6 +195,7 @@ pipeline {
   }
 }
 ```
+
 - Supports **scheduled runs**, **parallel nodes** for cross-browser, and **post actions** for publishing reports and artifacts.
 
 ---
@@ -189,6 +203,7 @@ pipeline {
 ## 6) What kind of reports do you generate post automation execution? How do you integrate Extent Reports or Allure?
 
 **Extent Reports Setup**
+
 ```java
 public class ExtentManager {
   private static final ExtentReports extent = new ExtentReports();
@@ -220,6 +235,7 @@ public class TestBase {
 ```
 
 **Allure Setup (Maven)**
+
 ```xml
 <dependency>
   <groupId>io.qameta.allure</groupId>
@@ -232,7 +248,9 @@ public class TestBase {
   <version>2.11.2</version>
 </plugin>
 ```
+
 Annotate steps & attach artifacts:
+
 ```java
 @Step("Login as {user}")
 public HomePage loginAs(String user, String pass) { /* ... */ }
@@ -245,6 +263,7 @@ Allure.addAttachment("Failure Screenshot", new ByteArrayInputStream(bytes));
 ## 7) What is Page Object Model (POM)? How do you maintain reusable components across multiple test cases?
 
 **POM Principle**: Page classes expose **behaviors**, not locators.
+
 ```java
 public class LoginPage {
   private WebDriver driver = DriverManager.getDriver();
@@ -260,7 +279,9 @@ public class LoginPage {
   }
 }
 ```
+
 **Reusable Components**
+
 - **BasePage** with common methods (safeClick, type, waitFor, getText).
 - **Components**: Header, Footer, Modal, Grid as separate classes used across pages.
 - **Service Layer**: High-level flows (e.g., `CheckoutService.placeOrder()`), reused in multiple tests.
@@ -271,6 +292,7 @@ public class LoginPage {
 ## 8) Have you automated REST API test cases? Which tools or libraries do you use (like Rest Assured or Postman)?
 
 **Rest Assured Pattern**
+
 ```java
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
@@ -292,6 +314,7 @@ public void createUser_shouldReturn201() {
     .body("id", notNullValue());
 }
 ```
+
 - Use **Request/Response specs**, **filters** for logging, **schema validation** (JSON Schema), and integrate into TestNG suites for unified reporting.
 - Postman can be used for quick exploration; collections exported to Newman for CI if needed.
 
@@ -300,6 +323,7 @@ public void createUser_shouldReturn201() {
 ## 9) How do you capture screenshots on failure and attach them to reports?
 
 **Utility**
+
 ```java
 public class Screenshot {
   public static String capture(WebDriver driver, String name) {
@@ -313,6 +337,7 @@ public class Screenshot {
   }
 }
 ```
+
 Hook into **TestNG Listeners** or `@AfterMethod` to capture and attach for Extent/Allure.
 
 ---
@@ -320,13 +345,15 @@ Hook into **TestNG Listeners** or `@AfterMethod` to capture and attach for Exten
 ## 10) What is your approach to version control? How do you structure your code in Git and collaborate with teams?
 
 **Branching Strategy**
+
 - **Main**: Always stable; tagged releases.
 - **Develop**: Integration branch (optional).
-- **Feature/*** branches per story; **hotfix/*** for urgent fixes.
+- **Feature/***branches per story; **hotfix/*** for urgent fixes.
 - **Pull Requests** with mandatory code review (2 reviewers for critical tests).
 
 **Repo Structure**
-```
+
+```text
 automation-tests/
   ui/           # Selenium
   api/          # Rest Assured
@@ -335,6 +362,7 @@ automation-tests/
 ```
 
 **Conventions**
+
 - **Commit Messages**: Conventional commits (`feat(ui): add checkout flow`, `fix(api): handle 429`).
 - **Code Quality**: Checkstyle/SpotBugs, unit tests for utils, pre-commit hooks.
 - **Secrets**: Stored in Jenkins credentials & environment variables; never in repo.
@@ -343,6 +371,7 @@ automation-tests/
 ---
 
 ### Extras: Parallelism & Scalability
+
 - TestNG parallel suites by **methods/classes** with thread-safe `DriverManager`.
 - Selenium Grid / Selenoid for distributed runs; Dockerized nodes.
 - Tagging tests (Smoke/Regression) and running selective suites in CI.

@@ -1,7 +1,7 @@
 # AWS Certified AI Practitioner (AIF-C01): Practice Questions, Set 2
 
 > **Last reviewed:** 2026-11-13 against the AIF-C01 exam guide (v1.4) · AI-assisted structural and staleness review · see [review-log.md](review-log.md)
-
+>
 > **Format:** 65 questions · 90 minutes · weighted by domain · all new scenarios (no repeats from Set 1)
 > **Question types:** Multiple choice (one answer), multiple response (select TWO), ordering, matching
 > **Answers:** Each answer is directly below its question inside a collapsible **"Show answer"** block. If your Markdown viewer doesn't support collapsible blocks, the answers will show as plain text, so cover them while you practise.
@@ -1033,6 +1033,7 @@ Which TWO practices strengthen AI governance in an organisation? **(Select TWO.)
 | **Total** | **65** | **___ / 65** | **52** |
 
 > **Set 2 focus areas, for checking your weak spots:**
+>
 > - Async vs serverless vs batch inference (Q5)
 > - Concept drift vs data drift (Q12)
 > - `Retrieve` vs `RetrieveAndGenerate` (Q32)

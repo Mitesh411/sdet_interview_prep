@@ -78,11 +78,11 @@ Each item is scored on **Impact** (learner value, reach, credibility) and **Feas
 | ID | Task | Description | Impact | Feasibility | Dev Effort | Test Effort |
 |---|---|---|---|---|---|---|
 | F-01 | **Write a real README** | Purpose, audience, folder map, how to use (study vs. self-test), table of all guides with question counts, contribution link, disclaimer that questions are not real exam content | 5 | 5 | 2 SP (4h) | 0.5 SP (1h) |
-| F-02 | **Remove/replace placeholder** | Delete `Playwright/playwright.md`, or turn it into a Playwright section index | 2 | 5 | 0.25 SP (0.5h) | 0.25 SP (0.5h) |
+| ~~F-02~~ | ~~**Remove/replace placeholder**~~ | ~~Delete `Playwright/playwright.md`, or turn it into a Playwright section index~~ ✅ **Done 2026-11-14** (with F-06). It's now a short Playwright index that links to the guide and the study plan | 2 | 5 | 0.25 SP (0.5h) | 0.25 SP (0.5h) |
 | ~~F-03~~ | ~~**Fix naming**~~ | ~~Rename `Capegemini/` to `Capgemini/` and `AWS AI Practitioner/Claude/` to `AWS-AI-Practitioner/`. Use kebab-case file names with no `&` or spaces (e.g. `ch1-2.md`). Update internal links~~ ✅ **Done 2026-11-13** | 3 | 5 | 1 SP (2h) | 0.5 SP (1h) |
 | F-04 | **Fix heading structure** | Replace Unicode bold characters with plain text. Use one H1 per file and H2/H3 for rounds and questions. Fence all code blocks with language tags | 3 | 5 | 1.5 SP (3h) | 0.5 SP (1h) |
-| F-05 | **Add repo hygiene** | `.gitignore`, `CONTRIBUTING.md` (question template, style guide, review rule for AI-generated content), issue templates ("Add interview experience", "Report incorrect answer") | 4 | 5 | 1.5 SP (3h) | 0.5 SP (1h) |
-| F-06 | **Markdown CI** | GitHub Action running `markdownlint`, `lychee` (link checker) and a spell check with a custom tech dictionary on every PR | 4 | 5 | 2 SP (4h) | 1 SP (2h) |
+| F-05 | **Add repo hygiene** | `.gitignore`, ~~`CONTRIBUTING.md` (question template, style guide, review rule for AI-generated content)~~ ✅ added 2026-11-14 with C-01, issue templates ("Add interview experience", "Report incorrect answer"). **Still open:** `.gitignore` and issue templates | 4 | 5 | 1.5 SP (3h) | 0.5 SP (1h) |
+| ~~F-06~~ | ~~**Markdown CI**~~ | ~~GitHub Action running `markdownlint`, `lychee` (link checker) and a spell check with a custom tech dictionary on every PR~~ ✅ **Done 2026-11-14.** `.github/workflows/docs-quality.yml` runs on every PR and by manual dispatch. Configs: `.markdownlint-cli2.jsonc`, `lychee.toml`, `cspell.json` + `.cspell/tech-words.txt`. Existing content was fixed to pass (MD025 multiple-H1 stays disabled until F-04) | 4 | 5 | 2 SP (4h) | 1 SP (2h) |
 | F-07 | **Remove committed PDF** | Delete the PDF from the repo. Generate PDFs on release instead (see P-04) | 2 | 5 | 0.25 SP (0.5h) | 0.25 SP (0.5h) |
 | | | | | **Phase total** | **8.5 SP (17h)** | **3.5 SP (7h)** |
 
@@ -96,7 +96,7 @@ Each item is scored on **Impact** (learner value, reach, credibility) and **Feas
 
 | ID | Task | Description | Impact | Feasibility | Dev Effort | Test Effort |
 |---|---|---|---|---|---|---|
-| C-01 | **Define a canonical question schema** | One Markdown pattern for every Q&A. Front-matter-style metadata (`id`, `topic`, `company`, `role`, `round`, `difficulty`, `type`, `tags`, `last_verified`), then the question, options, and a `<details>` answer with an explanation. Document it in CONTRIBUTING | 5 | 4 | 2 SP (4h) | 1 SP (2h) |
+| ~~C-01~~ | ~~**Define a canonical question schema**~~ | ~~One Markdown pattern for every Q&A, with metadata, question, options and a `<details>` answer. Document it in CONTRIBUTING~~ ✅ **Done 2026-11-14.** Spec in `docs/question-schema.md`, JSON Schema in `docs/question.schema.json`, template in `docs/templates/`, linked from `CONTRIBUTING.md` | 5 | 4 | 2 SP (4h) | 1 SP (2h) |
 | ~~C-02~~ | ~~**Deduplicate the AWS 525-question bank**~~ | ~~Pick one copy, merge any better wording, and delete the other copy~~ ✅ **Done 2026-11-13 as part of W4.** The banks turned out to be different question sets, so only the 52 overlapping questions were removed (from `question-bank-2.md`) instead of deleting a whole file | 5 | 4 | 3 SP (6h) | 2 SP (4h) |
 | ~~C-03~~ | ~~**Convert `AIF-C01.md` to self-test format**~~ | ~~Add a title and intro, number the 57 questions, move answers into `<details>`, and add explanations for each~~ ✅ **Done 2026-11-13.** Now `aif-c01-questions.md`, with domain tags, explanations, an answer key and a score tracker. All 57 answers were checked | 4 | 4 | 4 SP (8h) | 2 SP (4h) |
 | C-04 | **Normalize the remaining files to the schema** | Migrate the Playwright, Deloitte, Capgemini and both 65-question mock exams. Add a script that validates the schema in CI | 4 | 3 | 6 SP (12h) | 3 SP (6h) |
@@ -140,7 +140,7 @@ Each module: 25–40 questions in the canonical schema, with code samples where 
 | P-05 | **Progress tracking and spaced repetition** | Local-only (browser storage) tracking of answered, wrong and bookmarked questions; a "review my weak areas" deck using an SM-2-style schedule | P2 | 4 | 3 | 8 SP (16h) | 4 SP (8h) |
 | P-06 | **Flashcard export** | Export the dataset to Anki (`.apkg`/CSV) and Quizlet CSV | P2 | 3 | 4 | 3 SP (6h) | 1 SP (2h) |
 | P-07 | **Content dashboard** | Auto-generated stats page: questions by topic, difficulty and company; staleness (`last_verified` older than 6 months); coverage against the AIF-C01 exam guide task statements | P2 | 3 | 4 | 4 SP (8h) | 1.5 SP (3h) |
-| P-08 | **Study plans** | Curated paths: "7-day AIF-C01 cram", "2-week SDET (Selenium/Java)", "Playwright in 5 days", each linking to questions and notes in order | P2 | 4 | 5 | 3 SP (6h) | 1 SP (2h) |
+| ~~P-08~~ | ~~**Study plans**~~ | ~~Curated paths: "7-day AIF-C01 cram", "2-week SDET (Selenium/Java)", "Playwright in 5 days", each linking to questions and notes in order~~ ✅ **Done 2026-11-14.** See `study-plans/`. The SDET plan covers all 62 Deloitte and Capgemini questions | P2 | 4 | 5 | 3 SP (6h) | 1 SP (2h) |
 | | | | | | **Phase total** | **44 SP (88h)** | **19.5 SP (39h)** |
 
 **Exit criteria:** site is live; quiz works for all question banks; parser runs in CI and fails the build on schema violations.
@@ -163,6 +163,7 @@ All AI features read from the P-02 dataset. They require **human review before A
 | | | | | | **Phase total** | **55 SP (110h)** | **32 SP (64h)** |
 
 **AI guardrails (required for all of Phase 3):**
+
 - Mark AI-generated content in metadata (`source: ai-generated`, `reviewed_by`).
 - Keep an eval set (≥100 cases) for A-01 and A-02 and run it in CI on prompt changes.
 - Never store user resumes or answers on the server. Show a clear data notice.
@@ -189,12 +190,12 @@ Ranked by Impact × Feasibility, then by dependencies.
 | Rank | ID | Task | Priority | Dev | Test | Depends on |
 |---|---|---|---|---|---|---|
 | 1 | F-01 | Write README | P0 | 4h | 1h | — |
-| 2 | F-06 | Markdown CI (lint, links, spell) | P0 | 4h | 2h | F-04 |
-| 3 | F-05 | CONTRIBUTING + templates | P0 | 3h | 1h | — |
+| 2 | ~~F-06~~ | ~~Markdown CI (lint, links, spell)~~ ✅ Done | P0 | 4h | 2h | ~~F-04~~ |
+| 3 | F-05 | ~~CONTRIBUTING~~ (✅ done) + `.gitignore` + issue templates | P0 | 3h | 1h | — |
 | 4 | ~~F-03~~/F-04 | ~~Naming~~ (✅ done) + heading fixes | P0 | 5h | 2h | — |
 | 5 | ~~C-02~~ | ~~Deduplicate AWS bank~~ ✅ Done | P1 | 6h | 4h | ~~C-01~~ |
 | 6 | C-06 | Complete Playwright Q81–100 | P1 | 12h | 4h | — |
-| 7 | C-01 | Canonical question schema | P1 | 4h | 2h | — |
+| 7 | ~~C-01~~ | ~~Canonical question schema~~ ✅ Done | P1 | 4h | 2h | — |
 | 8 | P-01 | Static docs site | P1 | 10h | 4h | F-03 |
 | 9 | ~~C-03~~ | ~~Fix `AIF-C01.md` self-test format~~ ✅ Done | P1 | 8h | 4h | ~~C-01~~ |
 | 10 | C-08 | API Testing module | P1 | 12h | 4h | C-01 |
@@ -223,7 +224,7 @@ The calendar estimates assume one part-time contributor. With 3 contributors wor
 
 ## 7. Timeline (Indicative)
 
-```
+```text
 Quarter 1 (Wk 1-12)
   Wk 1-2   ████ Phase 0: README, naming, CI, CONTRIBUTING
   Wk 3-8   ████████████ Phase 1A/1B: schema, dedupe, Playwright 81-100, AIF-C01 fix
@@ -270,6 +271,6 @@ Quarter 3-4
 ## 10. Immediate Next Steps (This Week)
 
 1. Merge **F-01 (README)** and **F-02 (remove placeholder)**.
-2. Agree the **canonical question schema (C-01)**. It unblocks dedup, the parser, the quiz and all AI work.
+2. ~~Agree the **canonical question schema (C-01)**. It unblocks dedup, the parser, the quiz and all AI work.~~ ✅ Done 2026-11-14 ([docs/question-schema.md](docs/question-schema.md)).
 3. Open GitHub issues for every item in Section 5 with labels `P0`–`P3`, `content`, `platform` and `ai`, and a size label in story points.
 4. Start **C-06 (Playwright Q81–100)**. It is the most visible content gap.

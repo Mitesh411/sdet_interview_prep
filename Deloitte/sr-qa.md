@@ -9,7 +9,6 @@ I’m a QA Engineer with experience in both **manual and automation testing** fo
 My day-to-day responsibilities include **test case design**, **test execution**, **defect reporting and tracking**, and ensuring end-to-end quality across releases. I also contribute to automation using **Selenium WebDriver with Java** (along with TestNG/JUnit, Maven, and Git), and I maintain reusable test suites for **regression and smoke testing**.
 
 Alongside UI testing, I do **API testing** (Postman/RestAssured basics), **database validation using SQL**, and I regularly participate in sprint ceremonies like refinement, planning, daily standups, and retrospectives. My focus is always on improving test coverage, reducing production issues, and making releases smoother and more predictable.
-    
 
 ----------
 
@@ -71,20 +70,19 @@ Example:
 
 Types:
 
--   **INNER JOIN**: only matching rows in both tables
-    
--   **LEFT JOIN (LEFT OUTER)**: all rows from left + matching from right; non-matching right → NULL
-    
--   **RIGHT JOIN (RIGHT OUTER)**: all rows from right + matching from left
-    
--   **FULL OUTER JOIN**: all rows from both; non-matching sides → NULL (not supported in MySQL without workaround)
-    
--   **CROSS JOIN**: Cartesian product (every left row with every right row)
-    
--   **SELF JOIN**: a table joined to itself
-    
--   (Also used: **NATURAL JOIN** in some DBs, but generally avoided in real projects)
-    
+- **INNER JOIN**: only matching rows in both tables
+
+- **LEFT JOIN (LEFT OUTER)**: all rows from left + matching from right; non-matching right → NULL
+
+- **RIGHT JOIN (RIGHT OUTER)**: all rows from right + matching from left
+
+- **FULL OUTER JOIN**: all rows from both; non-matching sides → NULL (not supported in MySQL without workaround)
+
+- **CROSS JOIN**: Cartesian product (every left row with every right row)
+
+- **SELF JOIN**: a table joined to itself
+
+- (Also used: **NATURAL JOIN** in some DBs, but generally avoided in real projects)
 
 ----------
 
@@ -92,17 +90,15 @@ Types:
 
 `LinkedHashMap` is a `HashMap` variant that **maintains order**:
 
--   **Insertion order** (default), or
-    
--   **Access order** (if enabled), useful for LRU cache.
-    
+- **Insertion order** (default), or
+
+- **Access order** (if enabled), useful for LRU cache.
 
 Use cases:
 
--   When you need **fast lookup (O(1) average)** + **predictable iteration order**
-    
--   Implement **LRU cache** using `accessOrder=true` and `removeEldestEntry`
-    
+- When you need **fast lookup (O(1) average)** + **predictable iteration order**
+
+- Implement **LRU cache** using `accessOrder=true` and `removeEldestEntry`
 
 Example (preserves insertion order):
 
@@ -114,18 +110,17 @@ Example (preserves insertion order):
 
 ## 6) Explain black-box testing and white-box testing
 
--   **Black-box testing**: test based on requirements/spec; you don’t look at code.
-    
-    -   Focus: functionality, inputs/outputs, UI/API behavior
-        
-    -   Techniques: equivalence partitioning, boundary value analysis, decision tables
-        
--   **White-box testing**: test based on internal code/logic.
-    
-    -   Focus: code paths, conditions, loops, statements
-        
-    -   Techniques: statement coverage, branch coverage, path coverage
-        
+- **Black-box testing**: test based on requirements/spec; you don’t look at code.
+
+  - Focus: functionality, inputs/outputs, UI/API behavior
+
+  - Techniques: equivalence partitioning, boundary value analysis, decision tables
+
+- **White-box testing**: test based on internal code/logic.
+
+  - Focus: code paths, conditions, loops, statements
+
+  - Techniques: statement coverage, branch coverage, path coverage
 
 ----------
 
@@ -133,14 +128,13 @@ Example (preserves insertion order):
 
 In Java:
 
--   **Exception**: conditions an application might want to catch and handle.
-    
-    -   Example: `IOException`, `SQLException`
-        
--   **Error**: serious problems typically not meant to be handled by application code.
-    
-    -   Example: `OutOfMemoryError`, `StackOverflowError`
-        
+- **Exception**: conditions an application might want to catch and handle.
+
+  - Example: `IOException`, `SQLException`
+
+- **Error**: serious problems typically not meant to be handled by application code.
+
+  - Example: `OutOfMemoryError`, `StackOverflowError`
 
 ----------
 
@@ -148,39 +142,37 @@ In Java:
 
 In Selenium:
 
--   `findElement(By ...)`
-    
-    -   Returns **single WebElement**
-        
-    -   If not found → **throws NoSuchElementException**
-        
--   `findElements(By ...)`
-    
-    -   Returns **List<WebElement>**
-        
-    -   If not found → returns **empty list** (no exception)
-        
+- `findElement(By ...)`
+
+  - Returns **single WebElement**
+
+  - If not found → **throws NoSuchElementException**
+
+- `findElements(By ...)`
+
+  - Returns `List<WebElement>`
+
+  - If not found → returns **empty list** (no exception)
 
 ----------
 
 ## 9) Difference between implicit wait and explicit wait
 
--   **Implicit wait**
-    
-    -   Global setting: applies to all `findElement(s)`
-        
-    -   Waits up to given time before throwing exception / returning empty list
-        
-    -   Can cause confusing delays if overused
-        
--   **Explicit wait**
-    
-    -   Applied to a **specific condition** (element visible/clickable/text present/etc.)
-        
-    -   Uses `WebDriverWait` + `ExpectedConditions`
-        
-    -   Preferred for stable automation
-        
+- **Implicit wait**
+
+  - Global setting: applies to all `findElement(s)`
+
+  - Waits up to given time before throwing exception / returning empty list
+
+  - Can cause confusing delays if overused
+
+- **Explicit wait**
+
+  - Applied to a **specific condition** (element visible/clickable/text present/etc.)
+
+  - Uses `WebDriverWait` + `ExpectedConditions`
+
+  - Preferred for stable automation
 
 Tip: avoid mixing implicit + explicit heavily (can cause unpredictable wait times).
 
@@ -189,7 +181,6 @@ Tip: avoid mixing implicit + explicit heavily (can cause unpredictable wait time
 ## 10) Selenium code to automate a calendar WebElement
 
 Example: select a date in a typical date-picker by navigating months and clicking a day.
-
 
     import java.time.Duration;
     import org.openqa.selenium.*;
@@ -219,7 +210,6 @@ Example: select a date in a typical date-picker by navigating months and clickin
         }
     }
 
-
 > Note: Locators (`.ui-datepicker-*`) vary by app. Replace with your calendar’s DOM.
 
 ----------
@@ -245,20 +235,19 @@ Only works for **prompt alerts**.
 
 ## 13) Difference between checked and unchecked exceptions
 
--   **Checked exceptions**
-    
-    -   Must be **handled** (try-catch) or **declared** (`throws`)
-        
-    -   Example: `IOException`, `SQLException`
-        
--   **Unchecked exceptions**
-    
-    -   Subclasses of `RuntimeException`
-        
-    -   Not required to handle explicitly
-        
-    -   Example: `NullPointerException`, `ArrayIndexOutOfBoundsException`
-        
+- **Checked exceptions**
+
+  - Must be **handled** (try-catch) or **declared** (`throws`)
+
+  - Example: `IOException`, `SQLException`
+
+- **Unchecked exceptions**
+
+  - Subclasses of `RuntimeException`
+
+  - Not required to handle explicitly
+
+  - Example: `NullPointerException`, `ArrayIndexOutOfBoundsException`
 
 ----------
 
@@ -271,18 +260,17 @@ It throws `NoSuchElementException` only when **no elements match**.
 
 ## 15) Explain smoke testing and sanity testing
 
--   **Smoke testing**
-    
-    -   Quick checks to ensure the build is **stable enough to test**
-        
-    -   Broad and shallow (login, navigation, major flows)
-        
--   **Sanity testing**
-    
-    -   Narrow checks after a small change/fix to confirm **specific functionality works**
-        
-    -   More focused than smoke
-        
+- **Smoke testing**
+
+  - Quick checks to ensure the build is **stable enough to test**
+
+  - Broad and shallow (login, navigation, major flows)
+
+- **Sanity testing**
+
+  - Narrow checks after a small change/fix to confirm **specific functionality works**
+
+  - More focused than smoke
 
 ----------
 
@@ -290,8 +278,7 @@ It throws `NoSuchElementException` only when **no elements match**.
 
 Relative locators (Selenium 4) locate elements based on their position relative to another element:
 
--   `above()`, `below()`, `toLeftOf()`, `toRightOf()`, `near()`
-    
+- `above()`, `below()`, `toLeftOf()`, `toRightOf()`, `near()`
 
 Example:
 
@@ -306,50 +293,49 @@ Example:
 
 Here are common real-world challenges (you can speak to 2–3 with how you solved them):
 
-1.  **Flaky automation due to synchronization issues (AJAX / loaders / dynamic UI)**
-    
-    -   _Challenge:_ Elements appeared late or became stale after page refresh.
-        
-    -   _Solution:_ Used **explicit waits** with proper conditions (visibility/clickable), added smart wait utilities, and avoided hard sleeps.
-        
-2.  **Unstable locators because of frequently changing DOM**
-    
-    -   _Challenge:_ Dynamic IDs and changing XPaths broke tests.
-        
-    -   _Solution:_ Worked with devs to add stable attributes (like `data-testid`), improved CSS/XPath strategies, and implemented **Page Object Model** for easy maintenance.
-        
-3.  **Test data problems across environments**
-    
-    -   _Challenge:_ Data was reused/dirty, causing inconsistent results.
-        
-    -   _Solution:_ Created controlled test data sets, used setup/cleanup scripts, and validated data with **SQL** before execution.
-        
-4.  **Regression suite getting too large and time-consuming**
-    
-    -   _Challenge:_ Full regression couldn’t fit within sprint timelines.
-        
-    -   _Solution:_ Prioritized tests by business impact, created **smoke + sanity + full regression buckets**, and moved stable tests to CI nightly runs.
-        
-5.  **Environment and CI failures**
-    
-    -   _Challenge:_ Tests passed locally but failed in CI due to browser/driver mismatch or environment slowness.
-        
-    -   _Solution:_ Standardized versions, improved waits, captured screenshots/logs on failure, and ensured consistent config through properties/profiles.
+1. **Flaky automation due to synchronization issues (AJAX / loaders / dynamic UI)**
+
+    - _Challenge:_ Elements appeared late or became stale after page refresh.
+
+    - _Solution:_ Used **explicit waits** with proper conditions (visibility/clickable), added smart wait utilities, and avoided hard sleeps.
+
+2. **Unstable locators because of frequently changing DOM**
+
+    - _Challenge:_ Dynamic IDs and changing XPaths broke tests.
+
+    - _Solution:_ Worked with devs to add stable attributes (like `data-testid`), improved CSS/XPath strategies, and implemented **Page Object Model** for easy maintenance.
+
+3. **Test data problems across environments**
+
+    - _Challenge:_ Data was reused/dirty, causing inconsistent results.
+
+    - _Solution:_ Created controlled test data sets, used setup/cleanup scripts, and validated data with **SQL** before execution.
+
+4. **Regression suite getting too large and time-consuming**
+
+    - _Challenge:_ Full regression couldn’t fit within sprint timelines.
+
+    - _Solution:_ Prioritized tests by business impact, created **smoke + sanity + full regression buckets**, and moved stable tests to CI nightly runs.
+
+5. **Environment and CI failures**
+
+    - _Challenge:_ Tests passed locally but failed in CI due to browser/driver mismatch or environment slowness.
+
+    - _Solution:_ Standardized versions, improved waits, captured screenshots/logs on failure, and ensured consistent config through properties/profiles.
 
 Sample (interview-ready) points:
 
--   **Dynamic elements & changing DOM** causing flaky locators → solved using stable attributes, better XPath/CSS, page object model.
-    
--   **Synchronization issues** (AJAX loaders, animations) → fixed with explicit waits and custom wait utilities.
-    
--   **Test data management** across environments → created reusable test data builders and cleanup routines.
-    
--   **CI/CD failures** due to environment differences → containerized runs, ensured consistent browser/driver versions.
-    
--   **Parallel execution issues** (shared state) → thread-safe driver management, isolated data.
-    
--   **Intermittent failures** → added retry logic _only where justified_, improved logging/screenshots, and root-caused real issues.
-    
+- **Dynamic elements & changing DOM** causing flaky locators → solved using stable attributes, better XPath/CSS, page object model.
+
+- **Synchronization issues** (AJAX loaders, animations) → fixed with explicit waits and custom wait utilities.
+
+- **Test data management** across environments → created reusable test data builders and cleanup routines.
+
+- **CI/CD failures** due to environment differences → containerized runs, ensured consistent browser/driver versions.
+
+- **Parallel execution issues** (shared state) → thread-safe driver management, isolated data.
+
+- **Intermittent failures** → added retry logic _only where justified_, improved logging/screenshots, and root-caused real issues.
 
 ----------
 
@@ -357,89 +343,83 @@ Sample (interview-ready) points:
 
 Prioritization strategy:
 
-1.  **Business-critical flows** (revenue, onboarding, login, payments)
-    
-2.  **High-risk areas** (recent code changes, complex logic, integrations)
-    
-3.  **High-defect modules** (historically unstable)
-    
-4.  **Core CRUD + key validations**
-    
-5.  **Cross-browser/device critical paths**
-    
-6.  **APIs/integration points** (third-party services, DB updates, queues)
-    
-7.  **Security and role/permission checks** where applicable
-    
-8.  **Production bugs**: add “never again” tests for key escaped defects
-    
+1. **Business-critical flows** (revenue, onboarding, login, payments)
+
+2. **High-risk areas** (recent code changes, complex logic, integrations)
+
+3. **High-defect modules** (historically unstable)
+
+4. **Core CRUD + key validations**
+
+5. **Cross-browser/device critical paths**
+
+6. **APIs/integration points** (third-party services, DB updates, queues)
+
+7. **Security and role/permission checks** where applicable
+
+8. **Production bugs**: add “never again” tests for key escaped defects
 
 Practical approach:
 
--   Maintain a **smoke suite**, a **sanity suite**, and a **full regression suite**
-    
--   Run smoke on every build, targeted regression per change, full regression nightly/weekly depending on timeline.
+- Maintain a **smoke suite**, a **sanity suite**, and a **full regression suite**
 
-
+- Run smoke on every build, targeted regression per change, full regression nightly/weekly depending on timeline.
 
 # Round 2: (Techno-Managerial)
-
-
 
 ## 1) Explain your framework in detail
 
 A typical **Java + Selenium + TestNG + Maven** automation framework (industry-standard) looks like this:
 
--   **Design pattern**
-    
-    -   **Page Object Model (POM)** for maintainability (UI locators + actions in page classes)
-        
-    -   Optionally **Page Factory** (less common now), or plain `By` locators
-        
--   **Project structure (example)**
-    
-    -   `src/test/java`
-        
-        -   `tests/` → TestNG test classes
-            
-        -   `pages/` → Page Objects (UI actions)
-            
-        -   `utils/` → waits, screenshots, file readers, date helpers, common methods
-            
-        -   `listeners/` → TestNG listeners (reporting, screenshots on fail)
-            
-    -   `src/main/java` (optional) → reusable core components
-        
-    -   `resources/`
-        
-        -   `config.properties` (env URLs, browser, creds via vault/secret store)
-            
-        -   `testdata/` (json/excel)
-            
-        -   `log4j2.xml` / logging config
-            
--   **Core components**
-    
-    -   **Driver management**: `WebDriverManager` or grid; ThreadLocal driver for parallel runs
-        
-    -   **BaseTest**: setup/teardown, driver init, common hooks
-        
-    -   **Wait utilities**: explicit waits + fluent wait helper for flaky/dynamic elements
-        
-    -   **Reporting**: Extent/Allure reports + screenshots on failure
-        
-    -   **CI/CD integration**: Jenkins/Azure DevOps pipeline triggers, reports archived, results published
-        
-    -   **Data handling**: DataProvider + external test data (JSON/Excel/DB)
-        
-    -   **Assertions**: TestNG asserts / soft asserts where needed
-        
--   **Execution**
-    
-    -   Run via `testng.xml` suites (smoke/regression)
-        
-    -   Maven commands like `mvn test -DsuiteXmlFile=testng.xml -Dbrowser=chrome`
-        
+- **Design pattern**
+
+  - **Page Object Model (POM)** for maintainability (UI locators + actions in page classes)
+
+  - Optionally **Page Factory** (less common now), or plain `By` locators
+
+- **Project structure (example)**
+
+  - `src/test/java`
+
+    - `tests/` → TestNG test classes
+
+    - `pages/` → Page Objects (UI actions)
+
+    - `utils/` → waits, screenshots, file readers, date helpers, common methods
+
+    - `listeners/` → TestNG listeners (reporting, screenshots on fail)
+
+  - `src/main/java` (optional) → reusable core components
+
+  - `resources/`
+
+    - `config.properties` (env URLs, browser, creds via vault/secret store)
+
+    - `testdata/` (json/excel)
+
+    - `log4j2.xml` / logging config
+
+- **Core components**
+
+  - **Driver management**: `WebDriverManager` or grid; ThreadLocal driver for parallel runs
+
+  - **BaseTest**: setup/teardown, driver init, common hooks
+
+  - **Wait utilities**: explicit waits + fluent wait helper for flaky/dynamic elements
+
+  - **Reporting**: Extent/Allure reports + screenshots on failure
+
+  - **CI/CD integration**: Jenkins/Azure DevOps pipeline triggers, reports archived, results published
+
+  - **Data handling**: DataProvider + external test data (JSON/Excel/DB)
+
+  - **Assertions**: TestNG asserts / soft asserts where needed
+
+- **Execution**
+
+  - Run via `testng.xml` suites (smoke/regression)
+
+  - Maven commands like `mvn test -DsuiteXmlFile=testng.xml -Dbrowser=chrome`
 
 ----------
 
@@ -449,21 +429,20 @@ Not always.
 
 Best practice:
 
--   Create Page Objects for **important pages and reusable components**.
-    
--   Use a **component-based approach**:
-    
-    -   Example: `HeaderComponent`, `LeftMenuComponent`, `CalendarComponent`, `ToastComponent`
-        
--   If many pages are similar (CRUD screens), you can:
-    
-    -   Create **generic/base page** + extend
-        
-    -   Use **dynamic locators** + reusable methods
-        
--   Rule of thumb: **If a page has unique behavior or many interactions → create a Page Object.**  
+- Create Page Objects for **important pages and reusable components**.
+
+- Use a **component-based approach**:
+
+  - Example: `HeaderComponent`, `LeftMenuComponent`, `CalendarComponent`, `ToastComponent`
+
+- If many pages are similar (CRUD screens), you can:
+
+  - Create **generic/base page** + extend
+
+  - Use **dynamic locators** + reusable methods
+
+- Rule of thumb: **If a page has unique behavior or many interactions → create a Page Object.**  
     If it’s a minor/static page with 1–2 elements, you can keep it minimal or covered via component objects.
-    
 
 ----------
 
@@ -473,24 +452,23 @@ Best practice:
 
 Fixes:
 
--   Wait until element is **clickable**:
-    
-    -   `ExpectedConditions.elementToBeClickable`
-        
--   Wait for overlay/loader to disappear:
-    
-    -   `invisibilityOfElementLocated`
-        
--   Scroll into view:
-    
-    -   `((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true)", el);`
-        
--   Click via JavaScript (last resort):
-    
-    -   `executeScript("arguments[0].click()", el);`
-        
--   Fix locator to click the correct element (sometimes you’re clicking a wrapper)
-    
+- Wait until element is **clickable**:
+
+  - `ExpectedConditions.elementToBeClickable`
+
+- Wait for overlay/loader to disappear:
+
+  - `invisibilityOfElementLocated`
+
+- Scroll into view:
+
+  - `((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true)", el);`
+
+- Click via JavaScript (last resort):
+
+  - `executeScript("arguments[0].click()", el);`
+
+- Fix locator to click the correct element (sometimes you’re clicking a wrapper)
 
 ----------
 
@@ -530,22 +508,21 @@ Use a **TestNG Listener** (`ITestListener`) and capture screenshot in `onTestFai
 
 Common ways:
 
--   **Azure Repos**: push your automation code to Azure Git repos.
-    
--   **Azure Pipelines (CI)**:
-    
-    -   Create a pipeline YAML that runs `mvn test`
-        
-    -   Publish results using **Publish Test Results** task (JUnit/TestNG results)
-        
-    -   Publish artifacts: screenshots + reports (Allure/Extent)
-        
--   **Azure Test Plans integration**:
-    
-    -   Link automation results to Test Plans via pipeline test reporting
-        
-    -   Some teams map automated tests using test case IDs in names/tags for traceability
-        
+- **Azure Repos**: push your automation code to Azure Git repos.
+
+- **Azure Pipelines (CI)**:
+
+  - Create a pipeline YAML that runs `mvn test`
+
+  - Publish results using **Publish Test Results** task (JUnit/TestNG results)
+
+  - Publish artifacts: screenshots + reports (Allure/Extent)
+
+- **Azure Test Plans integration**:
+
+  - Link automation results to Test Plans via pipeline test reporting
+
+  - Some teams map automated tests using test case IDs in names/tags for traceability
 
 ----------
 
@@ -553,10 +530,9 @@ Common ways:
 
 `git fetch` downloads the latest commits/branches/tags from the remote repository **without merging** into your current branch.
 
--   Updates your remote-tracking branches like `origin/main`
-    
--   Safe way to see what changed before you merge/rebase
-    
+- Updates your remote-tracking branches like `origin/main`
+
+- Safe way to see what changed before you merge/rebase
 
 Example:
 
@@ -579,16 +555,15 @@ In the **Tests** script:
 
 Reasons teams use **Cucumber (BDD)**:
 
--   **Readable scenarios** in Gherkin (Given/When/Then) for business + QA + dev alignment
-    
--   Improves **requirement clarity** and reduces ambiguity
-    
--   Encourages **reusable step definitions**
-    
--   Makes it easier to maintain **feature-level documentation**
-    
--   Works well for acceptance tests and stakeholder visibility
-    
+- **Readable scenarios** in Gherkin (Given/When/Then) for business + QA + dev alignment
+
+- Improves **requirement clarity** and reduces ambiguity
+
+- Encourages **reusable step definitions**
+
+- Makes it easier to maintain **feature-level documentation**
+
+- Works well for acceptance tests and stakeholder visibility
 
 (Also be honest in interviews: BDD helps only if the team actually collaborates on scenarios.)
 
@@ -596,56 +571,53 @@ Reasons teams use **Cucumber (BDD)**:
 
 ## 9) Explain dynamic binding and static binding
 
--   **Static binding (compile-time)**  
+- **Static binding (compile-time)**  
     Method call resolved at compile time.  
     Examples: **method overloading**, `static`, `final`, `private` methods.
-    
--   **Dynamic binding (runtime)**  
+
+- **Dynamic binding (runtime)**  
     Method call resolved at runtime based on the actual object type.  
     Example: **method overriding** (polymorphism).
-    
 
 ----------
 
 ## 10) Method overloading vs method overriding
 
--   **Overloading**
-    
-    -   Same method name, **different parameters** (number/type/order)
-        
-    -   Compile-time polymorphism
-        
-    -   Can be in same class
-        
--   **Overriding**
-    
-    -   Child class provides new implementation of parent method
-        
-    -   Same signature, runtime polymorphism
-        
-    -   Requires inheritance
-        
+- **Overloading**
+
+  - Same method name, **different parameters** (number/type/order)
+
+  - Compile-time polymorphism
+
+  - Can be in same class
+
+- **Overriding**
+
+  - Child class provides new implementation of parent method
+
+  - Same signature, runtime polymorphism
+
+  - Requires inheritance
 
 ----------
 
 ## 11) Comparable vs Comparator
 
--   **Comparable**
-    
-    -   Implemented by the class itself
-        
-    -   Defines natural ordering via `compareTo()`
-        
-    -   Example: `class Employee implements Comparable<Employee>`
-        
--   **Comparator**
-    
-    -   Separate class or lambda
-        
-    -   Defines multiple custom sort orders via `compare()`
-        
-    -   Useful when you need sorting by salary, name, date, etc.
-        
+- **Comparable**
+
+  - Implemented by the class itself
+
+  - Defines natural ordering via `compareTo()`
+
+  - Example: `class Employee implements Comparable<Employee>`
+
+- **Comparator**
+
+  - Separate class or lambda
+
+  - Defines multiple custom sort orders via `compare()`
+
+  - Useful when you need sorting by salary, name, date, etc.
 
 ----------
 
@@ -653,37 +625,35 @@ Reasons teams use **Cucumber (BDD)**:
 
 You evaluate usability + UX cues, for example:
 
--   Clear labels, placeholder vs label not confusing
-    
--   Proper error messages (wrong password, empty fields) and **not generic**
-    
--   Shows password toggle, caps-lock warning (optional)
-    
--   Keyboard accessibility: tab order, enter-to-submit
-    
--   Fast feedback and no confusing redirects
-    
--   “Forgot password” visible, signup link appropriate
-    
--   Mobile responsiveness
-    
--   Security cues: no exposing sensitive info, rate limiting, etc.
-    
+- Clear labels, placeholder vs label not confusing
+
+- Proper error messages (wrong password, empty fields) and **not generic**
+
+- Shows password toggle, caps-lock warning (optional)
+
+- Keyboard accessibility: tab order, enter-to-submit
+
+- Fast feedback and no confusing redirects
+
+- “Forgot password” visible, signup link appropriate
+
+- Mobile responsiveness
+
+- Security cues: no exposing sensitive info, rate limiting, etc.
 
 ----------
 
 ## 13) 5 points for writing a good test case
 
-1.  **Clear objective** (what feature/behavior is validated)
-    
-2.  **Preconditions** + test data stated
-    
-3.  **Step-by-step actions** that are unambiguous
-    
-4.  **Expected results** per key step (not only at the end)
-    
-5.  **Traceability & priority** (requirement/story ID, severity, tags like smoke/regression)
-    
+1. **Clear objective** (what feature/behavior is validated)
+
+2. **Preconditions** + test data stated
+
+3. **Step-by-step actions** that are unambiguous
+
+4. **Expected results** per key step (not only at the end)
+
+5. **Traceability & priority** (requirement/story ID, severity, tags like smoke/regression)
 
 ----------
 
@@ -691,18 +661,17 @@ You evaluate usability + UX cues, for example:
 
 Professional approach:
 
--   Re-validate bug with clear steps, screenshots/logs, environment details
-    
--   Explain **impact** (business/user impact, severity, frequency)
-    
--   Discuss with developer directly first (maybe it’s expected behavior or needs clarification)
-    
--   If still blocked: raise in standup/sprint triage with PO/lead, propose options:
-    
-    -   Fix now / workaround / defer with documented risk
-        
--   Keep it factual, collaborative, and focused on delivering safely
-    
+- Re-validate bug with clear steps, screenshots/logs, environment details
+
+- Explain **impact** (business/user impact, severity, frequency)
+
+- Discuss with developer directly first (maybe it’s expected behavior or needs clarification)
+
+- If still blocked: raise in standup/sprint triage with PO/lead, propose options:
+
+  - Fix now / workaround / defer with documented risk
+
+- Keep it factual, collaborative, and focused on delivering safely
 
 ----------
 
@@ -710,10 +679,9 @@ Professional approach:
 
 In JMeter, **threads** represent **virtual users**.
 
--   A **Thread Group** defines number of users (threads), ramp-up time, loop count.
-    
--   More threads → more concurrent load (limited by machine resources).
-    
+- A **Thread Group** defines number of users (threads), ramp-up time, loop count.
+
+- More threads → more concurrent load (limited by machine resources).
 
 ----------
 
@@ -723,12 +691,11 @@ In general, **no** (and you shouldn’t in real scenarios) because CAPTCHA is de
 
 What teams do instead:
 
--   Use **test environment** where captcha is disabled
-    
--   Use **whitelisted test keys** (for reCAPTCHA) or bypass tokens (server-side)
-    
--   Mock/stub captcha validation in lower environments
-    
+- Use **test environment** where captcha is disabled
+
+- Use **whitelisted test keys** (for reCAPTCHA) or bypass tokens (server-side)
+
+- Mock/stub captcha validation in lower environments
 
 ----------
 
@@ -736,14 +703,13 @@ What teams do instead:
 
 Use **FluentWait** when:
 
--   Element appears at unpredictable times (dynamic/AJAX)
-    
--   You need **custom polling interval** (e.g., poll every 500ms)
-    
--   You want to **ignore specific exceptions** (NoSuchElement, StaleElement)
-    
--   Waiting for non-standard conditions (custom JS state, attribute changes, text updates)
-    
+- Element appears at unpredictable times (dynamic/AJAX)
+
+- You need **custom polling interval** (e.g., poll every 500ms)
+
+- You want to **ignore specific exceptions** (NoSuchElement, StaleElement)
+
+- Waiting for non-standard conditions (custom JS state, attribute changes, text updates)
 
 ----------
 
@@ -751,15 +717,14 @@ Use **FluentWait** when:
 
 Options:
 
--   Using Selenium 4:
+- Using Selenium 4:
 
   `driver.switchTo().newWindow(WindowType.TAB);
     driver.get("https://example.com");`
 
--   Using JavaScript:
-    
+- Using JavaScript:
 
-`((JavascriptExecutor)driver).executeScript("window.open('https://example.com','_blank');");` 
+`((JavascriptExecutor)driver).executeScript("window.open('https://example.com','_blank');");`
 
 ----------
 
@@ -769,15 +734,12 @@ A **CRON expression** schedules jobs to run automatically at specific times (nig
 
 Example:
 
--   `H 2 * * 1-5` → run around 2 AM on weekdays (Jenkins supports `H` for hash-based spreading)
-    
+- `H 2 * * 1-5` → run around 2 AM on weekdays (Jenkins supports `H` for hash-based spreading)
 
 Common use:
 
--   Nightly regression
-    
--   Scheduled smoke checks
-    
--   Periodic health checks in lower environments
+- Nightly regression
 
+- Scheduled smoke checks
 
+- Periodic health checks in lower environments

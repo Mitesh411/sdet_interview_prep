@@ -1,7 +1,7 @@
 # AWS Certified AI Practitioner (AIF-C01): 65 Practice Questions
 
 > **Last reviewed:** 2026-11-13 against the AIF-C01 exam guide (v1.4) · AI-assisted structural and staleness review · see [review-log.md](review-log.md)
-
+>
 > **Format:** Mirrors the real exam. 65 questions, 90 minutes, weighted by domain.
 > **Question types:** Multiple choice (one answer), multiple response (select TWO), ordering, matching.
 > **How to use:** Answer all 65 in one 90-minute sitting **before** checking the [Answer Key](#answer-key). Aim for **80%+ (52/65)** before booking the real exam.
@@ -678,6 +678,7 @@ A company wants to (1) continuously collect evidence of how its AWS usage aligns
 | **Total** | **65** | **___ / 65** | **52** |
 
 > **Interpreting your score**
+>
 > - **52+ (80%+):** Ready. Book the exam and review your weak areas.
 > - **45–51 (70–79%):** Borderline. Re-study the domains where you scored below target, then retest.
 > - **Below 45:** Go back through the study notes domain by domain before attempting another practice set.

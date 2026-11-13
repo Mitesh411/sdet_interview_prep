@@ -1,0 +1,22 @@
+# lychee link checker configuration (used by .github/workflows/docs-quality.yml)
+
+# Check links to other files and #heading anchors, not only external URLs.
+include_fragments = true
+
+# Be tolerant of slow or rate-limiting sites so PRs don't fail on transient errors.
+max_retries = 3
+retry_wait_time = 5
+timeout = 30
+max_concurrency = 8
+accept = ["200..=299", "403", "429"]
+
+exclude = [
+  # Placeholder URLs used inside code samples.
+  '^https?://([a-z0-9-]+\.)*example\.(com|org)',
+  '^https?://localhost',
+  '^https?://127\.0\.0\.1',
+  # Sites that block automated clients.
+  '^https?://(www\.)?linkedin\.com',
+]
+
+exclude_path = ["node_modules", ".git"]
